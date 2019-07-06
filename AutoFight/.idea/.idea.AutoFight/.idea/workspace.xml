@@ -47,6 +47,7 @@
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -84,12 +85,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1562389278254</updated>
-      <workItem from="1562389282595" duration="7280000" />
+      <workItem from="1562389282595" duration="8822000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7280000" />
+    <option name="totallyTimeSpent" value="8822000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
