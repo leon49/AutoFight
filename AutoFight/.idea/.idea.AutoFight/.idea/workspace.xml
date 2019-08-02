@@ -4,6 +4,8 @@
     <list default="true" id="170d5015-85ae-45a6-b937-2c508dc8510d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AutoFight/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AutoFight/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AutoFight/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AutoFight/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll.meta" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,48 +18,48 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/OtherResources/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3381">
+            <state relative-caret-position="3220">
               <caret line="190" column="27" selection-start-line="190" selection-start-column="27" selection-end-line="190" selection-end-column="27" />
               <folding>
-                <marker date="1559475690000" expanded="true" signature="0:77" ph="/* Author: Daniele Giardini - http://www.demigiant.com ... */" />
-                <marker date="1559475690000" expanded="false" signature="111:258" ph="..." />
-                <marker date="1559475690000" expanded="true" signature="344:8841" ph="{...}" />
-                <marker date="1559475690000" expanded="true" signature="386:8839" ph="{...}" />
-                <marker date="1559475690000" expanded="true" signature="401:8833" ph="Shortcuts" />
-                <marker date="1559475690000" expanded="false" signature="428:1847" ph="Audio" />
-                <marker date="1559475690000" expanded="true" signature="451:759" ph="///Tweens an AudioSource's volume to the given value. ... " />
-                <marker date="1559475690000" expanded="true" signature="885:1186" ph="{...}" />
-                <marker date="1559475690000" expanded="true" signature="1196:1494" ph="///Tweens an AudioSource's pitch to the given value. ... " />
-                <marker date="1559475690000" expanded="true" signature="1621:1827" ph="{...}" />
-                <marker date="1559475690000" expanded="true" signature="1894:8806" ph="AudioMixer (Unity 5 or Newer)" />
-                <marker date="1559475690000" expanded="true" signature="1941:2461" ph="///Tweens an AudioMixer's exposed float to the given value. ... " />
-                <marker date="1559475690000" expanded="true" signature="2608:2964" ph="{...}" />
-                <marker date="1559475690000" expanded="true" signature="2691:2842" ph="{...}" />
-                <marker date="1559475690000" expanded="true" signature="2974:8786" ph="Operation Shortcuts" />
-                <marker date="1559475690000" expanded="true" signature="3011:3543" ph="/// Completes all tweens that have this target as a reference ... " />
-                <marker date="1559475690000" expanded="true" signature="3632:3712" ph="{...}" />
-                <marker date="1559475690000" expanded="true" signature="3722:4076" ph="/// Kills all tweens that have this target as a reference ... " />
-                <marker date="1559475690000" expanded="true" signature="4156:4227" ph="{...}" />
-                <marker date="1559475690000" expanded="true" signature="4237:4569" ph="/// Flips the direction (backwards if it was going forward or viceversa) of all tweens that have this target as a ... " />
-                <marker date="1559475690000" expanded="true" signature="4626:4687" ph="{...}" />
-                <marker date="1559475690000" expanded="true" signature="4697:5268" ph="/// Sends to the given position all tweens that have this target as a reference ... " />
-                <marker date="1559475690000" expanded="true" signature="5357:5431" ph="{...}" />
-                <marker date="1559475690000" expanded="true" signature="5441:5707" ph="/// Pauses all tweens that have this target as a reference ... " />
-                <marker date="1559475690000" expanded="true" signature="5765:5827" ph="{...}" />
-                <marker date="1559475690000" expanded="true" signature="5837:6102" ph="/// Plays all tweens that have this target as a reference ... " />
-                <marker date="1559475690000" expanded="true" signature="6159:6220" ph="{...}" />
-                <marker date="1559475690000" expanded="true" signature="6230:6505" ph="/// Plays backwards all tweens that have this target as a reference ... " />
-                <marker date="1559475690000" expanded="true" signature="6571:6641" ph="{...}" />
-                <marker date="1559475690000" expanded="true" signature="6651:6924" ph="/// Plays forward all tweens that have this target as a reference ... " />
-                <marker date="1559475690000" expanded="true" signature="6988:7056" ph="{...}" />
-                <marker date="1559475690000" expanded="true" signature="7066:7337" ph="/// Restarts all tweens that have this target as a reference ... " />
-                <marker date="1559475690000" expanded="true" signature="7397:7461" ph="{...}" />
-                <marker date="1559475690000" expanded="true" signature="7471:7740" ph="/// Rewinds all tweens that have this target as a reference ... " />
-                <marker date="1559475690000" expanded="true" signature="7799:7862" ph="{...}" />
-                <marker date="1559475690000" expanded="true" signature="7872:8150" ph="/// Smoothly rewinds all tweens that have this target as a reference ... " />
-                <marker date="1559475690000" expanded="true" signature="8215:8284" ph="{...}" />
-                <marker date="1559475690000" expanded="true" signature="8294:8634" ph="/// Toggles the paused state (plays if it was paused, pauses if it was playing) of all tweens that have this targ ... " />
-                <marker date="1559475690000" expanded="true" signature="8698:8766" ph="{...}" />
+                <marker date="1562578527756" expanded="true" signature="0:77" ph="/* Author: Daniele Giardini - http://www.demigiant.com ... */" />
+                <marker date="1562578527756" expanded="false" signature="111:258" ph="..." />
+                <marker date="1562578527756" expanded="true" signature="344:8841" ph="{...}" />
+                <marker date="1562578527756" expanded="true" signature="386:8839" ph="{...}" />
+                <marker date="1562578527756" expanded="true" signature="401:8833" ph="Shortcuts" />
+                <marker date="1562578527756" expanded="false" signature="428:1847" ph="Audio" />
+                <marker date="1562578527756" expanded="true" signature="451:759" ph="///Tweens an AudioSource's volume to the given value. ... " />
+                <marker date="1562578527756" expanded="true" signature="885:1186" ph="{...}" />
+                <marker date="1562578527756" expanded="true" signature="1196:1494" ph="///Tweens an AudioSource's pitch to the given value. ... " />
+                <marker date="1562578527756" expanded="true" signature="1621:1827" ph="{...}" />
+                <marker date="1562578527756" expanded="true" signature="1894:8806" ph="AudioMixer (Unity 5 or Newer)" />
+                <marker date="1562578527756" expanded="true" signature="1941:2461" ph="///Tweens an AudioMixer's exposed float to the given value. ... " />
+                <marker date="1562578527756" expanded="true" signature="2608:2964" ph="{...}" />
+                <marker date="1562578527756" expanded="true" signature="2691:2842" ph="{...}" />
+                <marker date="1562578527756" expanded="true" signature="2974:8786" ph="Operation Shortcuts" />
+                <marker date="1562578527756" expanded="true" signature="3011:3543" ph="/// Completes all tweens that have this target as a reference ... " />
+                <marker date="1562578527756" expanded="true" signature="3632:3712" ph="{...}" />
+                <marker date="1562578527756" expanded="true" signature="3722:4076" ph="/// Kills all tweens that have this target as a reference ... " />
+                <marker date="1562578527756" expanded="true" signature="4156:4227" ph="{...}" />
+                <marker date="1562578527756" expanded="true" signature="4237:4569" ph="/// Flips the direction (backwards if it was going forward or viceversa) of all tweens that have this target as a ... " />
+                <marker date="1562578527756" expanded="true" signature="4626:4687" ph="{...}" />
+                <marker date="1562578527756" expanded="true" signature="4697:5268" ph="/// Sends to the given position all tweens that have this target as a reference ... " />
+                <marker date="1562578527756" expanded="true" signature="5357:5431" ph="{...}" />
+                <marker date="1562578527756" expanded="true" signature="5441:5707" ph="/// Pauses all tweens that have this target as a reference ... " />
+                <marker date="1562578527756" expanded="true" signature="5765:5827" ph="{...}" />
+                <marker date="1562578527756" expanded="true" signature="5837:6102" ph="/// Plays all tweens that have this target as a reference ... " />
+                <marker date="1562578527756" expanded="true" signature="6159:6220" ph="{...}" />
+                <marker date="1562578527756" expanded="true" signature="6230:6505" ph="/// Plays backwards all tweens that have this target as a reference ... " />
+                <marker date="1562578527756" expanded="true" signature="6571:6641" ph="{...}" />
+                <marker date="1562578527756" expanded="true" signature="6651:6924" ph="/// Plays forward all tweens that have this target as a reference ... " />
+                <marker date="1562578527756" expanded="true" signature="6988:7056" ph="{...}" />
+                <marker date="1562578527756" expanded="true" signature="7066:7337" ph="/// Restarts all tweens that have this target as a reference ... " />
+                <marker date="1562578527756" expanded="true" signature="7397:7461" ph="{...}" />
+                <marker date="1562578527756" expanded="true" signature="7471:7740" ph="/// Rewinds all tweens that have this target as a reference ... " />
+                <marker date="1562578527756" expanded="true" signature="7799:7862" ph="{...}" />
+                <marker date="1562578527756" expanded="true" signature="7872:8150" ph="/// Smoothly rewinds all tweens that have this target as a reference ... " />
+                <marker date="1562578527756" expanded="true" signature="8215:8284" ph="{...}" />
+                <marker date="1562578527756" expanded="true" signature="8294:8634" ph="/// Toggles the paused state (plays if it was paused, pauses if it was playing) of all tweens that have this targ ... " />
+                <marker date="1562578527756" expanded="true" signature="8698:8766" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -66,38 +68,38 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/OtherResources/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
+            <state relative-caret-position="186">
+              <caret line="44" column="54" selection-start-line="44" selection-start-column="54" selection-end-line="44" selection-end-column="54" />
               <folding>
-                <marker date="1559475691000" expanded="true" signature="0:77" ph="/* Author: Daniele Giardini - http://www.demigiant.com ... */" />
-                <marker date="1559475691000" expanded="false" signature="111:294" ph="..." />
-                <marker date="1559475691000" expanded="true" signature="346:13678" ph="{...}" />
-                <marker date="1559475691000" expanded="true" signature="390:13676" ph="{...}" />
-                <marker date="1559475691000" expanded="true" signature="405:13673" ph="Shortcuts" />
-                <marker date="1559475691000" expanded="true" signature="432:13653" ph="Rigidbody" />
-                <marker date="1559475691000" expanded="true" signature="459:858" ph="///Tweens a Rigidbody's position to the given value. ... " />
-                <marker date="1559475691000" expanded="true" signature="1012:1245" ph="{...}" />
-                <marker date="1559475691000" expanded="true" signature="1255:1656" ph="///Tweens a Rigidbody's X position to the given value. ... " />
-                <marker date="1559475691000" expanded="true" signature="1809:2079" ph="{...}" />
-                <marker date="1559475691000" expanded="true" signature="2089:2490" ph="///Tweens a Rigidbody's Y position to the given value. ... " />
-                <marker date="1559475691000" expanded="true" signature="2643:2913" ph="{...}" />
-                <marker date="1559475691000" expanded="true" signature="2923:3324" ph="///Tweens a Rigidbody's Z position to the given value. ... " />
-                <marker date="1559475691000" expanded="true" signature="3477:3747" ph="{...}" />
-                <marker date="1559475691000" expanded="true" signature="3757:4106" ph="///Tweens a Rigidbody's rotation to the given value. ... " />
-                <marker date="1559475691000" expanded="true" signature="4281:4545" ph="{...}" />
-                <marker date="1559475691000" expanded="true" signature="4555:5079" ph="///Tweens a Rigidbody's rotation so that it will look towards the given position. ... " />
-                <marker date="1559475691000" expanded="true" signature="5291:5694" ph="{...}" />
-                <marker date="1559475691000" expanded="false" signature="5704:13633" ph="Special" />
-                <marker date="1559475691000" expanded="true" signature="5729:6449" ph="///Tweens a Rigidbody's position to the given value, while also applying a jump effect along the Y axis. ... " />
-                <marker date="1559475691000" expanded="true" signature="6598:8094" ph="{...}" />
-                <marker date="1559475691000" expanded="true" signature="7681:8060" ph="{...}" />
-                <marker date="1559475691000" expanded="true" signature="7716:7856" ph="{...}" />
-                <marker date="1559475691000" expanded="true" signature="8104:9441" ph="///Tweens a Rigidbody's position through the given path waypoints, using the chosen path algorithm. ... " />
-                <marker date="1559475691000" expanded="true" signature="9720:10153" ph="{...}" />
-                <marker date="1559475691000" expanded="true" signature="10162:11473" ph="///Tweens a Rigidbody's localPosition through the given path waypoints, using the chosen path algorithm. ... " />
-                <marker date="1559475691000" expanded="true" signature="11757:12357" ph="{...}" />
-                <marker date="1559475691000" expanded="true" signature="12635:12948" ph="{...}" />
-                <marker date="1559475691000" expanded="true" signature="13133:13613" ph="{...}" />
+                <marker date="1562578527758" expanded="true" signature="0:77" ph="/* Author: Daniele Giardini - http://www.demigiant.com ... */" />
+                <marker date="1562578527758" expanded="false" signature="111:294" ph="..." />
+                <marker date="1562578527758" expanded="true" signature="346:13678" ph="{...}" />
+                <marker date="1562578527758" expanded="true" signature="390:13676" ph="{...}" />
+                <marker date="1562578527758" expanded="true" signature="405:13673" ph="Shortcuts" />
+                <marker date="1562578527758" expanded="true" signature="432:13653" ph="Rigidbody" />
+                <marker date="1562578527758" expanded="true" signature="459:858" ph="///Tweens a Rigidbody's position to the given value. ... " />
+                <marker date="1562578527758" expanded="true" signature="1012:1245" ph="{...}" />
+                <marker date="1562578527758" expanded="true" signature="1255:1656" ph="///Tweens a Rigidbody's X position to the given value. ... " />
+                <marker date="1562578527758" expanded="true" signature="1809:2079" ph="{...}" />
+                <marker date="1562578527758" expanded="true" signature="2089:2490" ph="///Tweens a Rigidbody's Y position to the given value. ... " />
+                <marker date="1562578527758" expanded="true" signature="2643:2913" ph="{...}" />
+                <marker date="1562578527758" expanded="true" signature="2923:3324" ph="///Tweens a Rigidbody's Z position to the given value. ... " />
+                <marker date="1562578527758" expanded="true" signature="3477:3747" ph="{...}" />
+                <marker date="1562578527758" expanded="true" signature="3757:4106" ph="///Tweens a Rigidbody's rotation to the given value. ... " />
+                <marker date="1562578527758" expanded="true" signature="4281:4545" ph="{...}" />
+                <marker date="1562578527758" expanded="true" signature="4555:5079" ph="///Tweens a Rigidbody's rotation so that it will look towards the given position. ... " />
+                <marker date="1562578527758" expanded="true" signature="5291:5694" ph="{...}" />
+                <marker date="1562578527758" expanded="false" signature="5704:13633" ph="Special" />
+                <marker date="1562578527758" expanded="true" signature="5729:6449" ph="///Tweens a Rigidbody's position to the given value, while also applying a jump effect along the Y axis. ... " />
+                <marker date="1562578527758" expanded="true" signature="6598:8094" ph="{...}" />
+                <marker date="1562578527758" expanded="true" signature="7681:8060" ph="{...}" />
+                <marker date="1562578527758" expanded="true" signature="7716:7856" ph="{...}" />
+                <marker date="1562578527758" expanded="true" signature="8104:9441" ph="///Tweens a Rigidbody's position through the given path waypoints, using the chosen path algorithm. ... " />
+                <marker date="1562578527758" expanded="true" signature="9720:10153" ph="{...}" />
+                <marker date="1562578527758" expanded="true" signature="10162:11473" ph="///Tweens a Rigidbody's localPosition through the given path waypoints, using the chosen path algorithm. ... " />
+                <marker date="1562578527758" expanded="true" signature="11757:12357" ph="{...}" />
+                <marker date="1562578527758" expanded="true" signature="12635:12948" ph="{...}" />
+                <marker date="1562578527758" expanded="true" signature="13133:13613" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -110,14 +112,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/OtherResources/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/OtherResources/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/OtherResources/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
-    <option name="y" value="20" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/unity-chan!/Unity-chan! Model/Scripts/AutoBlink.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -127,10 +135,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="FileSystemExplorer" />
-      <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
-      </pane>
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -138,38 +142,16 @@
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
             </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="OtherResources" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="OtherResources" type="1045f7f1:UnityExplorerNode" />
-              <item name="Demigiant" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="OtherResources" type="1045f7f1:UnityExplorerNode" />
-              <item name="Demigiant" type="1045f7f1:UnityExplorerNode" />
-              <item name="DOTween" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="OtherResources" type="1045f7f1:UnityExplorerNode" />
-              <item name="Demigiant" type="1045f7f1:UnityExplorerNode" />
-              <item name="DOTween" type="1045f7f1:UnityExplorerNode" />
-              <item name="Modules" type="1045f7f1:UnityExplorerNode" />
-            </path>
           </expand>
           <select />
         </subPane>
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
       </pane>
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="FileSystemExplorer" />
       <pane id="AssemblyExplorer" />
     </panes>
   </component>
@@ -178,7 +160,7 @@
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="D:/Git/bin/git.exe" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.XML" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -219,11 +201,12 @@
       <workItem from="1562389282595" duration="9499000" />
       <workItem from="1562416950674" duration="75000" />
       <workItem from="1562417069958" duration="8720000" />
+      <workItem from="1564465617235" duration="14329000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18294000" />
+    <option name="totallyTimeSpent" value="32623000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -235,10 +218,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18176973" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18336888" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -286,86 +269,107 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/OtherResources/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3381">
+        <state relative-caret-position="3220">
           <caret line="190" column="27" selection-start-line="190" selection-start-column="27" selection-end-line="190" selection-end-column="27" />
           <folding>
-            <marker date="1559475690000" expanded="true" signature="0:77" ph="/* Author: Daniele Giardini - http://www.demigiant.com ... */" />
-            <marker date="1559475690000" expanded="false" signature="111:258" ph="..." />
-            <marker date="1559475690000" expanded="true" signature="344:8841" ph="{...}" />
-            <marker date="1559475690000" expanded="true" signature="386:8839" ph="{...}" />
-            <marker date="1559475690000" expanded="true" signature="401:8833" ph="Shortcuts" />
-            <marker date="1559475690000" expanded="false" signature="428:1847" ph="Audio" />
-            <marker date="1559475690000" expanded="true" signature="451:759" ph="///Tweens an AudioSource's volume to the given value. ... " />
-            <marker date="1559475690000" expanded="true" signature="885:1186" ph="{...}" />
-            <marker date="1559475690000" expanded="true" signature="1196:1494" ph="///Tweens an AudioSource's pitch to the given value. ... " />
-            <marker date="1559475690000" expanded="true" signature="1621:1827" ph="{...}" />
-            <marker date="1559475690000" expanded="true" signature="1894:8806" ph="AudioMixer (Unity 5 or Newer)" />
-            <marker date="1559475690000" expanded="true" signature="1941:2461" ph="///Tweens an AudioMixer's exposed float to the given value. ... " />
-            <marker date="1559475690000" expanded="true" signature="2608:2964" ph="{...}" />
-            <marker date="1559475690000" expanded="true" signature="2691:2842" ph="{...}" />
-            <marker date="1559475690000" expanded="true" signature="2974:8786" ph="Operation Shortcuts" />
-            <marker date="1559475690000" expanded="true" signature="3011:3543" ph="/// Completes all tweens that have this target as a reference ... " />
-            <marker date="1559475690000" expanded="true" signature="3632:3712" ph="{...}" />
-            <marker date="1559475690000" expanded="true" signature="3722:4076" ph="/// Kills all tweens that have this target as a reference ... " />
-            <marker date="1559475690000" expanded="true" signature="4156:4227" ph="{...}" />
-            <marker date="1559475690000" expanded="true" signature="4237:4569" ph="/// Flips the direction (backwards if it was going forward or viceversa) of all tweens that have this target as a ... " />
-            <marker date="1559475690000" expanded="true" signature="4626:4687" ph="{...}" />
-            <marker date="1559475690000" expanded="true" signature="4697:5268" ph="/// Sends to the given position all tweens that have this target as a reference ... " />
-            <marker date="1559475690000" expanded="true" signature="5357:5431" ph="{...}" />
-            <marker date="1559475690000" expanded="true" signature="5441:5707" ph="/// Pauses all tweens that have this target as a reference ... " />
-            <marker date="1559475690000" expanded="true" signature="5765:5827" ph="{...}" />
-            <marker date="1559475690000" expanded="true" signature="5837:6102" ph="/// Plays all tweens that have this target as a reference ... " />
-            <marker date="1559475690000" expanded="true" signature="6159:6220" ph="{...}" />
-            <marker date="1559475690000" expanded="true" signature="6230:6505" ph="/// Plays backwards all tweens that have this target as a reference ... " />
-            <marker date="1559475690000" expanded="true" signature="6571:6641" ph="{...}" />
-            <marker date="1559475690000" expanded="true" signature="6651:6924" ph="/// Plays forward all tweens that have this target as a reference ... " />
-            <marker date="1559475690000" expanded="true" signature="6988:7056" ph="{...}" />
-            <marker date="1559475690000" expanded="true" signature="7066:7337" ph="/// Restarts all tweens that have this target as a reference ... " />
-            <marker date="1559475690000" expanded="true" signature="7397:7461" ph="{...}" />
-            <marker date="1559475690000" expanded="true" signature="7471:7740" ph="/// Rewinds all tweens that have this target as a reference ... " />
-            <marker date="1559475690000" expanded="true" signature="7799:7862" ph="{...}" />
-            <marker date="1559475690000" expanded="true" signature="7872:8150" ph="/// Smoothly rewinds all tweens that have this target as a reference ... " />
-            <marker date="1559475690000" expanded="true" signature="8215:8284" ph="{...}" />
-            <marker date="1559475690000" expanded="true" signature="8294:8634" ph="/// Toggles the paused state (plays if it was paused, pauses if it was playing) of all tweens that have this targ ... " />
-            <marker date="1559475690000" expanded="true" signature="8698:8766" ph="{...}" />
+            <marker date="1562578527756" expanded="true" signature="0:77" ph="/* Author: Daniele Giardini - http://www.demigiant.com ... */" />
+            <marker date="1562578527756" expanded="false" signature="111:258" ph="..." />
+            <marker date="1562578527756" expanded="true" signature="344:8841" ph="{...}" />
+            <marker date="1562578527756" expanded="true" signature="386:8839" ph="{...}" />
+            <marker date="1562578527756" expanded="true" signature="401:8833" ph="Shortcuts" />
+            <marker date="1562578527756" expanded="false" signature="428:1847" ph="Audio" />
+            <marker date="1562578527756" expanded="true" signature="451:759" ph="///Tweens an AudioSource's volume to the given value. ... " />
+            <marker date="1562578527756" expanded="true" signature="885:1186" ph="{...}" />
+            <marker date="1562578527756" expanded="true" signature="1196:1494" ph="///Tweens an AudioSource's pitch to the given value. ... " />
+            <marker date="1562578527756" expanded="true" signature="1621:1827" ph="{...}" />
+            <marker date="1562578527756" expanded="true" signature="1894:8806" ph="AudioMixer (Unity 5 or Newer)" />
+            <marker date="1562578527756" expanded="true" signature="1941:2461" ph="///Tweens an AudioMixer's exposed float to the given value. ... " />
+            <marker date="1562578527756" expanded="true" signature="2608:2964" ph="{...}" />
+            <marker date="1562578527756" expanded="true" signature="2691:2842" ph="{...}" />
+            <marker date="1562578527756" expanded="true" signature="2974:8786" ph="Operation Shortcuts" />
+            <marker date="1562578527756" expanded="true" signature="3011:3543" ph="/// Completes all tweens that have this target as a reference ... " />
+            <marker date="1562578527756" expanded="true" signature="3632:3712" ph="{...}" />
+            <marker date="1562578527756" expanded="true" signature="3722:4076" ph="/// Kills all tweens that have this target as a reference ... " />
+            <marker date="1562578527756" expanded="true" signature="4156:4227" ph="{...}" />
+            <marker date="1562578527756" expanded="true" signature="4237:4569" ph="/// Flips the direction (backwards if it was going forward or viceversa) of all tweens that have this target as a ... " />
+            <marker date="1562578527756" expanded="true" signature="4626:4687" ph="{...}" />
+            <marker date="1562578527756" expanded="true" signature="4697:5268" ph="/// Sends to the given position all tweens that have this target as a reference ... " />
+            <marker date="1562578527756" expanded="true" signature="5357:5431" ph="{...}" />
+            <marker date="1562578527756" expanded="true" signature="5441:5707" ph="/// Pauses all tweens that have this target as a reference ... " />
+            <marker date="1562578527756" expanded="true" signature="5765:5827" ph="{...}" />
+            <marker date="1562578527756" expanded="true" signature="5837:6102" ph="/// Plays all tweens that have this target as a reference ... " />
+            <marker date="1562578527756" expanded="true" signature="6159:6220" ph="{...}" />
+            <marker date="1562578527756" expanded="true" signature="6230:6505" ph="/// Plays backwards all tweens that have this target as a reference ... " />
+            <marker date="1562578527756" expanded="true" signature="6571:6641" ph="{...}" />
+            <marker date="1562578527756" expanded="true" signature="6651:6924" ph="/// Plays forward all tweens that have this target as a reference ... " />
+            <marker date="1562578527756" expanded="true" signature="6988:7056" ph="{...}" />
+            <marker date="1562578527756" expanded="true" signature="7066:7337" ph="/// Restarts all tweens that have this target as a reference ... " />
+            <marker date="1562578527756" expanded="true" signature="7397:7461" ph="{...}" />
+            <marker date="1562578527756" expanded="true" signature="7471:7740" ph="/// Rewinds all tweens that have this target as a reference ... " />
+            <marker date="1562578527756" expanded="true" signature="7799:7862" ph="{...}" />
+            <marker date="1562578527756" expanded="true" signature="7872:8150" ph="/// Smoothly rewinds all tweens that have this target as a reference ... " />
+            <marker date="1562578527756" expanded="true" signature="8215:8284" ph="{...}" />
+            <marker date="1562578527756" expanded="true" signature="8294:8634" ph="/// Toggles the paused state (plays if it was paused, pauses if it was playing) of all tweens that have this targ ... " />
+            <marker date="1562578527756" expanded="true" signature="8698:8766" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Advanced Toon Shading/Scene/README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="59" lean-forward="true" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/unity-chan!/Unity-chan! Model/Scripts/AutoBlink.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Toon/Shader/README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/OtherResources/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="186">
+          <caret line="44" column="54" selection-start-line="44" selection-start-column="54" selection-end-line="44" selection-end-column="54" />
           <folding>
-            <marker date="1559475691000" expanded="true" signature="0:77" ph="/* Author: Daniele Giardini - http://www.demigiant.com ... */" />
-            <marker date="1559475691000" expanded="false" signature="111:294" ph="..." />
-            <marker date="1559475691000" expanded="true" signature="346:13678" ph="{...}" />
-            <marker date="1559475691000" expanded="true" signature="390:13676" ph="{...}" />
-            <marker date="1559475691000" expanded="true" signature="405:13673" ph="Shortcuts" />
-            <marker date="1559475691000" expanded="true" signature="432:13653" ph="Rigidbody" />
-            <marker date="1559475691000" expanded="true" signature="459:858" ph="///Tweens a Rigidbody's position to the given value. ... " />
-            <marker date="1559475691000" expanded="true" signature="1012:1245" ph="{...}" />
-            <marker date="1559475691000" expanded="true" signature="1255:1656" ph="///Tweens a Rigidbody's X position to the given value. ... " />
-            <marker date="1559475691000" expanded="true" signature="1809:2079" ph="{...}" />
-            <marker date="1559475691000" expanded="true" signature="2089:2490" ph="///Tweens a Rigidbody's Y position to the given value. ... " />
-            <marker date="1559475691000" expanded="true" signature="2643:2913" ph="{...}" />
-            <marker date="1559475691000" expanded="true" signature="2923:3324" ph="///Tweens a Rigidbody's Z position to the given value. ... " />
-            <marker date="1559475691000" expanded="true" signature="3477:3747" ph="{...}" />
-            <marker date="1559475691000" expanded="true" signature="3757:4106" ph="///Tweens a Rigidbody's rotation to the given value. ... " />
-            <marker date="1559475691000" expanded="true" signature="4281:4545" ph="{...}" />
-            <marker date="1559475691000" expanded="true" signature="4555:5079" ph="///Tweens a Rigidbody's rotation so that it will look towards the given position. ... " />
-            <marker date="1559475691000" expanded="true" signature="5291:5694" ph="{...}" />
-            <marker date="1559475691000" expanded="false" signature="5704:13633" ph="Special" />
-            <marker date="1559475691000" expanded="true" signature="5729:6449" ph="///Tweens a Rigidbody's position to the given value, while also applying a jump effect along the Y axis. ... " />
-            <marker date="1559475691000" expanded="true" signature="6598:8094" ph="{...}" />
-            <marker date="1559475691000" expanded="true" signature="7681:8060" ph="{...}" />
-            <marker date="1559475691000" expanded="true" signature="7716:7856" ph="{...}" />
-            <marker date="1559475691000" expanded="true" signature="8104:9441" ph="///Tweens a Rigidbody's position through the given path waypoints, using the chosen path algorithm. ... " />
-            <marker date="1559475691000" expanded="true" signature="9720:10153" ph="{...}" />
-            <marker date="1559475691000" expanded="true" signature="10162:11473" ph="///Tweens a Rigidbody's localPosition through the given path waypoints, using the chosen path algorithm. ... " />
-            <marker date="1559475691000" expanded="true" signature="11757:12357" ph="{...}" />
-            <marker date="1559475691000" expanded="true" signature="12635:12948" ph="{...}" />
-            <marker date="1559475691000" expanded="true" signature="13133:13613" ph="{...}" />
+            <marker date="1562578527758" expanded="true" signature="0:77" ph="/* Author: Daniele Giardini - http://www.demigiant.com ... */" />
+            <marker date="1562578527758" expanded="false" signature="111:294" ph="..." />
+            <marker date="1562578527758" expanded="true" signature="346:13678" ph="{...}" />
+            <marker date="1562578527758" expanded="true" signature="390:13676" ph="{...}" />
+            <marker date="1562578527758" expanded="true" signature="405:13673" ph="Shortcuts" />
+            <marker date="1562578527758" expanded="true" signature="432:13653" ph="Rigidbody" />
+            <marker date="1562578527758" expanded="true" signature="459:858" ph="///Tweens a Rigidbody's position to the given value. ... " />
+            <marker date="1562578527758" expanded="true" signature="1012:1245" ph="{...}" />
+            <marker date="1562578527758" expanded="true" signature="1255:1656" ph="///Tweens a Rigidbody's X position to the given value. ... " />
+            <marker date="1562578527758" expanded="true" signature="1809:2079" ph="{...}" />
+            <marker date="1562578527758" expanded="true" signature="2089:2490" ph="///Tweens a Rigidbody's Y position to the given value. ... " />
+            <marker date="1562578527758" expanded="true" signature="2643:2913" ph="{...}" />
+            <marker date="1562578527758" expanded="true" signature="2923:3324" ph="///Tweens a Rigidbody's Z position to the given value. ... " />
+            <marker date="1562578527758" expanded="true" signature="3477:3747" ph="{...}" />
+            <marker date="1562578527758" expanded="true" signature="3757:4106" ph="///Tweens a Rigidbody's rotation to the given value. ... " />
+            <marker date="1562578527758" expanded="true" signature="4281:4545" ph="{...}" />
+            <marker date="1562578527758" expanded="true" signature="4555:5079" ph="///Tweens a Rigidbody's rotation so that it will look towards the given position. ... " />
+            <marker date="1562578527758" expanded="true" signature="5291:5694" ph="{...}" />
+            <marker date="1562578527758" expanded="false" signature="5704:13633" ph="Special" />
+            <marker date="1562578527758" expanded="true" signature="5729:6449" ph="///Tweens a Rigidbody's position to the given value, while also applying a jump effect along the Y axis. ... " />
+            <marker date="1562578527758" expanded="true" signature="6598:8094" ph="{...}" />
+            <marker date="1562578527758" expanded="true" signature="7681:8060" ph="{...}" />
+            <marker date="1562578527758" expanded="true" signature="7716:7856" ph="{...}" />
+            <marker date="1562578527758" expanded="true" signature="8104:9441" ph="///Tweens a Rigidbody's position through the given path waypoints, using the chosen path algorithm. ... " />
+            <marker date="1562578527758" expanded="true" signature="9720:10153" ph="{...}" />
+            <marker date="1562578527758" expanded="true" signature="10162:11473" ph="///Tweens a Rigidbody's localPosition through the given path waypoints, using the chosen path algorithm. ... " />
+            <marker date="1562578527758" expanded="true" signature="11757:12357" ph="{...}" />
+            <marker date="1562578527758" expanded="true" signature="12635:12948" ph="{...}" />
+            <marker date="1562578527758" expanded="true" signature="13133:13613" ph="{...}" />
           </folding>
         </state>
       </provider>
