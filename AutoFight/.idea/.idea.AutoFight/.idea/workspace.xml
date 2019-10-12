@@ -16,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharactorRote.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+            <state relative-caret-position="240">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
               <folding>
                 <marker date="1564476933392" expanded="false" signature="6:50" ph="..." />
                 <marker date="1564476933392" expanded="true" signature="126:950" ph="{...}" />
@@ -127,12 +127,12 @@
       <workItem from="1562416950674" duration="75000" />
       <workItem from="1562417069958" duration="8720000" />
       <workItem from="1564465617235" duration="14329000" />
-      <workItem from="1570867350881" duration="1034000" />
+      <workItem from="1570867350881" duration="2366000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33657000" />
+    <option name="totallyTimeSpent" value="34989000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -212,8 +212,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharactorRote.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        <state relative-caret-position="240">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
           <folding>
             <marker date="1564476933392" expanded="false" signature="6:50" ph="..." />
             <marker date="1564476933392" expanded="true" signature="126:950" ph="{...}" />
