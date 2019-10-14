@@ -10,7 +10,7 @@ namespace Demo
         public Rigidbody Rigidbody;
         private void Start()
         {
-            Rigidbody = GetComponent<Rigidbody>();
+            Rigidbody = gameObject.GetComponent<Rigidbody>();
             anim = gameObject.GetComponent<Transform>().GetChild(0).GetComponent<Animator>();
             
             anim.Play("Idle");
@@ -27,18 +27,19 @@ namespace Demo
             {
                 anim.Play("Attacking1");
                 GetComponent<Transform>().LookAt(other.transform);
+                
+                if (null != Rigidbody)
+                {
+//                    Rigidbody.velocity = Vector3.zero;
+//                    Rigidbody.angularVelocity = Vector3.zero;
+                    Rigidbody.isKinematic = true;
+                }
             }
         }
 
         private void FixedUpdate()
         {
-            if (null != Rigidbody)
-            {
-                if (Rigidbody.velocity.magnitude < .01) {
-                    Rigidbody.velocity = Vector3.zero;
-                    Rigidbody.angularVelocity = Vector3.zero;
-                } 
-            }
+
         }
     }
 }
