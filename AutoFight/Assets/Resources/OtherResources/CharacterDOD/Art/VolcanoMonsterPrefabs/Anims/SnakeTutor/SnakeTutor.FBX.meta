@@ -1,0 +1,163 @@
+fileFormatVersion: 2
+guid: e4c6211007ac09545a21344477fd0cd6
+timeCreated: 1524637718
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: hat1
+    100004: hat2
+    100006: hat3
+    100008: hat4
+    100010: hat5
+    100012: head
+    100014: hip
+    100016: joint31
+    100018: joint33
+    100020: joint34
+    100022: joint35
+    100024: joint37
+    100026: joint38
+    100028: joint39
+    100030: joint40
+    100032: joint41
+    100034: left_finger1
+    100036: left_finger2
+    100038: left_finger3
+    100040: left_finger4
+    100042: left_forearm
+    100044: left_hand
+    100046: left_shoulder
+    100048: left_uparm
+    100050: neck
+    100052: right_finger1
+    100054: right_finger2
+    100056: right_finger3
+    100058: right_finger4
+    100060: right_forearm
+    100062: right_hand
+    100064: right_shoulder
+    100066: right_uparm
+    100068: sherenzu2:Object021
+    100070: spine1
+    100072: spine2
+    100074: tail1
+    100076: tail2
+    100078: tail3
+    100080: tail4
+    100082: tail5
+    400000: //RootNode
+    400002: hat1
+    400004: hat2
+    400006: hat3
+    400008: hat4
+    400010: hat5
+    400012: head
+    400014: hip
+    400016: joint31
+    400018: joint33
+    400020: joint34
+    400022: joint35
+    400024: joint37
+    400026: joint38
+    400028: joint39
+    400030: joint40
+    400032: joint41
+    400034: left_finger1
+    400036: left_finger2
+    400038: left_finger3
+    400040: left_finger4
+    400042: left_forearm
+    400044: left_hand
+    400046: left_shoulder
+    400048: left_uparm
+    400050: neck
+    400052: right_finger1
+    400054: right_finger2
+    400056: right_finger3
+    400058: right_finger4
+    400060: right_forearm
+    400062: right_hand
+    400064: right_shoulder
+    400066: right_uparm
+    400068: sherenzu2:Object021
+    400070: spine1
+    400072: spine2
+    400074: tail1
+    400076: tail2
+    400078: tail3
+    400080: tail4
+    400082: tail5
+    4300000: sherenzu2:Object021
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: sherenzu2:Object021
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

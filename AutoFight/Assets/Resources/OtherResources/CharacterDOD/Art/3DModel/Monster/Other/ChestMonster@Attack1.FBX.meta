@@ -1,0 +1,133 @@
+fileFormatVersion: 2
+guid: 0a1322207206e4e4ab1b31539cf2112c
+timeCreated: 1544087211
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bip001
+    100002: Bip_BoxDown
+    100004: Bip_BoxUp
+    100006: Bip_Eye
+    100008: Bip_Leftleg001
+    100010: Bip_Leftleg002
+    100012: Bip_Rightleg001
+    100014: Bip_Rightleg002
+    100016: Bip_tongue001
+    100018: Bip_tongue002
+    100020: Bip_tongue003
+    100022: Bip_tongue004
+    100024: Bip_tongue005
+    100026: Bip_tongue006
+    100028: Bip_tongue007
+    100030: Bip_tongue008
+    100032: Bip_tongue009
+    100034: Bip_tongue010
+    100036: BOX_Control
+    100038: //RootNode
+    100040: down
+    100042: IK Chain001
+    100044: IK Chain002
+    100046: She
+    100048: up
+    400000: Bip001
+    400002: Bip_BoxDown
+    400004: Bip_BoxUp
+    400006: Bip_Eye
+    400008: Bip_Leftleg001
+    400010: Bip_Leftleg002
+    400012: Bip_Rightleg001
+    400014: Bip_Rightleg002
+    400016: Bip_tongue001
+    400018: Bip_tongue002
+    400020: Bip_tongue003
+    400022: Bip_tongue004
+    400024: Bip_tongue005
+    400026: Bip_tongue006
+    400028: Bip_tongue007
+    400030: Bip_tongue008
+    400032: Bip_tongue009
+    400034: Bip_tongue010
+    400036: BOX_Control
+    400038: //RootNode
+    400040: down
+    400042: IK Chain001
+    400044: IK Chain002
+    400046: She
+    400048: up
+    4300000: down
+    4300002: up
+    4300004: She
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: down
+    13700002: She
+    13700004: up
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
