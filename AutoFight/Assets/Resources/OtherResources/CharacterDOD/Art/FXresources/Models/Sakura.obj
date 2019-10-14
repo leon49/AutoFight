@@ -1,0 +1,73 @@
+#File written by LIBUNFOLD3D. Compilation :Jun 29 2015,14:16:05
+mtllib Sakura.mtl
+#begin vertices
+v -0.6353 0.8047 4.9309
+v 0 0.5379 3.7528
+v 0 0.1286 1.9454
+v -2.4188 0.5586 2.8777
+v 0 0 -0
+v -2.9776 0.3893 0.3586
+v 0 0.0657 -2.1974
+v -2.1875 0.262 -2.1261
+v 0 0.4098 -4.4471
+v 0.6353 0.8047 4.9309
+v 2.4188 0.5586 2.8777
+v 2.9776 0.3893 0.3586
+v 2.1875 0.262 -2.1261
+#end vertices
+
+#begin 13 textures vertices 
+vt 0.3852683 1 0
+vt 0.317271 0.8726202 0
+vt 0.317271 0.6772752 0
+vt 0.5745326 0.7803662 0
+vt 0.317271 0.4720424 0
+vt 0.634542 0.5119072 0
+vt 0.317271 0.2408067 0
+vt 0.5500777 0.2473411 0
+vt 0.317271 0 0
+vt 0.2492737 1 0
+vt 0.06000941 0.7803662 0
+vt 0 0.5119072 0
+vt 0.08446432 0.2473411 0
+#end 13 textures vertices 
+
+#begin 13 normals 
+vn 0.0738 0.9759 -0.2053
+vn 0 0.9753 -0.2209
+vn -0 0.9929 -0.1189
+vn 0.1141 0.9838 -0.1382
+vn -0 0.9998 -0.0209
+vn 0.1154 0.992 -0.0506
+vn 0 0.9968 0.0804
+vn 0.0902 0.9955 0.028
+vn 0 0.9885 0.1512
+vn -0.0738 0.9759 -0.2053
+vn -0.1141 0.9838 -0.1382
+vn -0.1154 0.992 -0.0506
+vn -0.0902 0.9955 0.028
+#end 13 normals 
+
+#begin 8 faces
+usemtl wire_213154229
+g Sakura
+s 1
+f 1/1/1 2/2/2 3/3/3 4/4/4 
+f 4/4/4 3/3/3 5/5/5 6/6/6 
+f 6/6/6 5/5/5 7/7/7 8/8/8 
+f 8/8/8 7/7/7 9/9/9 
+f 10/10/10 11/11/11 3/3/3 2/2/2 
+f 11/11/11 12/12/12 5/5/5 3/3/3 
+f 12/12/12 13/13/13 7/7/7 5/5/5 
+f 13/13/13 9/9/9 7/7/7 
+#end 8 faces
+
+#begin properties
+#U3DPROPERTIES_00 table {Mesh table {SymPlane table {Point vector3d 0 0 0  Normal vector3d 1 0 0  Threshold double 0.01 Enabled bool false } Maps table {Density table {PrimType string "Polygon" Size int 1 DefaultValue double 1 ScaleType string "Log" MinValue double 0.1 MaxValue double 4 Data doubles { r 8 1 } } Pin table {PrimType string "Vertex" Size int 1 DefaultValue double 0 ScaleType string "Normalized" MinValue double 0 MaxValue double 1 Data doubles { r 13 0 } } Protect table {PrimType string "Vertex" Size int 1 DefaultValue double 0 ScaleType string "Normalized" MinValue double -1 MaxValue double 1 Data doubles { r 13 0 } } } } }
+#end properties
+
+#begin 0 fatal error vertex (that Unfold3D cannot handle)
+#end 0 fatal error vertex (that Unfold3D cannot handle)
+
+#begin 0 error vertex
+#end 0 error vertex

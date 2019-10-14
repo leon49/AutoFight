@@ -1,0 +1,90 @@
+
+unity序列化编辑器插件Odin - Inspector and Serializer v2.0.15
+所支持的Unity版本:5.3.0 及以上版本
+
+Odin puts your Unity workflow on steroids, making it easy to build powerful and advanced user-friendly editors for you and your entire team. 
+
+With an effortless integration that deploys perfectly into pre-existing workflows, Odin allows you to serialize anything and enjoy Unity with 80+ new inspector attributes, no boilerplate code and so much more! 
+
+See what's new in version 2.0!
+Watch what's new in version 1.0.6
+
+?? Website: Learn more about Odin
+?? Manual: Get started quickly
+?? Support: Submit any questions
+?? Roadmap: What's next?
+
+
+?? HIGHLIGHTS ??
+- Source code
+- Effortless Integration 
+- Editor Only Mode [NEW]
+- Odin Editor Windows [NEW]
+- Input Validation
+- Serialize Anything
+- Powerful Lists [UPDATED]
+- Insanely Extendable
+- Color Palettes
+- Dictionaries
+- Much More!
+
+All Odin licenses include the full source code so you can customize everything you want. 
+
+? Effortless Integration:
+Odin is extremely easy to use and won't break your existing workflow. In fact, you don't even need to inherit from anything, which means your existing editors will continue to work even with Odin. 
+
+? Editor-Only Mode: 
+Use Odin only for its editor improvements by disabling serialization completely. 
+
+? Odin Editor Windows: 
+You can now use Odin to rapidly create custom Editor Windows to help organize your project and game data. 
+
+? Input Validation:
+Empower your entire team by allowing your developers to setup scene and input validations, making using Unity easier than ever for artists and developers alike. 
+
+? Serialize Anything:
+Odin uses our highly-rated custom serialization protocol, allowing you to either inherit from our SerializedBehaviour, SerializedScriptableObject etc. or add a few lines of code to your existing class, and everything serializable shall be serialized. Yes, even polymorphic types! 
+
+? Powerful Lists:
+All arrays and lists implementing Microsoft's IList interface are drawn by our powerful list drawer; drag & drop, insert and delete individual items, multi-dim arrays [NEW], tables [NEW], cross-list and even cross-window item dragging, paging, nested list drawing, and much more! 
+
+? Insanely Extendable:
+A powerful and flexible API lets you easily extend and modify how the inspector is drawn. Create entirely new property group types and custom drawers in moments! 
+
+? Much More!
+Odin also adds; Dictionaries, Customizable Layouts, Asset Lists, Value Dropdowns, Inline Editor, Color Palettes, and yes, even more! 
+
+?? PLATFORM SUPPORT ??
+The feature-rich and optimized Odin Serializer supports:
+- Desktop
+- Android
+- iOS
+- WebGL
+- PlayStation
+- Xbox
+- Nintendo
+- Oculus
+- All IL2CPP platforms
+- UWP only supported with IL2CPP backend
+
+?? ROADMAP ??
+- New Instance Creator window
+- Better asset validator
+- Proper installer for Odin
+- Property and drawer system internals rebuild
+
+
+
+
+
+
+
+
+www.6m5m.com
+---------------------------------------------------------------------------------------------------
+6m5m游戏素材网专注于游戏开发各种源码、素材、模型、音效、资源的学习与分享！
+---------------------------------------------------------------------------------------------------
+免责声明：
+资源来自互联网，仅限用于学习研究，请勿用于任何商业用途，请支持正版，尊重原版权，否则后果自负，请下载24小时内务必删除，本站不承担任何责任！
+
+#1

@@ -1,0 +1,869 @@
+fileFormatVersion: 2
+guid: ff6539cc9b8cf5e499ecf3f021158c33
+timeCreated: 1534919911
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bat
+    100002: Bat001
+    100004: Bat002
+    100006: Bat003
+    100008: Bat004
+    100010: Head
+    100012: Head001
+    100014: Head002
+    100016: Head003
+    100018: Head004
+    100020: Hips
+    100022: Hips001
+    100024: Hips002
+    100026: Hips003
+    100028: Hips004
+    100030: Left005
+    100032: Left006
+    100034: Left007
+    100036: Left008
+    100038: Left009
+    100040: Left010
+    100042: Left011
+    100044: Left012
+    100046: Left013
+    100048: Left014
+    100050: Left015
+    100052: Left016
+    100054: Left017
+    100056: Left018
+    100058: Left019
+    100060: Left020
+    100062: Left1
+    100064: Left2
+    100066: Left2_002
+    100068: Left2_003
+    100070: Left2_004
+    100072: Left2_005
+    100074: Left2_1
+    100076: Left3
+    100078: Left3_003
+    100080: Left3_004
+    100082: Left3_005
+    100084: Left3_006
+    100086: Left3_007
+    100088: Left3_008
+    100090: Left3_009
+    100092: Left3_010
+    100094: Left3_1
+    100096: Left3_2
+    100098: Left4
+    100100: Left4_003
+    100102: Left4_004
+    100104: Left4_005
+    100106: Left4_006
+    100108: Left4_007
+    100110: Left4_008
+    100112: Left4_009
+    100114: Left4_010
+    100116: Left4_1
+    100118: Left4_2
+    100120: LeftLeg005
+    100122: LeftLeg006
+    100124: LeftLeg007
+    100126: LeftLeg008
+    100128: LeftLeg009
+    100130: LeftLeg010
+    100132: LeftLeg011
+    100134: LeftLeg012
+    100136: LeftLeg013
+    100138: LeftLeg014
+    100140: LeftLeg015
+    100142: LeftLeg016
+    100144: LeftLeg017
+    100146: LeftLeg018
+    100148: LeftLeg019
+    100150: LeftLeg020
+    100152: LeftLeg1
+    100154: LeftLeg2
+    100156: LeftLeg3
+    100158: LeftLeg4
+    100160: Pevis
+    100162: Pevis001
+    100164: Pevis002
+    100166: Pevis003
+    100168: Pevis004
+    100170: Right005
+    100172: Right006
+    100174: Right007
+    100176: Right008
+    100178: Right009
+    100180: Right010
+    100182: Right011
+    100184: Right012
+    100186: Right013
+    100188: Right014
+    100190: Right015
+    100192: Right016
+    100194: Right017
+    100196: Right018
+    100198: Right019
+    100200: Right020
+    100202: Right1
+    100204: Right2
+    100206: Right2_002
+    100208: Right2_003
+    100210: Right2_004
+    100212: Right2_005
+    100214: Right2_1
+    100216: Right3
+    100218: Right3_003
+    100220: Right3_004
+    100222: Right3_005
+    100224: Right3_006
+    100226: Right3_007
+    100228: Right3_008
+    100230: Right3_009
+    100232: Right3_010
+    100234: Right3_1
+    100236: Right3_2
+    100238: Right4
+    100240: Right4_003
+    100242: Right4_004
+    100244: Right4_005
+    100246: Right4_006
+    100248: Right4_007
+    100250: Right4_008
+    100252: Right4_009
+    100254: Right4_010
+    100256: Right4_1
+    100258: Right4_2
+    100260: RightLeg005
+    100262: RightLeg006
+    100264: RightLeg007
+    100266: RightLeg008
+    100268: RightLeg009
+    100270: RightLeg010
+    100272: RightLeg011
+    100274: RightLeg012
+    100276: RightLeg013
+    100278: RightLeg014
+    100280: RightLeg015
+    100282: RightLeg016
+    100284: RightLeg017
+    100286: RightLeg018
+    100288: RightLeg019
+    100290: RightLeg020
+    100292: RightLeg1
+    100294: RightLeg2
+    100296: RightLeg3
+    100298: RightLeg4
+    100300: //RootNode
+    100302: Spine003
+    100304: Spine004
+    100306: Spine005
+    100308: Spine006
+    100310: Spine007
+    100312: Spine008
+    100314: Spine009
+    100316: Spine010
+    100318: Spine1
+    100320: Spine2
+    100322: Tail003
+    100324: Tail004
+    100326: Tail005
+    100328: Tail006
+    100330: Tail007
+    100332: Tail008
+    100334: Tail009
+    100336: Tail010
+    100338: Tail1
+    100340: Tail2
+    100342: Bat005
+    100344: Head005
+    100346: Hips005
+    100348: Left021
+    100350: Left022
+    100352: Left023
+    100354: Left024
+    100356: Left2_006
+    100358: Left3_011
+    100360: Left3_012
+    100362: Left4_011
+    100364: Left4_012
+    100366: LeftLeg021
+    100368: LeftLeg022
+    100370: LeftLeg023
+    100372: LeftLeg024
+    100374: Pevis005
+    100376: Right021
+    100378: Right022
+    100380: Right023
+    100382: Right024
+    100384: Right2_006
+    100386: Right3_011
+    100388: Right3_012
+    100390: Right4_011
+    100392: Right4_012
+    100394: RightLeg021
+    100396: RightLeg022
+    100398: RightLeg023
+    100400: RightLeg024
+    100402: Spine011
+    100404: Spine012
+    100406: Tail011
+    100408: Tail012
+    400000: Bat
+    400002: Bat001
+    400004: Bat002
+    400006: Bat003
+    400008: Bat004
+    400010: Head
+    400012: Head001
+    400014: Head002
+    400016: Head003
+    400018: Head004
+    400020: Hips
+    400022: Hips001
+    400024: Hips002
+    400026: Hips003
+    400028: Hips004
+    400030: Left005
+    400032: Left006
+    400034: Left007
+    400036: Left008
+    400038: Left009
+    400040: Left010
+    400042: Left011
+    400044: Left012
+    400046: Left013
+    400048: Left014
+    400050: Left015
+    400052: Left016
+    400054: Left017
+    400056: Left018
+    400058: Left019
+    400060: Left020
+    400062: Left1
+    400064: Left2
+    400066: Left2_002
+    400068: Left2_003
+    400070: Left2_004
+    400072: Left2_005
+    400074: Left2_1
+    400076: Left3
+    400078: Left3_003
+    400080: Left3_004
+    400082: Left3_005
+    400084: Left3_006
+    400086: Left3_007
+    400088: Left3_008
+    400090: Left3_009
+    400092: Left3_010
+    400094: Left3_1
+    400096: Left3_2
+    400098: Left4
+    400100: Left4_003
+    400102: Left4_004
+    400104: Left4_005
+    400106: Left4_006
+    400108: Left4_007
+    400110: Left4_008
+    400112: Left4_009
+    400114: Left4_010
+    400116: Left4_1
+    400118: Left4_2
+    400120: LeftLeg005
+    400122: LeftLeg006
+    400124: LeftLeg007
+    400126: LeftLeg008
+    400128: LeftLeg009
+    400130: LeftLeg010
+    400132: LeftLeg011
+    400134: LeftLeg012
+    400136: LeftLeg013
+    400138: LeftLeg014
+    400140: LeftLeg015
+    400142: LeftLeg016
+    400144: LeftLeg017
+    400146: LeftLeg018
+    400148: LeftLeg019
+    400150: LeftLeg020
+    400152: LeftLeg1
+    400154: LeftLeg2
+    400156: LeftLeg3
+    400158: LeftLeg4
+    400160: Pevis
+    400162: Pevis001
+    400164: Pevis002
+    400166: Pevis003
+    400168: Pevis004
+    400170: Right005
+    400172: Right006
+    400174: Right007
+    400176: Right008
+    400178: Right009
+    400180: Right010
+    400182: Right011
+    400184: Right012
+    400186: Right013
+    400188: Right014
+    400190: Right015
+    400192: Right016
+    400194: Right017
+    400196: Right018
+    400198: Right019
+    400200: Right020
+    400202: Right1
+    400204: Right2
+    400206: Right2_002
+    400208: Right2_003
+    400210: Right2_004
+    400212: Right2_005
+    400214: Right2_1
+    400216: Right3
+    400218: Right3_003
+    400220: Right3_004
+    400222: Right3_005
+    400224: Right3_006
+    400226: Right3_007
+    400228: Right3_008
+    400230: Right3_009
+    400232: Right3_010
+    400234: Right3_1
+    400236: Right3_2
+    400238: Right4
+    400240: Right4_003
+    400242: Right4_004
+    400244: Right4_005
+    400246: Right4_006
+    400248: Right4_007
+    400250: Right4_008
+    400252: Right4_009
+    400254: Right4_010
+    400256: Right4_1
+    400258: Right4_2
+    400260: RightLeg005
+    400262: RightLeg006
+    400264: RightLeg007
+    400266: RightLeg008
+    400268: RightLeg009
+    400270: RightLeg010
+    400272: RightLeg011
+    400274: RightLeg012
+    400276: RightLeg013
+    400278: RightLeg014
+    400280: RightLeg015
+    400282: RightLeg016
+    400284: RightLeg017
+    400286: RightLeg018
+    400288: RightLeg019
+    400290: RightLeg020
+    400292: RightLeg1
+    400294: RightLeg2
+    400296: RightLeg3
+    400298: RightLeg4
+    400300: //RootNode
+    400302: Spine003
+    400304: Spine004
+    400306: Spine005
+    400308: Spine006
+    400310: Spine007
+    400312: Spine008
+    400314: Spine009
+    400316: Spine010
+    400318: Spine1
+    400320: Spine2
+    400322: Tail003
+    400324: Tail004
+    400326: Tail005
+    400328: Tail006
+    400330: Tail007
+    400332: Tail008
+    400334: Tail009
+    400336: Tail010
+    400338: Tail1
+    400340: Tail2
+    400342: Bat005
+    400344: Head005
+    400346: Hips005
+    400348: Left021
+    400350: Left022
+    400352: Left023
+    400354: Left024
+    400356: Left2_006
+    400358: Left3_011
+    400360: Left3_012
+    400362: Left4_011
+    400364: Left4_012
+    400366: LeftLeg021
+    400368: LeftLeg022
+    400370: LeftLeg023
+    400372: LeftLeg024
+    400374: Pevis005
+    400376: Right021
+    400378: Right022
+    400380: Right023
+    400382: Right024
+    400384: Right2_006
+    400386: Right3_011
+    400388: Right3_012
+    400390: Right4_011
+    400392: Right4_012
+    400394: RightLeg021
+    400396: RightLeg022
+    400398: RightLeg023
+    400400: RightLeg024
+    400402: Spine011
+    400404: Spine012
+    400406: Tail011
+    400408: Tail012
+    4300000: Bat
+    4300002: Bat001
+    4300004: Bat002
+    4300006: Bat003
+    4300008: Bat004
+    4300010: Bat005
+    7400000: RobberAppear_Bat5
+    9500000: //RootNode
+    13700000: Bat
+    13700002: Bat001
+    13700004: Bat002
+    13700006: Bat003
+    13700008: Bat004
+    13700010: Bat005
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: RobberAppear_Bat5
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 380
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bat001
+        weight: 1
+      - path: Bat002
+        weight: 1
+      - path: Bat003
+        weight: 1
+      - path: Bat004
+        weight: 1
+      - path: Bat005
+        weight: 1
+      - path: Hips001
+        weight: 1
+      - path: Hips001/Pevis001
+        weight: 1
+      - path: Hips001/Pevis001/LeftLeg006
+        weight: 1
+      - path: Hips001/Pevis001/LeftLeg006/LeftLeg005
+        weight: 1
+      - path: Hips001/Pevis001/LeftLeg006/LeftLeg005/LeftLeg007
+        weight: 1
+      - path: Hips001/Pevis001/LeftLeg006/LeftLeg005/LeftLeg007/LeftLeg008
+        weight: 1
+      - path: Hips001/Pevis001/RightLeg007
+        weight: 1
+      - path: Hips001/Pevis001/RightLeg007/RightLeg008
+        weight: 1
+      - path: Hips001/Pevis001/RightLeg007/RightLeg008/RightLeg006
+        weight: 1
+      - path: Hips001/Pevis001/RightLeg007/RightLeg008/RightLeg006/RightLeg005
+        weight: 1
+      - path: Hips001/Spine004
+        weight: 1
+      - path: Hips001/Spine004/Left006
+        weight: 1
+      - path: Hips001/Spine004/Left006/Left008
+        weight: 1
+      - path: Hips001/Spine004/Left006/Left008/Left2_002
+        weight: 1
+      - path: Hips001/Spine004/Left006/Left008/Left005
+        weight: 1
+      - path: Hips001/Spine004/Left006/Left008/Left005/Left3_004
+        weight: 1
+      - path: Hips001/Spine004/Left006/Left008/Left005/Left3_004/Left3_003
+        weight: 1
+      - path: Hips001/Spine004/Left006/Left008/Left005/Left007
+        weight: 1
+      - path: Hips001/Spine004/Left006/Left008/Left005/Left007/Left4_004
+        weight: 1
+      - path: Hips001/Spine004/Left006/Left008/Left005/Left007/Left4_004/Left4_003
+        weight: 1
+      - path: Hips001/Spine004/Right008
+        weight: 1
+      - path: Hips001/Spine004/Right008/Right005
+        weight: 1
+      - path: Hips001/Spine004/Right008/Right005/Right2_002
+        weight: 1
+      - path: Hips001/Spine004/Right008/Right005/Right006
+        weight: 1
+      - path: Hips001/Spine004/Right008/Right005/Right006/Right3_004
+        weight: 1
+      - path: Hips001/Spine004/Right008/Right005/Right006/Right3_004/Right3_003
+        weight: 1
+      - path: Hips001/Spine004/Right008/Right005/Right006/Right007
+        weight: 1
+      - path: Hips001/Spine004/Right008/Right005/Right006/Right007/Right4_004
+        weight: 1
+      - path: Hips001/Spine004/Right008/Right005/Right006/Right007/Right4_004/Right4_003
+        weight: 1
+      - path: Hips001/Spine004/Spine003
+        weight: 1
+      - path: Hips001/Spine004/Spine003/Head001
+        weight: 1
+      - path: Hips001/Tail004
+        weight: 1
+      - path: Hips001/Tail004/Tail003
+        weight: 1
+      - path: Hips002
+        weight: 1
+      - path: Hips002/Pevis002
+        weight: 1
+      - path: Hips002/Pevis002/LeftLeg011
+        weight: 1
+      - path: Hips002/Pevis002/LeftLeg011/LeftLeg012
+        weight: 1
+      - path: Hips002/Pevis002/LeftLeg011/LeftLeg012/LeftLeg010
+        weight: 1
+      - path: Hips002/Pevis002/LeftLeg011/LeftLeg012/LeftLeg010/LeftLeg009
+        weight: 1
+      - path: Hips002/Pevis002/RightLeg009
+        weight: 1
+      - path: Hips002/Pevis002/RightLeg009/RightLeg012
+        weight: 1
+      - path: Hips002/Pevis002/RightLeg009/RightLeg012/RightLeg010
+        weight: 1
+      - path: Hips002/Pevis002/RightLeg009/RightLeg012/RightLeg010/RightLeg011
+        weight: 1
+      - path: Hips002/Spine005
+        weight: 1
+      - path: Hips002/Spine005/Left010
+        weight: 1
+      - path: Hips002/Spine005/Left010/Left011
+        weight: 1
+      - path: Hips002/Spine005/Left010/Left011/Left2_003
+        weight: 1
+      - path: Hips002/Spine005/Left010/Left011/Left009
+        weight: 1
+      - path: Hips002/Spine005/Left010/Left011/Left009/Left3_006
+        weight: 1
+      - path: Hips002/Spine005/Left010/Left011/Left009/Left3_006/Left3_005
+        weight: 1
+      - path: Hips002/Spine005/Left010/Left011/Left009/Left012
+        weight: 1
+      - path: Hips002/Spine005/Left010/Left011/Left009/Left012/Left4_005
+        weight: 1
+      - path: Hips002/Spine005/Left010/Left011/Left009/Left012/Left4_005/Left4_006
+        weight: 1
+      - path: Hips002/Spine005/Right009
+        weight: 1
+      - path: Hips002/Spine005/Right009/Right010
+        weight: 1
+      - path: Hips002/Spine005/Right009/Right010/Right2_003
+        weight: 1
+      - path: Hips002/Spine005/Right009/Right010/Right011
+        weight: 1
+      - path: Hips002/Spine005/Right009/Right010/Right011/Right3_005
+        weight: 1
+      - path: Hips002/Spine005/Right009/Right010/Right011/Right3_005/Right3_006
+        weight: 1
+      - path: Hips002/Spine005/Right009/Right010/Right011/Right012
+        weight: 1
+      - path: Hips002/Spine005/Right009/Right010/Right011/Right012/Right4_005
+        weight: 1
+      - path: Hips002/Spine005/Right009/Right010/Right011/Right012/Right4_005/Right4_006
+        weight: 1
+      - path: Hips002/Spine005/Spine006
+        weight: 1
+      - path: Hips002/Spine005/Spine006/Head002
+        weight: 1
+      - path: Hips002/Tail005
+        weight: 1
+      - path: Hips002/Tail005/Tail006
+        weight: 1
+      - path: Hips003
+        weight: 1
+      - path: Hips003/Pevis003
+        weight: 1
+      - path: Hips003/Pevis003/LeftLeg013
+        weight: 1
+      - path: Hips003/Pevis003/LeftLeg013/LeftLeg014
+        weight: 1
+      - path: Hips003/Pevis003/LeftLeg013/LeftLeg014/LeftLeg015
+        weight: 1
+      - path: Hips003/Pevis003/LeftLeg013/LeftLeg014/LeftLeg015/LeftLeg016
+        weight: 1
+      - path: Hips003/Pevis003/RightLeg013
+        weight: 1
+      - path: Hips003/Pevis003/RightLeg013/RightLeg014
+        weight: 1
+      - path: Hips003/Pevis003/RightLeg013/RightLeg014/RightLeg015
+        weight: 1
+      - path: Hips003/Pevis003/RightLeg013/RightLeg014/RightLeg015/RightLeg016
+        weight: 1
+      - path: Hips003/Spine007
+        weight: 1
+      - path: Hips003/Spine007/Left013
+        weight: 1
+      - path: Hips003/Spine007/Left013/Left014
+        weight: 1
+      - path: Hips003/Spine007/Left013/Left014/Left2_004
+        weight: 1
+      - path: Hips003/Spine007/Left013/Left014/Left015
+        weight: 1
+      - path: Hips003/Spine007/Left013/Left014/Left015/Left3_007
+        weight: 1
+      - path: Hips003/Spine007/Left013/Left014/Left015/Left3_007/Left3_008
+        weight: 1
+      - path: Hips003/Spine007/Left013/Left014/Left015/Left016
+        weight: 1
+      - path: Hips003/Spine007/Left013/Left014/Left015/Left016/Left4_007
+        weight: 1
+      - path: Hips003/Spine007/Left013/Left014/Left015/Left016/Left4_007/Left4_008
+        weight: 1
+      - path: Hips003/Spine007/Right013
+        weight: 1
+      - path: Hips003/Spine007/Right013/Right014
+        weight: 1
+      - path: Hips003/Spine007/Right013/Right014/Right2_004
+        weight: 1
+      - path: Hips003/Spine007/Right013/Right014/Right015
+        weight: 1
+      - path: Hips003/Spine007/Right013/Right014/Right015/Right3_007
+        weight: 1
+      - path: Hips003/Spine007/Right013/Right014/Right015/Right3_007/Right3_008
+        weight: 1
+      - path: Hips003/Spine007/Right013/Right014/Right015/Right016
+        weight: 1
+      - path: Hips003/Spine007/Right013/Right014/Right015/Right016/Right4_007
+        weight: 1
+      - path: Hips003/Spine007/Right013/Right014/Right015/Right016/Right4_007/Right4_008
+        weight: 1
+      - path: Hips003/Spine007/Spine008
+        weight: 1
+      - path: Hips003/Spine007/Spine008/Head003
+        weight: 1
+      - path: Hips003/Tail007
+        weight: 1
+      - path: Hips003/Tail007/Tail008
+        weight: 1
+      - path: Hips004
+        weight: 1
+      - path: Hips004/Pevis004
+        weight: 1
+      - path: Hips004/Pevis004/LeftLeg019
+        weight: 1
+      - path: Hips004/Pevis004/LeftLeg019/LeftLeg018
+        weight: 1
+      - path: Hips004/Pevis004/LeftLeg019/LeftLeg018/LeftLeg017
+        weight: 1
+      - path: Hips004/Pevis004/LeftLeg019/LeftLeg018/LeftLeg017/LeftLeg020
+        weight: 1
+      - path: Hips004/Pevis004/RightLeg020
+        weight: 1
+      - path: Hips004/Pevis004/RightLeg020/RightLeg017
+        weight: 1
+      - path: Hips004/Pevis004/RightLeg020/RightLeg017/RightLeg019
+        weight: 1
+      - path: Hips004/Pevis004/RightLeg020/RightLeg017/RightLeg019/RightLeg018
+        weight: 1
+      - path: Hips004/Spine009
+        weight: 1
+      - path: Hips004/Spine009/Left019
+        weight: 1
+      - path: Hips004/Spine009/Left019/Left018
+        weight: 1
+      - path: Hips004/Spine009/Left019/Left018/Left2_005
+        weight: 1
+      - path: Hips004/Spine009/Left019/Left018/Left020
+        weight: 1
+      - path: Hips004/Spine009/Left019/Left018/Left020/Left3_009
+        weight: 1
+      - path: Hips004/Spine009/Left019/Left018/Left020/Left3_009/Left3_010
+        weight: 1
+      - path: Hips004/Spine009/Left019/Left018/Left020/Left017
+        weight: 1
+      - path: Hips004/Spine009/Left019/Left018/Left020/Left017/Left4_009
+        weight: 1
+      - path: Hips004/Spine009/Left019/Left018/Left020/Left017/Left4_009/Left4_010
+        weight: 1
+      - path: Hips004/Spine009/Right020
+        weight: 1
+      - path: Hips004/Spine009/Right020/Right019
+        weight: 1
+      - path: Hips004/Spine009/Right020/Right019/Right2_005
+        weight: 1
+      - path: Hips004/Spine009/Right020/Right019/Right018
+        weight: 1
+      - path: Hips004/Spine009/Right020/Right019/Right018/Right3_010
+        weight: 1
+      - path: Hips004/Spine009/Right020/Right019/Right018/Right3_010/Right3_009
+        weight: 1
+      - path: Hips004/Spine009/Right020/Right019/Right018/Right017
+        weight: 1
+      - path: Hips004/Spine009/Right020/Right019/Right018/Right017/Right4_010
+        weight: 1
+      - path: Hips004/Spine009/Right020/Right019/Right018/Right017/Right4_010/Right4_009
+        weight: 1
+      - path: Hips004/Spine009/Spine010
+        weight: 1
+      - path: Hips004/Spine009/Spine010/Head004
+        weight: 1
+      - path: Hips004/Tail010
+        weight: 1
+      - path: Hips004/Tail010/Tail009
+        weight: 1
+      - path: Hips005
+        weight: 1
+      - path: Hips005/Pevis005
+        weight: 1
+      - path: Hips005/Pevis005/LeftLeg021
+        weight: 1
+      - path: Hips005/Pevis005/LeftLeg021/LeftLeg022
+        weight: 1
+      - path: Hips005/Pevis005/LeftLeg021/LeftLeg022/LeftLeg023
+        weight: 1
+      - path: Hips005/Pevis005/LeftLeg021/LeftLeg022/LeftLeg023/LeftLeg024
+        weight: 1
+      - path: Hips005/Pevis005/RightLeg021
+        weight: 1
+      - path: Hips005/Pevis005/RightLeg021/RightLeg022
+        weight: 1
+      - path: Hips005/Pevis005/RightLeg021/RightLeg022/RightLeg023
+        weight: 1
+      - path: Hips005/Pevis005/RightLeg021/RightLeg022/RightLeg023/RightLeg024
+        weight: 1
+      - path: Hips005/Spine011
+        weight: 1
+      - path: Hips005/Spine011/Left021
+        weight: 1
+      - path: Hips005/Spine011/Left021/Left022
+        weight: 1
+      - path: Hips005/Spine011/Left021/Left022/Left2_006
+        weight: 1
+      - path: Hips005/Spine011/Left021/Left022/Left023
+        weight: 1
+      - path: Hips005/Spine011/Left021/Left022/Left023/Left3_011
+        weight: 1
+      - path: Hips005/Spine011/Left021/Left022/Left023/Left3_011/Left3_012
+        weight: 1
+      - path: Hips005/Spine011/Left021/Left022/Left023/Left024
+        weight: 1
+      - path: Hips005/Spine011/Left021/Left022/Left023/Left024/Left4_011
+        weight: 1
+      - path: Hips005/Spine011/Left021/Left022/Left023/Left024/Left4_011/Left4_012
+        weight: 1
+      - path: Hips005/Spine011/Right021
+        weight: 1
+      - path: Hips005/Spine011/Right021/Right022
+        weight: 1
+      - path: Hips005/Spine011/Right021/Right022/Right2_006
+        weight: 1
+      - path: Hips005/Spine011/Right021/Right022/Right023
+        weight: 1
+      - path: Hips005/Spine011/Right021/Right022/Right023/Right3_011
+        weight: 1
+      - path: Hips005/Spine011/Right021/Right022/Right023/Right3_011/Right3_012
+        weight: 1
+      - path: Hips005/Spine011/Right021/Right022/Right023/Right024
+        weight: 1
+      - path: Hips005/Spine011/Right021/Right022/Right023/Right024/Right4_011
+        weight: 1
+      - path: Hips005/Spine011/Right021/Right022/Right023/Right024/Right4_011/Right4_012
+        weight: 1
+      - path: Hips005/Spine011/Spine012
+        weight: 1
+      - path: Hips005/Spine011/Spine012/Head005
+        weight: 1
+      - path: Hips005/Tail011
+        weight: 1
+      - path: Hips005/Tail011/Tail012
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.6
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

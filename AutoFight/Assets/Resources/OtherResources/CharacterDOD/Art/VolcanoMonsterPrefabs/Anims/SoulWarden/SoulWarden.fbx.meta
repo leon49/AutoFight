@@ -1,0 +1,177 @@
+fileFormatVersion: 2
+guid: 202962de4ff870b48a7178c919085ee2
+timeCreated: 1524561964
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: bangdingdesherenzu4:Object024
+    100002: bangdingdesherenzu4:Object025
+    100004: bangdingdesherenzu4:Object026
+    100006: bangdingdesherenzu4:Object027
+    100008: bangdingdesherenzu4:Object028
+    100010: //RootNode
+    100012: Dummy002
+    100014: Dummy003
+    100016: hat1
+    100018: head
+    100020: hip
+    100022: joint15
+    100024: joint31
+    100026: joint33
+    100028: joint34
+    100030: joint35
+    100032: joint37
+    100034: joint38
+    100036: left_finger1
+    100038: left_finger2
+    100040: left_finger3
+    100042: left_finger4
+    100044: left_forearm
+    100046: left_hand
+    100048: left_shoulder
+    100050: left_uparm
+    100052: neck
+    100054: right_finger1
+    100056: right_finger2
+    100058: right_finger3
+    100060: right_finger4
+    100062: right_forearm
+    100064: right_hand
+    100066: right_shoulder
+    100068: right_uparm
+    100070: spine1
+    100072: spine2
+    100074: tail1
+    100076: tail2
+    100078: tail3
+    100080: tail4
+    100082: tail5
+    100084: "\u5BF9\u8C61001"
+    400000: bangdingdesherenzu4:Object024
+    400002: bangdingdesherenzu4:Object025
+    400004: bangdingdesherenzu4:Object026
+    400006: bangdingdesherenzu4:Object027
+    400008: bangdingdesherenzu4:Object028
+    400010: //RootNode
+    400012: Dummy002
+    400014: Dummy003
+    400016: hat1
+    400018: head
+    400020: hip
+    400022: joint15
+    400024: joint31
+    400026: joint33
+    400028: joint34
+    400030: joint35
+    400032: joint37
+    400034: joint38
+    400036: left_finger1
+    400038: left_finger2
+    400040: left_finger3
+    400042: left_finger4
+    400044: left_forearm
+    400046: left_hand
+    400048: left_shoulder
+    400050: left_uparm
+    400052: neck
+    400054: right_finger1
+    400056: right_finger2
+    400058: right_finger3
+    400060: right_finger4
+    400062: right_forearm
+    400064: right_hand
+    400066: right_shoulder
+    400068: right_uparm
+    400070: spine1
+    400072: spine2
+    400074: tail1
+    400076: tail2
+    400078: tail3
+    400080: tail4
+    400082: tail5
+    400084: "\u5BF9\u8C61001"
+    2300000: bangdingdesherenzu4:Object028
+    2300002: "\u5BF9\u8C61001"
+    3300000: bangdingdesherenzu4:Object028
+    3300002: "\u5BF9\u8C61001"
+    4300000: bangdingdesherenzu4:Object028
+    4300002: "\u5BF9\u8C61001"
+    4300004: bangdingdesherenzu4:Object024
+    4300006: bangdingdesherenzu4:Object025
+    4300008: bangdingdesherenzu4:Object026
+    4300010: bangdingdesherenzu4:Object027
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: bangdingdesherenzu4:Object024
+    13700002: bangdingdesherenzu4:Object025
+    13700004: bangdingdesherenzu4:Object026
+    13700006: bangdingdesherenzu4:Object027
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

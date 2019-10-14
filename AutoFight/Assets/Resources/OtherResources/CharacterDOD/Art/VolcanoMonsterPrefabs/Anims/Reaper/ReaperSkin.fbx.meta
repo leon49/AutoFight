@@ -1,0 +1,199 @@
+fileFormatVersion: 2
+guid: bb9e871d8f0109a4cbccc35883728ea0
+timeCreated: 1518166338
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: body
+    100002: Fire1
+    100004: fire1
+    100006: Fire2
+    100008: fire2
+    100010: Fire3
+    100012: fire3
+    100014: head
+    100016: hood
+    100018: hood2
+    100020: hood3
+    100022: hood4
+    100024: joint5
+    100026: neck
+    100028: Pivot
+    100030: //RootNode
+    100032: spine1
+    100034: spine2
+    100036: Weapon
+    100038: weapon
+    100040: Bone001
+    100042: Bone002
+    100044: Bone003
+    100046: Bone004
+    100048: Connect1
+    100050: Connect2
+    100052: Connect3
+    100054: fire
+    100056: Fire0
+    100058: Hat1
+    100060: Hat2
+    100062: Hat3
+    100064: Hat4
+    100066: Hat5
+    100068: Hat6
+    100070: Head
+    100072: Hips
+    100074: LeftConnect1
+    100076: LeftConnect2
+    100078: LeftConnect3
+    100080: LeftFire1
+    100082: LeftFire2
+    100084: LeftFire3
+    100086: Leg1
+    100088: Leg2
+    100090: Neck
+    100092: RightConnect1
+    100094: RightConnect2
+    100096: RightConnect3
+    100098: RightFire1
+    100100: RightFire2
+    100102: RightFire3
+    100104: Spine1
+    100106: Spine2
+    100108: Weapon001
+    400000: body
+    400002: Fire1
+    400004: fire1
+    400006: Fire2
+    400008: fire2
+    400010: Fire3
+    400012: fire3
+    400014: head
+    400016: hood
+    400018: hood2
+    400020: hood3
+    400022: hood4
+    400024: joint5
+    400026: neck
+    400028: Pivot
+    400030: //RootNode
+    400032: spine1
+    400034: spine2
+    400036: Weapon
+    400038: weapon
+    400040: Bone001
+    400042: Bone002
+    400044: Bone003
+    400046: Bone004
+    400048: Connect1
+    400050: Connect2
+    400052: Connect3
+    400054: fire
+    400056: Fire0
+    400058: Hat1
+    400060: Hat2
+    400062: Hat3
+    400064: Hat4
+    400066: Hat5
+    400068: Hat6
+    400070: Head
+    400072: Hips
+    400074: LeftConnect1
+    400076: LeftConnect2
+    400078: LeftConnect3
+    400080: LeftFire1
+    400082: LeftFire2
+    400084: LeftFire3
+    400086: Leg1
+    400088: Leg2
+    400090: Neck
+    400092: RightConnect1
+    400094: RightConnect2
+    400096: RightConnect3
+    400098: RightFire1
+    400100: RightFire2
+    400102: RightFire3
+    400104: Spine1
+    400106: Spine2
+    400108: Weapon001
+    4300000: body
+    4300002: fire3
+    4300004: fire2
+    4300006: fire1
+    4300008: Weapon
+    4300010: fire
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: body
+    13700002: fire1
+    13700004: fire2
+    13700006: fire3
+    13700008: Weapon
+    13700010: fire
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

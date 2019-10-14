@@ -1,0 +1,681 @@
+fileFormatVersion: 2
+guid: 21f5645b0a201fa4d88a7ff91340eeb6
+timeCreated: 1534491753
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Bat
+    100004: Bip001
+    100006: Bip001 Footsteps
+    100008: Bip001 Head
+    100010: Bip001 HeadNub
+    100012: Bip001 L Calf
+    100014: Bip001 L Clavicle
+    100016: Bip001 L Finger0
+    100018: Bip001 L Finger01
+    100020: Bip001 L Finger02
+    100022: Bip001 L Finger0Nub
+    100024: Bip001 L Finger1
+    100026: Bip001 L Finger11
+    100028: Bip001 L Finger12
+    100030: Bip001 L Finger1Nub
+    100032: Bip001 L Finger2
+    100034: Bip001 L Finger21
+    100036: Bip001 L Finger22
+    100038: Bip001 L Finger2Nub
+    100040: Bip001 L Finger3
+    100042: Bip001 L Finger31
+    100044: Bip001 L Finger32
+    100046: Bip001 L Finger3Nub
+    100048: Bip001 L Finger4
+    100050: Bip001 L Finger41
+    100052: Bip001 L Finger42
+    100054: Bip001 L Finger4Nub
+    100056: Bip001 L Foot
+    100058: Bip001 L Forearm
+    100060: Bip001 L Hand
+    100062: Bip001 L Thigh
+    100064: Bip001 L Toe0
+    100066: Bip001 L Toe0Nub
+    100068: Bip001 L UpperArm
+    100070: Bip001 Neck
+    100072: Bip001 Pelvis
+    100074: Bip001 R Calf
+    100076: Bip001 R Clavicle
+    100078: Bip001 R Finger0
+    100080: Bip001 R Finger01
+    100082: Bip001 R Finger02
+    100084: Bip001 R Finger0Nub
+    100086: Bip001 R Finger1
+    100088: Bip001 R Finger11
+    100090: Bip001 R Finger12
+    100092: Bip001 R Finger1Nub
+    100094: Bip001 R Finger2
+    100096: Bip001 R Finger21
+    100098: Bip001 R Finger22
+    100100: Bip001 R Finger2Nub
+    100102: Bip001 R Finger3
+    100104: Bip001 R Finger31
+    100106: Bip001 R Finger32
+    100108: Bip001 R Finger3Nub
+    100110: Bip001 R Finger4
+    100112: Bip001 R Finger41
+    100114: Bip001 R Finger42
+    100116: Bip001 R Finger4Nub
+    100118: Bip001 R Foot
+    100120: Bip001 R Forearm
+    100122: Bip001 R Hand
+    100124: Bip001 R Thigh
+    100126: Bip001 R Toe0
+    100128: Bip001 R Toe0Nub
+    100130: Bip001 R UpperArm
+    100132: Bip001 Spine
+    100134: Bip001 Spine1
+    100136: Bone001
+    100138: Bone002
+    100140: Bone003
+    100142: Bone004
+    100144: Bone005
+    100146: Bone006
+    100148: Bone007
+    100150: Bone008
+    100152: Bone009
+    100154: Bone010
+    100156: Bone011
+    100158: Bone012
+    100160: Bone013
+    100162: Bone014
+    100164: Bone015
+    100166: Bone016
+    100168: Bone017
+    100170: Bone018
+    100172: Coin_Bone
+    100174: Coins
+    100176: Head
+    100178: Hips
+    100180: Left1
+    100182: Left2
+    100184: Left2_1
+    100186: Left3
+    100188: Left3_1
+    100190: Left3_2
+    100192: Left4
+    100194: Left4_1
+    100196: Left4_2
+    100198: LeftLeg1
+    100200: LeftLeg2
+    100202: LeftLeg3
+    100204: LeftLeg4
+    100206: Pevis
+    100208: Right1
+    100210: Right2
+    100212: Right2_1
+    100214: Right3
+    100216: Right3_1
+    100218: Right3_2
+    100220: Right4
+    100222: Right4_1
+    100224: Right4_2
+    100226: RightLeg1
+    100228: RightLeg2
+    100230: RightLeg3
+    100232: RightLeg4
+    100234: Robber
+    100236: Spine1
+    100238: Spine2
+    100240: Tail1
+    100242: Tail2
+    100244: Bone019
+    100246: Bone020
+    100248: Bone021
+    100250: Bone022
+    100252: Bone023
+    100254: Bone024
+    100256: Bone025
+    100258: Bone026
+    100260: Bone027
+    100262: Bone028
+    100264: Bone029
+    100266: Bone030
+    100268: Bone031
+    100270: Bone032
+    100272: Bone033
+    100274: Bone034
+    100276: Bone035
+    100278: Bone036
+    100280: Bone037
+    100282: Bone038
+    100284: Bone039
+    100286: Bone040
+    100288: Bone041
+    100290: Bone042
+    100292: Bone043
+    100294: Bone044
+    100296: Bone045
+    100298: Bone046
+    100300: Bone047
+    100302: Bone048
+    100304: Bone049
+    100306: Dummy001
+    100308: Pifeng
+    100310: "\u5BF9\u8C61001"
+    100312: Bat001
+    100314: Bat002
+    100316: Bat003
+    100318: Bat004
+    100320: Head001
+    100322: Head002
+    100324: Head003
+    100326: Head004
+    100328: Hips001
+    100330: Hips002
+    100332: Hips003
+    100334: Hips004
+    100336: Left005
+    100338: Left006
+    100340: Left007
+    100342: Left008
+    100344: Left009
+    100346: Left010
+    100348: Left011
+    100350: Left012
+    100352: Left013
+    100354: Left014
+    100356: Left015
+    100358: Left016
+    100360: Left017
+    100362: Left018
+    100364: Left019
+    100366: Left020
+    100368: Left2_002
+    100370: Left2_003
+    100372: Left2_004
+    100374: Left2_005
+    100376: Left3_003
+    100378: Left3_004
+    100380: Left3_005
+    100382: Left3_006
+    100384: Left3_007
+    100386: Left3_008
+    100388: Left3_009
+    100390: Left3_010
+    100392: Left4_003
+    100394: Left4_004
+    100396: Left4_005
+    100398: Left4_006
+    100400: Left4_007
+    100402: Left4_008
+    100404: Left4_009
+    100406: Left4_010
+    100408: LeftLeg005
+    100410: LeftLeg006
+    100412: LeftLeg007
+    100414: LeftLeg008
+    100416: LeftLeg009
+    100418: LeftLeg010
+    100420: LeftLeg011
+    100422: LeftLeg012
+    100424: LeftLeg013
+    100426: LeftLeg014
+    100428: LeftLeg015
+    100430: LeftLeg016
+    100432: LeftLeg017
+    100434: LeftLeg018
+    100436: LeftLeg019
+    100438: LeftLeg020
+    100440: Pevis001
+    100442: Pevis002
+    100444: Pevis003
+    100446: Pevis004
+    100448: Right005
+    100450: Right006
+    100452: Right007
+    100454: Right008
+    100456: Right009
+    100458: Right010
+    100460: Right011
+    100462: Right012
+    100464: Right013
+    100466: Right014
+    100468: Right015
+    100470: Right016
+    100472: Right017
+    100474: Right018
+    100476: Right019
+    100478: Right020
+    100480: Right2_002
+    100482: Right2_003
+    100484: Right2_004
+    100486: Right2_005
+    100488: Right3_003
+    100490: Right3_004
+    100492: Right3_005
+    100494: Right3_006
+    100496: Right3_007
+    100498: Right3_008
+    100500: Right3_009
+    100502: Right3_010
+    100504: Right4_003
+    100506: Right4_004
+    100508: Right4_005
+    100510: Right4_006
+    100512: Right4_007
+    100514: Right4_008
+    100516: Right4_009
+    100518: Right4_010
+    100520: RightLeg005
+    100522: RightLeg006
+    100524: RightLeg007
+    100526: RightLeg008
+    100528: RightLeg009
+    100530: RightLeg010
+    100532: RightLeg011
+    100534: RightLeg012
+    100536: RightLeg013
+    100538: RightLeg014
+    100540: RightLeg015
+    100542: RightLeg016
+    100544: RightLeg017
+    100546: RightLeg018
+    100548: RightLeg019
+    100550: RightLeg020
+    100552: Spine003
+    100554: Spine004
+    100556: Spine005
+    100558: Spine006
+    100560: Spine007
+    100562: Spine008
+    100564: Spine009
+    100566: Spine010
+    100568: Tail003
+    100570: Tail004
+    100572: Tail005
+    100574: Tail006
+    100576: Tail007
+    100578: Tail008
+    100580: Tail009
+    100582: Tail010
+    400000: //RootNode
+    400002: Bat
+    400004: Bip001
+    400006: Bip001 Footsteps
+    400008: Bip001 Head
+    400010: Bip001 HeadNub
+    400012: Bip001 L Calf
+    400014: Bip001 L Clavicle
+    400016: Bip001 L Finger0
+    400018: Bip001 L Finger01
+    400020: Bip001 L Finger02
+    400022: Bip001 L Finger0Nub
+    400024: Bip001 L Finger1
+    400026: Bip001 L Finger11
+    400028: Bip001 L Finger12
+    400030: Bip001 L Finger1Nub
+    400032: Bip001 L Finger2
+    400034: Bip001 L Finger21
+    400036: Bip001 L Finger22
+    400038: Bip001 L Finger2Nub
+    400040: Bip001 L Finger3
+    400042: Bip001 L Finger31
+    400044: Bip001 L Finger32
+    400046: Bip001 L Finger3Nub
+    400048: Bip001 L Finger4
+    400050: Bip001 L Finger41
+    400052: Bip001 L Finger42
+    400054: Bip001 L Finger4Nub
+    400056: Bip001 L Foot
+    400058: Bip001 L Forearm
+    400060: Bip001 L Hand
+    400062: Bip001 L Thigh
+    400064: Bip001 L Toe0
+    400066: Bip001 L Toe0Nub
+    400068: Bip001 L UpperArm
+    400070: Bip001 Neck
+    400072: Bip001 Pelvis
+    400074: Bip001 R Calf
+    400076: Bip001 R Clavicle
+    400078: Bip001 R Finger0
+    400080: Bip001 R Finger01
+    400082: Bip001 R Finger02
+    400084: Bip001 R Finger0Nub
+    400086: Bip001 R Finger1
+    400088: Bip001 R Finger11
+    400090: Bip001 R Finger12
+    400092: Bip001 R Finger1Nub
+    400094: Bip001 R Finger2
+    400096: Bip001 R Finger21
+    400098: Bip001 R Finger22
+    400100: Bip001 R Finger2Nub
+    400102: Bip001 R Finger3
+    400104: Bip001 R Finger31
+    400106: Bip001 R Finger32
+    400108: Bip001 R Finger3Nub
+    400110: Bip001 R Finger4
+    400112: Bip001 R Finger41
+    400114: Bip001 R Finger42
+    400116: Bip001 R Finger4Nub
+    400118: Bip001 R Foot
+    400120: Bip001 R Forearm
+    400122: Bip001 R Hand
+    400124: Bip001 R Thigh
+    400126: Bip001 R Toe0
+    400128: Bip001 R Toe0Nub
+    400130: Bip001 R UpperArm
+    400132: Bip001 Spine
+    400134: Bip001 Spine1
+    400136: Bone001
+    400138: Bone002
+    400140: Bone003
+    400142: Bone004
+    400144: Bone005
+    400146: Bone006
+    400148: Bone007
+    400150: Bone008
+    400152: Bone009
+    400154: Bone010
+    400156: Bone011
+    400158: Bone012
+    400160: Bone013
+    400162: Bone014
+    400164: Bone015
+    400166: Bone016
+    400168: Bone017
+    400170: Bone018
+    400172: Coin_Bone
+    400174: Coins
+    400176: Head
+    400178: Hips
+    400180: Left1
+    400182: Left2
+    400184: Left2_1
+    400186: Left3
+    400188: Left3_1
+    400190: Left3_2
+    400192: Left4
+    400194: Left4_1
+    400196: Left4_2
+    400198: LeftLeg1
+    400200: LeftLeg2
+    400202: LeftLeg3
+    400204: LeftLeg4
+    400206: Pevis
+    400208: Right1
+    400210: Right2
+    400212: Right2_1
+    400214: Right3
+    400216: Right3_1
+    400218: Right3_2
+    400220: Right4
+    400222: Right4_1
+    400224: Right4_2
+    400226: RightLeg1
+    400228: RightLeg2
+    400230: RightLeg3
+    400232: RightLeg4
+    400234: Robber
+    400236: Spine1
+    400238: Spine2
+    400240: Tail1
+    400242: Tail2
+    400244: Bone019
+    400246: Bone020
+    400248: Bone021
+    400250: Bone022
+    400252: Bone023
+    400254: Bone024
+    400256: Bone025
+    400258: Bone026
+    400260: Bone027
+    400262: Bone028
+    400264: Bone029
+    400266: Bone030
+    400268: Bone031
+    400270: Bone032
+    400272: Bone033
+    400274: Bone034
+    400276: Bone035
+    400278: Bone036
+    400280: Bone037
+    400282: Bone038
+    400284: Bone039
+    400286: Bone040
+    400288: Bone041
+    400290: Bone042
+    400292: Bone043
+    400294: Bone044
+    400296: Bone045
+    400298: Bone046
+    400300: Bone047
+    400302: Bone048
+    400304: Bone049
+    400306: Dummy001
+    400308: Pifeng
+    400310: "\u5BF9\u8C61001"
+    400312: Bat001
+    400314: Bat002
+    400316: Bat003
+    400318: Bat004
+    400320: Head001
+    400322: Head002
+    400324: Head003
+    400326: Head004
+    400328: Hips001
+    400330: Hips002
+    400332: Hips003
+    400334: Hips004
+    400336: Left005
+    400338: Left006
+    400340: Left007
+    400342: Left008
+    400344: Left009
+    400346: Left010
+    400348: Left011
+    400350: Left012
+    400352: Left013
+    400354: Left014
+    400356: Left015
+    400358: Left016
+    400360: Left017
+    400362: Left018
+    400364: Left019
+    400366: Left020
+    400368: Left2_002
+    400370: Left2_003
+    400372: Left2_004
+    400374: Left2_005
+    400376: Left3_003
+    400378: Left3_004
+    400380: Left3_005
+    400382: Left3_006
+    400384: Left3_007
+    400386: Left3_008
+    400388: Left3_009
+    400390: Left3_010
+    400392: Left4_003
+    400394: Left4_004
+    400396: Left4_005
+    400398: Left4_006
+    400400: Left4_007
+    400402: Left4_008
+    400404: Left4_009
+    400406: Left4_010
+    400408: LeftLeg005
+    400410: LeftLeg006
+    400412: LeftLeg007
+    400414: LeftLeg008
+    400416: LeftLeg009
+    400418: LeftLeg010
+    400420: LeftLeg011
+    400422: LeftLeg012
+    400424: LeftLeg013
+    400426: LeftLeg014
+    400428: LeftLeg015
+    400430: LeftLeg016
+    400432: LeftLeg017
+    400434: LeftLeg018
+    400436: LeftLeg019
+    400438: LeftLeg020
+    400440: Pevis001
+    400442: Pevis002
+    400444: Pevis003
+    400446: Pevis004
+    400448: Right005
+    400450: Right006
+    400452: Right007
+    400454: Right008
+    400456: Right009
+    400458: Right010
+    400460: Right011
+    400462: Right012
+    400464: Right013
+    400466: Right014
+    400468: Right015
+    400470: Right016
+    400472: Right017
+    400474: Right018
+    400476: Right019
+    400478: Right020
+    400480: Right2_002
+    400482: Right2_003
+    400484: Right2_004
+    400486: Right2_005
+    400488: Right3_003
+    400490: Right3_004
+    400492: Right3_005
+    400494: Right3_006
+    400496: Right3_007
+    400498: Right3_008
+    400500: Right3_009
+    400502: Right3_010
+    400504: Right4_003
+    400506: Right4_004
+    400508: Right4_005
+    400510: Right4_006
+    400512: Right4_007
+    400514: Right4_008
+    400516: Right4_009
+    400518: Right4_010
+    400520: RightLeg005
+    400522: RightLeg006
+    400524: RightLeg007
+    400526: RightLeg008
+    400528: RightLeg009
+    400530: RightLeg010
+    400532: RightLeg011
+    400534: RightLeg012
+    400536: RightLeg013
+    400538: RightLeg014
+    400540: RightLeg015
+    400542: RightLeg016
+    400544: RightLeg017
+    400546: RightLeg018
+    400548: RightLeg019
+    400550: RightLeg020
+    400552: Spine003
+    400554: Spine004
+    400556: Spine005
+    400558: Spine006
+    400560: Spine007
+    400562: Spine008
+    400564: Spine009
+    400566: Spine010
+    400568: Tail003
+    400570: Tail004
+    400572: Tail005
+    400574: Tail006
+    400576: Tail007
+    400578: Tail008
+    400580: Tail009
+    400582: Tail010
+    2300000: Coins
+    3300000: Coins
+    4300000: Bat
+    4300002: Robber
+    4300004: Coins
+    4300006: Pifeng
+    4300008: "\u5BF9\u8C61001"
+    4300010: Bat001
+    4300012: Bat002
+    4300014: Bat003
+    4300016: Bat004
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Bat
+    13700002: Coins
+    13700004: Robber
+    13700006: Pifeng
+    13700008: "\u5BF9\u8C61001"
+    13700010: Bat001
+    13700012: Bat002
+    13700014: Bat003
+    13700016: Bat004
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

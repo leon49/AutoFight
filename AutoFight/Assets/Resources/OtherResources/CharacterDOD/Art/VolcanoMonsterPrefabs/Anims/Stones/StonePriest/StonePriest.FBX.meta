@@ -1,0 +1,165 @@
+fileFormatVersion: 2
+guid: 69c47172110e71b409b36e9b135ac248
+timeCreated: 1530670289
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: fazhang_Plane002
+    100002: giant:Box020
+    100004: Head
+    100006: HeadConnect001
+    100008: HeadConnect002
+    100010: Hit
+    100012: LeftFinger001
+    100014: LeftFinger002
+    100016: LeftFinger003
+    100018: LeftFinger004
+    100020: LeftFinger005
+    100022: LeftFoot
+    100024: LeftForceArm
+    100026: LeftHand
+    100028: LeftLeg
+    100030: LeftLegConnect
+    100032: LeftMiddleArm
+    100034: LeftShoulder
+    100036: LeftUpArm
+    100038: Neck
+    100040: RightFinger001
+    100042: RightFinger002
+    100044: RightFinger003
+    100046: RightFinger004
+    100048: RightFinger005
+    100050: RightFoot
+    100052: RightForceArm
+    100054: RightHand
+    100056: RightLeg
+    100058: RightLegConnect
+    100060: RightMiddleArm
+    100062: RightShoulder
+    100064: RightUpArm
+    100066: shixiang:Box021
+    100068: Spine
+    100070: Spine1
+    100072: SpineConnect001
+    100074: SpineConnect002
+    100076: SpineConnect003
+    100078: SpineConnect004
+    100080: //RootNode
+    400000: fazhang_Plane002
+    400002: giant:Box020
+    400004: Head
+    400006: HeadConnect001
+    400008: HeadConnect002
+    400010: Hit
+    400012: LeftFinger001
+    400014: LeftFinger002
+    400016: LeftFinger003
+    400018: LeftFinger004
+    400020: LeftFinger005
+    400022: LeftFoot
+    400024: LeftForceArm
+    400026: LeftHand
+    400028: LeftLeg
+    400030: LeftLegConnect
+    400032: LeftMiddleArm
+    400034: LeftShoulder
+    400036: LeftUpArm
+    400038: Neck
+    400040: RightFinger001
+    400042: RightFinger002
+    400044: RightFinger003
+    400046: RightFinger004
+    400048: RightFinger005
+    400050: RightFoot
+    400052: RightForceArm
+    400054: RightHand
+    400056: RightLeg
+    400058: RightLegConnect
+    400060: RightMiddleArm
+    400062: RightShoulder
+    400064: RightUpArm
+    400066: shixiang:Box021
+    400068: Spine
+    400070: Spine1
+    400072: SpineConnect001
+    400074: SpineConnect002
+    400076: SpineConnect003
+    400078: SpineConnect004
+    400080: //RootNode
+    4300000: giant:Box020
+    4300002: shixiang:Box021
+    4300004: fazhang_Plane002
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: fazhang_Plane002
+    13700002: giant:Box020
+    13700004: shixiang:Box021
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

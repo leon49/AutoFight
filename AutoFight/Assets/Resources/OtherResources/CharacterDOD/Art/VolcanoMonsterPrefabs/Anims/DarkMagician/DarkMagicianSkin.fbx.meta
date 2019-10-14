@@ -1,0 +1,254 @@
+fileFormatVersion: 2
+guid: 0a85094520e39d6458fe0f69857d0ec7
+timeCreated: 1518147116
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Head
+    100004: hood
+    100006: joint18
+    100008: joint20
+    100010: joint21
+    100012: joint22
+    100014: joint23
+    100016: joint24
+    100018: joint25
+    100020: joint26
+    100022: joint27
+    100024: joint28
+    100026: joint29
+    100028: joint31
+    100030: joint32
+    100032: joint33
+    100034: joint34
+    100036: joint35
+    100038: joint36
+    100040: joint37
+    100042: joint39
+    100044: joint40
+    100046: joint41
+    100048: joint42
+    100050: joint43
+    100052: joint44
+    100054: joint45
+    100056: joint46
+    100058: joint47
+    100060: joint48
+    100062: LeftHand
+    100064: LeftShoulder
+    100066: LeftShoulder1
+    100068: Pivot
+    100070: polySurface1
+    100072: polySurface28
+    100074: RightHand
+    100076: Spine1
+    100078: Spine2
+    100080: Spine3
+    100082: Weapon
+    100084: Shadow
+    100086: Connect1
+    100088: Connect2
+    100090: Connect3
+    100092: Connect4
+    100094: Connect5
+    100096: Hips
+    100098: LeftFinge7
+    100100: LeftFinger1
+    100102: LeftFinger10
+    100104: LeftFinger11
+    100106: LeftFinger12
+    100108: LeftFinger13
+    100110: LeftFinger14
+    100112: LeftFinger15
+    100114: LeftFinger2
+    100116: LeftFinger3
+    100118: LeftFinger4
+    100120: LeftFinger5
+    100122: LeftFinger6
+    100124: LeftFinger8
+    100126: LeftFinger9
+    100128: LeftForceArm
+    100130: LeftUpperArm
+    100132: Neck
+    100134: RightFinger1
+    100136: RightFinger10
+    100138: RightFinger11
+    100140: RightFinger12
+    100142: RightFinger13
+    100144: RightFinger14
+    100146: RightFinger15
+    100148: RightFinger2
+    100150: RightFinger3
+    100152: RightFinger3 1
+    100154: RightFinger5
+    100156: RightFinger6
+    100158: RightFinger7
+    100160: RightFinger8
+    100162: RightFinger9
+    100164: RightForceArm
+    100166: RightShoulder
+    100168: RightUpperArm
+    400000: //RootNode
+    400002: Head
+    400004: hood
+    400006: joint18
+    400008: joint20
+    400010: joint21
+    400012: joint22
+    400014: joint23
+    400016: joint24
+    400018: joint25
+    400020: joint26
+    400022: joint27
+    400024: joint28
+    400026: joint29
+    400028: joint31
+    400030: joint32
+    400032: joint33
+    400034: joint34
+    400036: joint35
+    400038: joint36
+    400040: joint37
+    400042: joint39
+    400044: joint40
+    400046: joint41
+    400048: joint42
+    400050: joint43
+    400052: joint44
+    400054: joint45
+    400056: joint46
+    400058: joint47
+    400060: joint48
+    400062: LeftHand
+    400064: LeftShoulder
+    400066: LeftShoulder1
+    400068: Pivot
+    400070: polySurface1
+    400072: polySurface28
+    400074: RightHand
+    400076: Spine1
+    400078: Spine2
+    400080: Spine3
+    400082: Weapon
+    400084: Shadow
+    400086: Connect1
+    400088: Connect2
+    400090: Connect3
+    400092: Connect4
+    400094: Connect5
+    400096: Hips
+    400098: LeftFinge7
+    400100: LeftFinger1
+    400102: LeftFinger10
+    400104: LeftFinger11
+    400106: LeftFinger12
+    400108: LeftFinger13
+    400110: LeftFinger14
+    400112: LeftFinger15
+    400114: LeftFinger2
+    400116: LeftFinger3
+    400118: LeftFinger4
+    400120: LeftFinger5
+    400122: LeftFinger6
+    400124: LeftFinger8
+    400126: LeftFinger9
+    400128: LeftForceArm
+    400130: LeftUpperArm
+    400132: Neck
+    400134: RightFinger1
+    400136: RightFinger10
+    400138: RightFinger11
+    400140: RightFinger12
+    400142: RightFinger13
+    400144: RightFinger14
+    400146: RightFinger15
+    400148: RightFinger2
+    400150: RightFinger3
+    400152: RightFinger3 1
+    400154: RightFinger5
+    400156: RightFinger6
+    400158: RightFinger7
+    400160: RightFinger8
+    400162: RightFinger9
+    400164: RightForceArm
+    400166: RightShoulder
+    400168: RightUpperArm
+    2300000: Shadow
+    3300000: Shadow
+    4300000: polySurface28
+    4300002: polySurface1
+    4300004: Shadow
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: polySurface1
+    13700002: polySurface28
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
