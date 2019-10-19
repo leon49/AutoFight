@@ -21,16 +21,17 @@ namespace Pathfinding.Util {
 		}
 
 		public void Init (AstarPath active, RetainedGizmos.Hasher hasher, RetainedGizmos gizmos) {
-			debugData = active.debugPathData;
-			debugPathID = active.debugPathID;
-			debugMode = active.debugMode;
-			debugFloor = active.debugFloor;
-			debugRoof = active.debugRoof;
+			if (active != null) {
+				debugData = active.debugPathData;
+				debugPathID = active.debugPathID;
+				debugMode = active.debugMode;
+				debugFloor = active.debugFloor;
+				debugRoof = active.debugRoof;
+				showSearchTree = active.showSearchTree && debugData != null;
+			}
 			this.gizmos = gizmos;
 			this.hasher = hasher;
 			builder = ObjectPool<RetainedGizmos.Builder>.Claim();
-
-			showSearchTree = active.showSearchTree && debugData != null;
 		}
 
 		public void OnEnterPool () {
@@ -65,11 +66,12 @@ namespace Pathfinding.Util {
 			builder.DrawLine(drawConnectionStart, Vector3.Lerp((Vector3)other.position, drawConnectionStart, 0.5f), drawConnectionColor);
 		}
 
-		/** Color to use for gizmos.
-		 * Returns a color to be used for the specified node with the current debug settings (editor only).
-		 *
-		 * \version Since 3.6.1 this method will not handle null nodes
-		 */
+		/// <summary>
+		/// Color to use for gizmos.
+		/// Returns a color to be used for the specified node with the current debug settings (editor only).
+		///
+		/// Version: Since 3.6.1 this method will not handle null nodes
+		/// </summary>
 		public Color NodeColor (GraphNode node) {
 			if (showSearchTree && !InSearchTree(node, debugData, debugPathID)) return Color.clear;
 
@@ -80,18 +82,21 @@ namespace Pathfinding.Util {
 				case GraphDebugMode.Areas:
 					color = AstarColor.GetAreaColor(node.Area);
 					break;
+				case GraphDebugMode.HierarchicalNode:
+					color = AstarColor.GetTagColor((uint)node.HierarchicalNodeIndex);
+					break;
 				case GraphDebugMode.Penalty:
 					color = Color.Lerp(AstarColor.ConnectionLowLerp, AstarColor.ConnectionHighLerp, ((float)node.Penalty-debugFloor) / (debugRoof-debugFloor));
 					break;
 				case GraphDebugMode.Tags:
-					color = AstarColor.GetAreaColor(node.Tag);
+					color = AstarColor.GetTagColor(node.Tag);
 					break;
-				case GraphDebugMode.Connections:
-					color = AstarColor.NodeConnection;
+				case GraphDebugMode.SolidColor:
+					color = AstarColor.SolidColor;
 					break;
 				default:
 					if (debugData == null) {
-						color = AstarColor.NodeConnection;
+						color = AstarColor.SolidColor;
 						break;
 					}
 
@@ -116,10 +121,11 @@ namespace Pathfinding.Util {
 			return color;
 		}
 
-		/** Returns if the node is in the search tree of the path.
-		 * Only guaranteed to be correct if \a path is the latest path calculated.
-		 * Use for gizmo drawing only.
-		 */
+		/// <summary>
+		/// Returns if the node is in the search tree of the path.
+		/// Only guaranteed to be correct if path is the latest path calculated.
+		/// Use for gizmo drawing only.
+		/// </summary>
 		public static bool InSearchTree (GraphNode node, PathHandler handler, ushort pathID) {
 			return handler.GetPathNode(node).pathID == pathID;
 		}
@@ -135,7 +141,7 @@ namespace Pathfinding.Util {
 
 			for (int i = 0; i < numTriangles*3; i++) triangles.Add(i);
 			builder.DrawMesh(gizmos, vertices, triangles, colors);
-			ListPool<int>.Release(triangles);
+			ListPool<int>.Release(ref triangles);
 		}
 
 		public void DrawWireTriangles (Vector3[] vertices, Color[] colors, int numTriangles) {

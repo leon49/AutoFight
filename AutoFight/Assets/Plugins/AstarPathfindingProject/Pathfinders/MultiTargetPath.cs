@@ -2,74 +2,77 @@ using UnityEngine;
 using System.Collections.Generic;
 
 namespace Pathfinding {
-	/** A path which searches from one point to a number of different targets in one search or from a number of different start points to a single target.
-	 *
-	 * This is faster than searching with an ABPath for each target if pathsForAll is true.
-	 * This path type can be used for example when you want an agent to find the closest target of a few different options.
-	 *
-	 * When pathsForAll is true, it will calculate a path to each target point, but it can share a lot of calculations for the different paths so
-	 * it is faster than requesting them separately.
-	 *
-	 * When pathsForAll is false, it will perform a search using the heuristic set to None and stop as soon as it finds the first target.
-	 * This may be faster or slower than requesting each path separately.
-	 * It will run a Dijkstra search where it searches all nodes around the start point until the closest target is found.
-	 * Note that this is usually faster if some target points are very close to the start point and some are very far away, but
-	 * it can be slower if all target points are relatively far away because then it will have to search a much larger
-	 * region since it will not use any heuristics.
-	 *
-	 * \ingroup paths
-	 * \astarpro
-	 * \see Seeker.StartMultiTargetPath
-	 * \see \ref MultiTargetPathExample.cs "Example of how to use multi-target-paths"
-	 *
-	 * \version Since 3.7.1 the vectorPath and path fields are always set to the shortest path even when pathsForAll is true.
-	 */
+	/// <summary>
+	/// A path which searches from one point to a number of different targets in one search or from a number of different start points to a single target.
+	///
+	/// This is faster than searching with an ABPath for each target if pathsForAll is true.
+	/// This path type can be used for example when you want an agent to find the closest target of a few different options.
+	///
+	/// When pathsForAll is true, it will calculate a path to each target point, but it can share a lot of calculations for the different paths so
+	/// it is faster than requesting them separately.
+	///
+	/// When pathsForAll is false, it will perform a search using the heuristic set to None and stop as soon as it finds the first target.
+	/// This may be faster or slower than requesting each path separately.
+	/// It will run a Dijkstra search where it searches all nodes around the start point until the closest target is found.
+	/// Note that this is usually faster if some target points are very close to the start point and some are very far away, but
+	/// it can be slower if all target points are relatively far away because then it will have to search a much larger
+	/// region since it will not use any heuristics.
+	///
+	/// \ingroup paths
+	///
+	/// See: Seeker.StartMultiTargetPath
+	/// See: MultiTargetPathExample.cs (view in online documentation for working links) "Example of how to use multi-target-paths"
+	///
+	/// Version: Since 3.7.1 the vectorPath and path fields are always set to the shortest path even when pathsForAll is true.
+	/// </summary>
 	public class MultiTargetPath : ABPath {
-		/** Callbacks to call for each individual path */
+		/// <summary>Callbacks to call for each individual path</summary>
 		public OnPathDelegate[] callbacks;
 
-		/** Nearest nodes to the #targetPoints */
+		/// <summary>Nearest nodes to the <see cref="targetPoints"/></summary>
 		public GraphNode[] targetNodes;
 
-		/** Number of target nodes left to find */
+		/// <summary>Number of target nodes left to find</summary>
 		protected int targetNodeCount;
 
-		/** Indicates if the target has been found. Also true if the target cannot be reached (is in another area) */
+		/// <summary>Indicates if the target has been found. Also true if the target cannot be reached (is in another area)</summary>
 		public bool[] targetsFound;
 
-		/** Target points specified when creating the path. These are snapped to the nearest nodes */
+		/// <summary>Target points specified when creating the path. These are snapped to the nearest nodes</summary>
 		public Vector3[] targetPoints;
 
-		/** Target points specified when creating the path. These are not snapped to the nearest nodes */
+		/// <summary>Target points specified when creating the path. These are not snapped to the nearest nodes</summary>
 		public Vector3[] originalTargetPoints;
 
-		/** Stores all vector paths to the targets. Elements are null if no path was found */
+		/// <summary>Stores all vector paths to the targets. Elements are null if no path was found</summary>
 		public List<Vector3>[] vectorPaths;
 
-		/** Stores all paths to the targets. Elements are null if no path was found */
+		/// <summary>Stores all paths to the targets. Elements are null if no path was found</summary>
 		public List<GraphNode>[] nodePaths;
 
-		/** If true, a path to all targets will be returned, otherwise just the one to the closest one. */
+		/// <summary>If true, a path to all targets will be returned, otherwise just the one to the closest one.</summary>
 		public bool pathsForAll = true;
 
-		/** The closest target index (if any target was found) */
+		/// <summary>The closest target index (if any target was found)</summary>
 		public int chosenTarget = -1;
 
-		/** Current target for Sequential #heuristicMode.
-		 * Refers to an item in the targetPoints array
-		 */
+		/// <summary>
+		/// Current target for Sequential <see cref="heuristicMode"/>.
+		/// Refers to an item in the targetPoints array
+		/// </summary>
 		int sequentialTarget;
 
-		/** How to calculate the heuristic.
-		 * The \link #hTarget heuristic target point \endlink can be calculated in different ways,
-		 * by taking the Average position of all targets, or taking the mid point of them (i.e center of the AABB encapsulating all targets).
-		 *
-		 * The one which works best seems to be Sequential, it sets #hTarget to the target furthest away, and when that target is found, it moves on to the next one.\n
-		 * Some modes have the option to be 'moving' (e.g 'MovingAverage'), that means that it is updated every time a target is found.\n
-		 * The H score is calculated according to AstarPath.heuristic
-		 *
-		 * \note If pathsForAll is false then this option is ignored and it is always treated as being set to None
-		 */
+		/// <summary>
+		/// How to calculate the heuristic.
+		/// The \link <see cref="hTarget"/> heuristic target point \endlink can be calculated in different ways,
+		/// by taking the Average position of all targets, or taking the mid point of them (i.e center of the AABB encapsulating all targets).
+		///
+		/// The one which works best seems to be Sequential, it sets <see cref="hTarget"/> to the target furthest away, and when that target is found, it moves on to the next one.\n
+		/// Some modes have the option to be 'moving' (e.g 'MovingAverage'), that means that it is updated every time a target is found.\n
+		/// The H score is calculated according to AstarPath.heuristic
+		///
+		/// Note: If pathsForAll is false then this option is ignored and it is always treated as being set to None
+		/// </summary>
 		public HeuristicMode heuristicMode = HeuristicMode.Sequential;
 
 		public enum HeuristicMode {
@@ -81,12 +84,13 @@ namespace Pathfinding {
 			Sequential
 		}
 
-		/** False if the path goes from one point to multiple targets. True if it goes from multiple start points to one target point */
-		public bool inverted = true;
+		/// <summary>False if the path goes from one point to multiple targets. True if it goes from multiple start points to one target point</summary>
+		public bool inverted { get; protected set; }
 
-		/** Default constructor.
-		 * Do not use this. Instead use the static Construct method which can handle path pooling.
-		 */
+		/// <summary>
+		/// Default constructor.
+		/// Do not use this. Instead use the static Construct method which can handle path pooling.
+		/// </summary>
 		public MultiTargetPath () {}
 
 		public static MultiTargetPath Construct (Vector3[] startPoints, Vector3 target, OnPathDelegate[] callbackDelegates, OnPathDelegate callback = null) {
@@ -107,7 +111,7 @@ namespace Pathfinding {
 			inverted = false;
 			this.callback = callback;
 			callbacks = callbackDelegates;
-
+			if (callbacks != null && callbacks.Length != targets.Length) throw new System.ArgumentException("The targets array must have the same length as the callbackDelegates array");
 			targetPoints = targets;
 
 			originalStartPoint = start;
@@ -116,8 +120,7 @@ namespace Pathfinding {
 			startIntPoint = (Int3)start;
 
 			if (targets.Length == 0) {
-				Error();
-				LogError("No targets were assigned to the MultiTargetPath");
+				FailWithError("No targets were assigned to the MultiTargetPath");
 				return;
 			}
 
@@ -127,6 +130,15 @@ namespace Pathfinding {
 			for (int i = 0; i < targetPoints.Length; i++) {
 				originalTargetPoints[i] = targetPoints[i];
 			}
+		}
+
+		protected override void Reset () {
+			base.Reset();
+			pathsForAll = true;
+			chosenTarget = -1;
+			sequentialTarget = 0;
+			inverted = true;
+			heuristicMode = HeuristicMode.Sequential;
 		}
 
 		protected override void OnEnterPool () {
@@ -144,11 +156,15 @@ namespace Pathfinding {
 			nodePaths = null;
 			path = null;
 			callbacks = null;
+			targetNodes = null;
+			targetsFound = null;
+			targetPoints = null;
+			originalTargetPoints = null;
 
 			base.OnEnterPool();
 		}
 
-		/** Set chosenTarget to the index of the shortest path */
+		/// <summary>Set chosenTarget to the index of the shortest path</summary>
 		void ChooseShortestPath () {
 			//
 			// When pathsForAll is false there will only be one non-null path
@@ -211,10 +227,13 @@ namespace Pathfinding {
 
 			for (int i = 0; i < nodePaths.Length; i++) {
 				if (nodePaths[i] != null) {
-					CompleteState = PathCompleteState.Complete;
+					// Note that we use the lowercase 'completeState' here.
+					// The property (CompleteState) will ensure that the complete state is never
+					// changed away from the error state but in this case we don't want that behaviour.
+					completeState = PathCompleteState.Complete;
 					anySucceded = true;
 				} else {
-					CompleteState = PathCompleteState.Error;
+					completeState = PathCompleteState.Error;
 				}
 
 				if (callbacks != null && callbacks[i] != null) {
@@ -227,10 +246,10 @@ namespace Pathfinding {
 			}
 
 			if (anySucceded) {
-				CompleteState = PathCompleteState.Complete;
+				completeState = PathCompleteState.Complete;
 				SetPathParametersForReturn(chosenTarget);
 			} else {
-				CompleteState = PathCompleteState.Error;
+				completeState = PathCompleteState.Error;
 			}
 
 			if (callback != null) {
@@ -288,14 +307,12 @@ namespace Pathfinding {
 			startNode = startNNInfo.node;
 
 			if (startNode == null) {
-				LogError("Could not find start node for multi target path");
-				Error();
+				FailWithError("Could not find start node for multi target path");
 				return;
 			}
 
-			if (!startNode.Walkable) {
-				LogError("Nearest node to the start point is not walkable");
-				Error();
+			if (!CanTraverse(startNode)) {
+				FailWithError("The node closest to the start point could not be traversed");
 				return;
 			}
 
@@ -328,7 +345,7 @@ namespace Pathfinding {
 
 				bool notReachable = false;
 
-				if (endNNInfo.node != null && endNNInfo.node.Walkable) {
+				if (endNNInfo.node != null && CanTraverse(endNNInfo.node)) {
 					anyWalkable = true;
 				} else {
 					notReachable = true;
@@ -351,31 +368,20 @@ namespace Pathfinding {
 
 			startIntPoint = (Int3)startPoint;
 
-			if (startNode == null || !anyNotNull) {
-				LogError("Couldn't find close nodes to either the start or the end (start = "+(startNode != null ? "found" : "not found")+" end = "+(anyNotNull ? "at least one found" : "none found")+")");
-				Error();
-				return;
-			}
-
-			if (!startNode.Walkable) {
-				LogError("The node closest to the start point is not walkable");
-				Error();
+			if (!anyNotNull) {
+				FailWithError("Couldn't find nodes close to the all of the end points");
 				return;
 			}
 
 			if (!anyWalkable) {
-				LogError("No target nodes were walkable");
-				Error();
+				FailWithError("No target nodes could be traversed");
 				return;
 			}
 
 			if (!anySameArea) {
-				LogError("There are no valid paths to the targets");
-				Error();
+				FailWithError("There are no valid paths to the targets");
 				return;
 			}
-
-			//=== Calcuate hTarget ===
 
 			RecalculateHTarget(true);
 		}
@@ -527,8 +533,7 @@ namespace Pathfinding {
 
 			//any nodes left to search?
 			if (pathHandler.heap.isEmpty) {
-				LogError("No open points, the start node didn't open any nodes");
-				Error();
+				FailWithError("No open points, the start node didn't open any nodes");
 				return;
 			}
 
@@ -543,7 +548,7 @@ namespace Pathfinding {
 			ResetFlags();
 		}
 
-		/** Reset flag1 on all nodes after the pathfinding has completed (no matter if an error occurs or if the path is canceled) */
+		/// <summary>Reset flag1 on all nodes after the pathfinding has completed (no matter if an error occurs or if the path is canceled)</summary>
 		void ResetFlags () {
 			// Reset all flags
 			if (targetNodes != null) {
@@ -556,7 +561,7 @@ namespace Pathfinding {
 		protected override void CalculateStep (long targetTick) {
 			int counter = 0;
 
-			// Continue to search while there hasn't ocurred an error and the end hasn't been found
+			// Continue to search as long as we haven't encountered an error and we haven't found the target
 			while (CompleteState == PathCompleteState.NotCalculated) {
 				// @Performance Just for debug info
 				searchedNodes++;

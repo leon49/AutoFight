@@ -2,10 +2,7 @@ using UnityEngine;
 using UnityEditor;
 
 namespace Pathfinding {
-	/**
-	 * Editor for the RecastGraph.
-	 * \astarpro
-	 */
+	/// <summary>Editor for the RecastGraph.</summary>
 	[CustomGraphEditor(typeof(RecastGraph), "Recast Graph")]
 	public class RecastGraphEditor : GraphEditor {
 		public static bool tagMaskFoldout;
@@ -39,9 +36,9 @@ namespace Pathfinding {
 			}
 
 			GUI.enabled = false;
-			EditorGUILayout.LabelField("Width (voxels)", estWidth.ToString());
+			EditorGUILayout.LabelField(new GUIContent("Width (voxels)", "Based on the cell size and the bounding box"), new GUIContent(estWidth.ToString()));
 
-			EditorGUILayout.LabelField("Depth (voxels)", estDepth.ToString());
+			EditorGUILayout.LabelField(new GUIContent("Depth (voxels)", "Based on the cell size and the bounding box"), new GUIContent(estDepth.ToString()));
 			GUI.enabled = preEnabled;
 
 			graph.cellSize = EditorGUILayout.FloatField(new GUIContent("Cell Size", "Size of one voxel in world units"), graph.cellSize);
@@ -131,6 +128,8 @@ namespace Pathfinding {
 
 			graph.forcedBoundsCenter = EditorGUILayout.Vector3Field("Center", graph.forcedBoundsCenter);
 			graph.forcedBoundsSize = EditorGUILayout.Vector3Field("Size", graph.forcedBoundsSize);
+			// Make sure the bounding box is not infinitely thin along any axis
+			graph.forcedBoundsSize = Vector3.Max(graph.forcedBoundsSize, Vector3.one * 0.001f);
 			graph.rotation = EditorGUILayout.Vector3Field("Rotation", graph.rotation);
 
 			if (GUILayout.Button(new GUIContent("Snap bounds to scene", "Will snap the bounds of the graph to exactly contain all meshes that the bounds currently touches"))) {
@@ -143,6 +142,8 @@ namespace Pathfinding {
 			EditorGUILayout.HelpBox("Objects contained in any of these masks will be rasterized", MessageType.None);
 			graph.mask = EditorGUILayoutx.LayerMaskField("Layer Mask", graph.mask);
 			tagMaskFoldout = EditorGUILayoutx.UnityTagMaskList(new GUIContent("Tag Mask"), tagMaskFoldout, graph.tagMask);
+
+			graph.enableNavmeshCutting = EditorGUILayout.Toggle(new GUIContent("Affected by navmesh cuts", "Makes this graph affected by NavmeshCut and NavmeshAdd components. See the documentation for more info."), graph.enableNavmeshCutting);
 
 			Separator();
 
@@ -188,7 +189,7 @@ namespace Pathfinding {
 			}
 		}
 
-		/** Exports the INavmesh graph to a .obj file */
+		/// <summary>Exports the INavmesh graph to a .obj file</summary>
 		public static void ExportToFile (RecastGraph target) {
 			//INavmesh graph = (INavmesh)target;
 			if (target == null) return;

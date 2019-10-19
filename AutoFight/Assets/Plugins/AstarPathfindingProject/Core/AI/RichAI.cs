@@ -6,303 +6,259 @@ namespace Pathfinding {
 	using Pathfinding.RVO;
 	using Pathfinding.Util;
 
-	[RequireComponent(typeof(Seeker))]
 	[AddComponentMenu("Pathfinding/AI/RichAI (3D, for navmesh)")]
-	/** Advanced AI for navmesh based graphs.
-	 * \astarpro
-	 */
-	[HelpURL("http://arongranberg.com/astar/docs/class_pathfinding_1_1_rich_a_i.php")]
-	public class RichAI : AIBase {
-		/** Target position to move to */
-		public Transform target;
-
-		/** Search for new paths repeatedly.
-		 *
-		 * \see repathRate
-		 * \see SearchPaths
-		  */
-		public bool repeatedlySearchPaths = false;
-
-		/** Delay (seconds) between path searches.
-		 * The agent will plan a new path to the target every N seconds.
-		 *
-		 * \see SearchPaths
-		 */
-		public float repathRate = 0.5f;
-
-		/** Max speed of the agent.
-		 * In world units per second.
-		 */
-		public float maxSpeed = 1;
-
-		/** Max acceleration of the agent.
-		 * In world units per second per second.
-		 */
+	/// <summary>Advanced AI for navmesh based graphs.</summary>
+	public partial class RichAI : AIBase, IAstarAI {
+		/// <summary>
+		/// Max acceleration of the agent.
+		/// In world units per second per second.
+		/// </summary>
 		public float acceleration = 5;
 
-		/** Max rotation speed of the agent.
-		 * In degrees per second.
-		 */
+		/// <summary>
+		/// Max rotation speed of the agent.
+		/// In degrees per second.
+		/// </summary>
 		public float rotationSpeed = 360;
 
-		/** How long before reaching the end of the path to start to slow down.
-		 * A lower value will make the agent stop more abruptly.
-		 *
-		 * \note The agent may require more time to slow down if
-		 * its maximum #acceleration is not high enough.
-		 *
-		 * If set to zero the agent will not even attempt to slow down.
-		 * This can be useful if the target point is not a point you want the agent to stop at
-		 * but it might for example be the player and you want the AI to slam into the player.
-		 *
-		 * \note A value of zero will behave differently from a small but non-zero value (such as 0.0001).
-		 * When it is non-zero the agent will still respect its #acceleration when determining if it needs
-		 * to slow down, but if it is zero it will disable that check.
-		 *
-		 * \htmlonly <video class="tinyshadow" controls loop><source src="images/richai_slowdown_time.mp4" type="video/mp4"></video> \endhtmlonly
-		 */
+		/// <summary>
+		/// How long before reaching the end of the path to start to slow down.
+		/// A lower value will make the agent stop more abruptly.
+		///
+		/// Note: The agent may require more time to slow down if
+		/// its maximum <see cref="acceleration"/> is not high enough.
+		///
+		/// If set to zero the agent will not even attempt to slow down.
+		/// This can be useful if the target point is not a point you want the agent to stop at
+		/// but it might for example be the player and you want the AI to slam into the player.
+		///
+		/// Note: A value of zero will behave differently from a small but non-zero value (such as 0.0001).
+		/// When it is non-zero the agent will still respect its <see cref="acceleration"/> when determining if it needs
+		/// to slow down, but if it is zero it will disable that check.
+		/// This is useful if the <see cref="destination"/> is not a point where you want the agent to stop.
+		///
+		/// \htmlonly <video class="tinyshadow" controls loop><source src="images/richai_slowdown_time.mp4" type="video/mp4"></video> \endhtmlonly
+		/// </summary>
 		public float slowdownTime = 0.5f;
 
-		/** Max distance to the endpoint to consider it reached.
-		 * In seconds.
-		 *
-		 * \see #TargetReached
-		 * \see #OnTargetReached
-		 */
+		/// <summary>
+		/// Max distance to the endpoint to consider it reached.
+		///
+		/// See: <see cref="reachedEndOfPath"/>
+		/// See: <see cref="OnTargetReached"/>
+		/// </summary>
 		public float endReachedDistance = 0.01f;
 
-		/** Force to avoid walls with.
-		 * The agent will try to steer away from walls slightly.
-		 *
-		 * \see #wallDist
-		 */
+		/// <summary>
+		/// Force to avoid walls with.
+		/// The agent will try to steer away from walls slightly.
+		///
+		/// See: <see cref="wallDist"/>
+		/// </summary>
 		public float wallForce = 3;
 
-		/** Walls within this range will be used for avoidance.
-		 * Setting this to zero disables wall avoidance and may improve performance slightly
-		 *
-		 * \see #wallForce
-		 */
+		/// <summary>
+		/// Walls within this range will be used for avoidance.
+		/// Setting this to zero disables wall avoidance and may improve performance slightly
+		///
+		/// See: <see cref="wallForce"/>
+		/// </summary>
 		public float wallDist = 1;
 
-		/** Use funnel simplification.
-		 * On tiled navmesh maps, but sometimes on normal ones as well, it can be good to simplify
-		 * the funnel as a post-processing step to make the paths straighter.
-		 *
-		 * This has a moderate performance impact during frames when a path calculation is completed.
-		 */
+		/// <summary>
+		/// Use funnel simplification.
+		/// On tiled navmesh maps, but sometimes on normal ones as well, it can be good to simplify
+		/// the funnel as a post-processing step to make the paths straighter.
+		///
+		/// This has a moderate performance impact during frames when a path calculation is completed.
+		///
+		/// The RichAI script uses its own internal funnel algorithm, so you never
+		/// need to attach the FunnelModifier component.
+		///
+		/// [Open online documentation to see images]
+		///
+		/// See: <see cref="Pathfinding.FunnelModifier"/>
+		/// </summary>
 		public bool funnelSimplification = false;
-		public Animation anim;
 
-		/** Slow down when not facing the target direction.
-		 * Incurs at a small performance overhead.
-		 */
+		/// <summary>
+		/// Slow down when not facing the target direction.
+		/// Incurs at a small performance overhead.
+		/// </summary>
 		public bool slowWhenNotFacingTarget = true;
 
-		/** Position of the agent at the end of the previous frame */
-		protected Vector3 prevPosition = new Vector3(float.PositiveInfinity, float.PositiveInfinity, float.PositiveInfinity);
+		/// <summary>
+		/// Called when the agent starts to traverse an off-mesh link.
+		/// Register to this callback to handle off-mesh links in a custom way.
+		///
+		/// If this event is set to null then the agent will fall back to traversing
+		/// off-mesh links using a very simple linear interpolation.
+		///
+		/// <code>
+		/// void OnEnable () {
+		///     ai = GetComponent<RichAI>();
+		///     if (ai != null) ai.onTraverseOffMeshLink += TraverseOffMeshLink;
+		/// }
+		///
+		/// void OnDisable () {
+		///     if (ai != null) ai.onTraverseOffMeshLink -= TraverseOffMeshLink;
+		/// }
+		///
+		/// IEnumerator TraverseOffMeshLink (RichSpecial link) {
+		///     // Traverse the link over 1 second
+		///     float startTime = Time.time;
+		///
+		///     while (Time.time < startTime + 1) {
+		///         transform.position = Vector3.Lerp(link.first.position, link.second.position, Time.time - startTime);
+		///         yield return null;
+		///     }
+		///     transform.position = link.second.position;
+		/// }
+		/// </code>
+		/// </summary>
+		public System.Func<RichSpecial, IEnumerator> onTraverseOffMeshLink;
 
-		/** Current velocity of the agent */
-		protected Vector3 realVelocity;
-
-		/** Holds the current path that this agent is following */
+		/// <summary>Holds the current path that this agent is following</summary>
 		protected readonly RichPath richPath = new RichPath();
 
-		Vector3 waypoint;
-
-		protected bool waitingForPathCalc;
-		protected bool canSearchPath;
 		protected bool delayUpdatePath;
-		protected bool traversingSpecialPath;
 		protected bool lastCorner;
-		protected float distanceToWaypoint = float.PositiveInfinity;
+
+		/// <summary>Distance to <see cref="steeringTarget"/> in the movement plane</summary>
+		protected float distanceToSteeringTarget = float.PositiveInfinity;
 
 		protected readonly List<Vector3> nextCorners = new List<Vector3>();
 		protected readonly List<Vector3> wallBuffer = new List<Vector3>();
 
-		bool startHasRun;
-		protected float lastRepath = float.NegativeInfinity;
+		public bool traversingOffMeshLink { get; protected set; }
 
-		/** Current velocity of the agent.
-		 * Includes velocity due to gravity.
-		 */
-		public Vector3 Velocity {
+		/// <summary>\copydoc Pathfinding::IAstarAI::remainingDistance</summary>
+		public float remainingDistance {
 			get {
-				return realVelocity;
+				return distanceToSteeringTarget + Vector3.Distance(steeringTarget, richPath.Endpoint);
 			}
 		}
 
-		public bool TraversingSpecial {
+		/// <summary>\copydoc Pathfinding::IAstarAI::reachedEndOfPath</summary>
+		public bool reachedEndOfPath { get { return approachingPathEndpoint && distanceToSteeringTarget < endReachedDistance; } }
+
+		/// <summary>\copydoc Pathfinding::IAstarAI::reachedDestination</summary>
+		public bool reachedDestination {
 			get {
-				return traversingSpecialPath;
+				if (!reachedEndOfPath) return false;
+				// Note: distanceToSteeringTarget is the distance to the end of the path when approachingPathEndpoint is true
+				if (approachingPathEndpoint && distanceToSteeringTarget + movementPlane.ToPlane(destination - richPath.Endpoint).magnitude > endReachedDistance) return false;
+
+				// Don't do height checks in 2D mode
+				if (orientation != OrientationMode.YAxisForward) {
+					// Check if the destination is above the head of the character or far below the feet of it
+					float yDifference;
+					movementPlane.ToPlane(destination - position, out yDifference);
+					var h = tr.localScale.y * height;
+					if (yDifference > h || yDifference < -h*0.5) return false;
+				}
+
+				return true;
 			}
 		}
 
-		/** Waypoint that the agent is moving towards.
-		 * This is either a corner in the path or the end of the path.
-		 *
-		 * \see #DistanceToNextWaypoint
-		 */
-		public Vector3 NextWaypoint {
-			get {
-				return waypoint;
-			}
-		}
+		/// <summary>\copydoc Pathfinding::IAstarAI::hasPath</summary>
+		public bool hasPath { get { return richPath.GetCurrentPart() != null; } }
 
-		/** Distance to the next waypoint.
-		 *
-		 * \see #NextWaypoint
-		 */
-		public float DistanceToNextWaypoint {
-			get {
-				return distanceToWaypoint;
-			}
-		}
+		/// <summary>\copydoc Pathfinding::IAstarAI::pathPending</summary>
+		public bool pathPending { get { return waitingForPathCalculation || delayUpdatePath; } }
 
-		/** True if the agent is within #endReachedDistance units from the end of the current path.
-		 * Note that if the target was just changed, a new path may not be calculated immediately
-		 * and thus this value will correspond to if the previous target had been reached.
-		 *
-		 * To be sure if a character has reached a particular target you can make sure to call #UpdatePath
-		 * when you change the target position and then check for !PathPending && TargetReached.
-		 * The #PathPending property indicates if the new path has been calculated yet.
-		 */
-		public bool TargetReached {
-			get {
-				return ApproachingPathEndpoint && DistanceToNextWaypoint < endReachedDistance;
-			}
-		}
+		/// <summary>\copydoc Pathfinding::IAstarAI::steeringTarget</summary>
+		public Vector3 steeringTarget { get; protected set; }
 
-		/** True if a path to the target is currently being calculated */
-		public bool PathPending {
-			get {
-				return waitingForPathCalc || delayUpdatePath;
-			}
-		}
+		/// <summary>\copydoc Pathfinding::IAstarAI::radius</summary>
+		float IAstarAI.radius { get { return radius; } set { radius = value; } }
 
-		/** True if approaching the last waypoint in the current part of the path.
-		 * Path parts are separated by off-mesh links.
-		 *
-		 * \see #ApproachingPathEndpoint
-		 */
-		public bool ApproachingPartEndpoint {
+		/// <summary>\copydoc Pathfinding::IAstarAI::height</summary>
+		float IAstarAI.height { get { return height; } set { height = value; } }
+
+		/// <summary>\copydoc Pathfinding::IAstarAI::maxSpeed</summary>
+		float IAstarAI.maxSpeed { get { return maxSpeed; } set { maxSpeed = value; } }
+
+		/// <summary>\copydoc Pathfinding::IAstarAI::canSearch</summary>
+		bool IAstarAI.canSearch { get { return canSearch; } set { canSearch = value; } }
+
+		/// <summary>\copydoc Pathfinding::IAstarAI::canMove</summary>
+		bool IAstarAI.canMove { get { return canMove; } set { canMove = value; } }
+
+		/// <summary>
+		/// True if approaching the last waypoint in the current part of the path.
+		/// Path parts are separated by off-mesh links.
+		///
+		/// See: <see cref="approachingPathEndpoint"/>
+		/// </summary>
+		public bool approachingPartEndpoint {
 			get {
 				return lastCorner && nextCorners.Count == 1;
 			}
 		}
 
-		/** True if approaching the last waypoint of all parts in the current path.
-		 * Path parts are separated by off-mesh links.
-		 *
-		 * \see #ApproachingPartEndpoint
-		 */
-		public bool ApproachingPathEndpoint {
+		/// <summary>
+		/// True if approaching the last waypoint of all parts in the current path.
+		/// Path parts are separated by off-mesh links.
+		///
+		/// See: <see cref="approachingPartEndpoint"/>
+		/// </summary>
+		public bool approachingPathEndpoint {
 			get {
-				return ApproachingPartEndpoint && richPath.IsLastPart;
+				return approachingPartEndpoint && richPath.IsLastPart;
 			}
 		}
 
-		/** Current waypoint that the agent is moving towards.
-		 * \deprecated This property has been renamed to #NextWaypoint
-		 */
-		[System.Obsolete("This property has been renamed to NextWaypoint")]
-		public Vector3 TargetPoint { get { return NextWaypoint; } }
-
-		/** Starts searching for paths.
-		 * If you override this function you should in most cases call base.Start () at the start of it.
-		 * \see #Init
-		 * \see #SearchPaths
-		 */
-		protected virtual void Start () {
-			startHasRun = true;
-			Init();
-		}
-
-		/** Called when the component is enabled */
-		protected virtual void OnEnable () {
-			// Make sure we receive callbacks when paths are calculated
-			seeker.pathCallback += OnPathComplete;
-			Init();
-		}
-
-		void Init () {
-			// Teleport the agent if we have moved from our previous position.
-			// This check is important as the Teleport call will cancel our current path request
-			// and if a script had created the RichAI component and in the same frame called
-			// UpdatePath the path request would always be canceled when RichAI.Start was called.
-			if (prevPosition != tr.position) Teleport(tr.position);
-
-			if (startHasRun) {
-				lastRepath = float.NegativeInfinity;
-				StartCoroutine(SearchPaths());
-			}
-		}
-
-		/** Instantly moves the agent to the target position.
-		 * When setting transform.position directly the agent
-		 * will be clamped to the part of the navmesh it can
-		 * reach, so it may not end up where you wanted it to.
-		 * This ensures that the agent can move to any part of the navmesh.
-		 *
-		 * The current path will be cleared.
-		 *
-		 * \see Works similarly to Unity's NavmeshAgent.Warp.
-		 */
-		public void Teleport (Vector3 newPosition) {
-			CancelCurrentPathRequest();
+		/// <summary>
+		/// \copydoc Pathfinding::IAstarAI::Teleport
+		///
+		/// When setting transform.position directly the agent
+		/// will be clamped to the part of the navmesh it can
+		/// reach, so it may not end up where you wanted it to.
+		/// This ensures that the agent can move to any part of the navmesh.
+		/// </summary>
+		public override void Teleport (Vector3 newPosition, bool clearPath = true) {
 			// Clamp the new position to the navmesh
-			var nearest = AstarPath.active.GetNearest(newPosition);
+			var nearest = AstarPath.active != null ? AstarPath.active.GetNearest(newPosition) : new NNInfo();
 			float elevation;
+
 			movementPlane.ToPlane(newPosition, out elevation);
-			prevPosition = tr.position = movementPlane.ToWorld(movementPlane.ToPlane(nearest.node != null ? nearest.position : newPosition), elevation);
-			richPath.Clear();
-			if (rvoController != null) rvoController.Move(Vector3.zero);
+			newPosition = movementPlane.ToWorld(movementPlane.ToPlane(nearest.node != null ? nearest.position : newPosition), elevation);
+			if (clearPath) richPath.Clear();
+			base.Teleport(newPosition, clearPath);
 		}
 
-		protected void CancelCurrentPathRequest () {
-			canSearchPath = true;
-			waitingForPathCalc = false;
-			// Abort calculation of the current path
-			if (seeker != null) seeker.CancelCurrentPathRequest();
-		}
-
-		/** Called when the component is disabled */
-		protected virtual void OnDisable () {
-			CancelCurrentPathRequest();
-			velocity2D = Vector3.zero;
-			verticalVelocity = 0f;
+		/// <summary>Called when the component is disabled</summary>
+		protected override void OnDisable () {
+			// Note that the AIBase.OnDisable call will also stop all coroutines
+			base.OnDisable();
 			lastCorner = false;
-			distanceToWaypoint = float.PositiveInfinity;
-
-			// We don't want to listen for path complete notifications any longer
-			seeker.pathCallback -= OnPathComplete;
+			distanceToSteeringTarget = float.PositiveInfinity;
+			traversingOffMeshLink = false;
+			delayUpdatePath = false;
+			// Stop the off mesh link traversal coroutine
+			StopAllCoroutines();
 		}
 
-		/** Force recalculation of the current path.
-		 * If there is an ongoing path calculation, it will be canceled (so make sure you leave time for the paths to get calculated before calling this function again).
-		 *
-		 * \see #Seeker.IsDone
-		 */
-		public virtual void UpdatePath () {
-			CancelCurrentPathRequest();
-
-			waitingForPathCalc = true;
-			lastRepath = Time.time;
-			seeker.StartPath(tr.position, target.position);
-		}
-
-		/** Searches for paths periodically */
-		IEnumerator SearchPaths () {
-			while (true) {
-				while (!repeatedlySearchPaths || waitingForPathCalc || !canSearchPath || Time.time - lastRepath < repathRate) yield return null;
-
-				UpdatePath();
-				yield return null;
+		protected override bool shouldRecalculatePath {
+			get {
+				// Don't automatically recalculate the path in the middle of an off-mesh link
+				return base.shouldRecalculatePath && !traversingOffMeshLink;
 			}
 		}
 
-		void OnPathComplete (Path p) {
-			waitingForPathCalc = false;
+		public override void SearchPath () {
+			// Calculate paths after the current off-mesh link has been completed
+			if (traversingOffMeshLink) {
+				delayUpdatePath = true;
+			} else {
+				base.SearchPath();
+			}
+		}
+
+		protected override void OnPathComplete (Path p) {
+			waitingForPathCalculation = false;
 			p.Claim(this);
 
 			if (p.error) {
@@ -310,22 +266,24 @@ namespace Pathfinding {
 				return;
 			}
 
-			if (traversingSpecialPath) {
+			if (traversingOffMeshLink) {
 				delayUpdatePath = true;
 			} else {
 				richPath.Initialize(seeker, p, true, funnelSimplification);
 
 				// Check if we have already reached the end of the path
-				// We need to do this here to make sure that the #TargetReached
+				// We need to do this here to make sure that the #reachedEndOfPath
 				// property is up to date.
 				var part = richPath.GetCurrentPart() as RichFunnel;
 				if (part != null) {
+					if (updatePosition) simulatedPosition = tr.position;
 					var position = movementPlane.ToPlane(UpdateTarget(part));
 					if (lastCorner && nextCorners.Count == 1) {
 						// Target point
-						Vector2 targetPoint = waypoint = movementPlane.ToPlane(nextCorners[0]);
-						distanceToWaypoint = (targetPoint - position).magnitude;
-						if (distanceToWaypoint <= endReachedDistance) {
+						steeringTarget = nextCorners[0];
+						Vector2 targetPoint = movementPlane.ToPlane(steeringTarget);
+						distanceToSteeringTarget = (targetPoint - position).magnitude;
+						if (distanceToSteeringTarget <= endReachedDistance) {
 							NextPart();
 						}
 					}
@@ -334,72 +292,76 @@ namespace Pathfinding {
 			p.Release(this);
 		}
 
-		/** Declare that the AI has completely traversed the current part.
-		 * This will skip to the next part, or call OnTargetReached if this was the last part
-		 */
+		/// <summary>
+		/// Declare that the AI has completely traversed the current part.
+		/// This will skip to the next part, or call OnTargetReached if this was the last part
+		/// </summary>
 		protected void NextPart () {
 			if (!richPath.CompletedAllParts) {
 				if (!richPath.IsLastPart) lastCorner = false;
 				richPath.NextPart();
 				if (richPath.CompletedAllParts) {
-					//End
 					OnTargetReached();
 				}
 			}
 		}
 
-		/** Called when the end of the path is reached */
+		/// <summary>Called when the end of the path is reached</summary>
 		protected virtual void OnTargetReached () {
 		}
 
 		protected virtual Vector3 UpdateTarget (RichFunnel fn) {
 			nextCorners.Clear();
 
-			// Current position. We read and write to tr.position as few times as possible since doing so
-			// is much slower than to read and write from/to a local variable
+			// This method assumes simulatedPosition is up to date as our current position.
+			// We read and write to tr.position as few times as possible since doing so
+			// is much slower than to read and write from/to a local/member variable.
 			bool requiresRepath;
-			Vector3 position = fn.Update(tr.position, nextCorners, 2, out lastCorner, out requiresRepath);
+			Vector3 position = fn.Update(simulatedPosition, nextCorners, 2, out lastCorner, out requiresRepath);
 
-			if (requiresRepath && !waitingForPathCalc) {
-				UpdatePath();
+			if (requiresRepath && !waitingForPathCalculation && canSearch) {
+				// TODO: What if canSearch is false? How do we notify other scripts that might be handling the path calculation that a new path needs to be calculated?
+				SearchPath();
 			}
 
 			return position;
 		}
 
-		/** Called during either Update or FixedUpdate depending on if rigidbodies are used for movement or not */
-		protected override void MovementUpdate (float deltaTime) {
-			RichPathPart currentPart = richPath.GetCurrentPart();
-			var funnel = currentPart as RichFunnel;
+		/// <summary>Called during either Update or FixedUpdate depending on if rigidbodies are used for movement or not</summary>
+		protected override void MovementUpdateInternal (float deltaTime, out Vector3 nextPosition, out Quaternion nextRotation) {
+			if (updatePosition) simulatedPosition = tr.position;
+			if (updateRotation) simulatedRotation = tr.rotation;
 
-			if (funnel != null) {
-				TraverseFunnel(funnel, deltaTime);
-			} else if (currentPart is RichSpecial) {
-				// The current path part is a special part, for example a link
-				// Movement during this part of the path is handled by the TraverseSpecial coroutine
-				if (!traversingSpecialPath) {
+			RichPathPart currentPart = richPath.GetCurrentPart();
+
+			if (currentPart is RichSpecial) {
+				if (!traversingOffMeshLink) {
 					StartCoroutine(TraverseSpecial(currentPart as RichSpecial));
 				}
-			} else {
-				// Unknown or null path part, just try to stand still
-				if (rvoController != null && rvoController.enabled) {
-					// Use RVOController
-					rvoController.Move(Vector3.zero);
-				}
-				Move(tr.position, Vector3.zero);
-			}
 
-			var pos = tr.position;
-			realVelocity = deltaTime > 0 ? (pos - prevPosition) / deltaTime : Vector3.zero;
-			prevPosition = pos;
+				nextPosition = steeringTarget = simulatedPosition;
+				nextRotation = rotation;
+			} else {
+				var funnel = currentPart as RichFunnel;
+				if (funnel != null && !isStopped) {
+					TraverseFunnel(funnel, deltaTime, out nextPosition, out nextRotation);
+				} else {
+					// Unknown, null path part, or the character is stopped
+					// Slow down as quickly as possible
+					velocity2D -= Vector2.ClampMagnitude(velocity2D, acceleration * deltaTime);
+					FinalMovement(simulatedPosition, deltaTime, float.PositiveInfinity, 1f, out nextPosition, out nextRotation);
+					steeringTarget = simulatedPosition;
+				}
+			}
 		}
 
-		void TraverseFunnel (RichFunnel fn, float deltaTime) {
+		void TraverseFunnel (RichFunnel fn, float deltaTime, out Vector3 nextPosition, out Quaternion nextRotation) {
 			// Clamp the current position to the navmesh
 			// and update the list of upcoming corners in the path
-			// and store that in the 'nextCorners' variable
+			// and store that in the 'nextCorners' field
+			var position3D = UpdateTarget(fn);
 			float elevation;
-			Vector2 position = movementPlane.ToPlane(UpdateTarget(fn), out elevation);
+			Vector2 position = movementPlane.ToPlane(position3D, out elevation);
 
 			// Only find nearby walls every 5th frame to improve performance
 			if (Time.frameCount % 5 == 0 && wallForce > 0 && wallDist > 0) {
@@ -408,27 +370,25 @@ namespace Pathfinding {
 			}
 
 			// Target point
-			Vector2 targetPoint = waypoint = movementPlane.ToPlane(nextCorners[0]);
+			steeringTarget = nextCorners[0];
+			Vector2 targetPoint = movementPlane.ToPlane(steeringTarget);
 			// Direction to target
 			Vector2 dir = targetPoint - position;
 
-			// Is the endpoint of the path (part) the current target point
-			bool targetIsEndPoint = lastCorner && nextCorners.Count == 1;
-
 			// Normalized direction to the target
-			Vector2 normdir = VectorMath.Normalize(dir, out distanceToWaypoint);
+			Vector2 normdir = VectorMath.Normalize(dir, out distanceToSteeringTarget);
 			// Calculate force from walls
 			Vector2 wallForceVector = CalculateWallForce(position, elevation, normdir);
 			Vector2 targetVelocity;
 
-			if (targetIsEndPoint) {
+			if (approachingPartEndpoint) {
 				targetVelocity = slowdownTime > 0 ? Vector2.zero : normdir * maxSpeed;
 
 				// Reduce the wall avoidance force as we get closer to our target
-				wallForceVector *= System.Math.Min(distanceToWaypoint/0.5f, 1);
+				wallForceVector *= System.Math.Min(distanceToSteeringTarget/0.5f, 1);
 
-				if (distanceToWaypoint <= endReachedDistance) {
-					// END REACHED
+				if (distanceToSteeringTarget <= endReachedDistance) {
+					// Reached the end of the path or an off mesh link
 					NextPart();
 				}
 			} else {
@@ -436,16 +396,22 @@ namespace Pathfinding {
 				targetVelocity = (nextNextCorner - targetPoint).normalized * maxSpeed;
 			}
 
-			Vector2 accel = MovementUtilities.CalculateAccelerationToReachPoint(targetPoint - position, targetVelocity, velocity2D, acceleration, maxSpeed);
+			var forwards = movementPlane.ToPlane(simulatedRotation * (orientation == OrientationMode.YAxisForward ? Vector3.up : Vector3.forward));
+			Vector2 accel = MovementUtilities.CalculateAccelerationToReachPoint(targetPoint - position, targetVelocity, velocity2D, acceleration, rotationSpeed, maxSpeed, forwards);
 
 			// Update the velocity using the acceleration
 			velocity2D += (accel + wallForceVector*wallForce)*deltaTime;
 
-			// Distance to the end of the path (as the crow flies)
-			var distToEndOfPath = fn.DistanceToEndOfPath;
-			var slowdownFactor = slowdownTime > 0 ? distToEndOfPath / (maxSpeed * slowdownTime) : 1;
+			// Distance to the end of the path (almost as the crow flies)
+			var distanceToEndOfPath = distanceToSteeringTarget + Vector3.Distance(steeringTarget, fn.exactEnd);
+			var slowdownFactor = distanceToEndOfPath < maxSpeed * slowdownTime ? Mathf.Sqrt(distanceToEndOfPath / (maxSpeed * slowdownTime)) : 1;
+			FinalMovement(position3D, deltaTime, distanceToEndOfPath, slowdownFactor, out nextPosition, out nextRotation);
+		}
 
-			velocity2D = MovementUtilities.ClampVelocity(velocity2D, maxSpeed, slowdownFactor, slowWhenNotFacingTarget, movementPlane.ToPlane(rotationIn2D ? tr.up : tr.forward));
+		void FinalMovement (Vector3 position3D, float deltaTime, float distanceToEndOfPath, float slowdownFactor, out Vector3 nextPosition, out Quaternion nextRotation) {
+			var forwards = movementPlane.ToPlane(simulatedRotation * (orientation == OrientationMode.YAxisForward ? Vector3.up : Vector3.forward));
+
+			velocity2D = MovementUtilities.ClampVelocity(velocity2D, maxSpeed, slowdownFactor, slowWhenNotFacingTarget && enableRotation, forwards);
 
 			ApplyGravity(deltaTime);
 
@@ -459,26 +425,50 @@ namespace Pathfinding {
 				// Make sure that we don't move further than to the end point
 				// of the path. If the RVO simulation FPS is low and we did
 				// not do this, the agent might overshoot the target a lot.
-				var rvoTarget = movementPlane.ToWorld(position + Vector2.ClampMagnitude(velocity2D, distToEndOfPath), elevation);
+				var rvoTarget = position3D + movementPlane.ToWorld(Vector2.ClampMagnitude(velocity2D, distanceToEndOfPath));
 				rvoController.SetTarget(rvoTarget, velocity2D.magnitude, maxSpeed);
 			}
 
 			// Direction and distance to move during this frame
-			var deltaPosition = CalculateDeltaToMoveThisFrame(position, distToEndOfPath, deltaTime);
+			var deltaPosition = lastDeltaPosition = CalculateDeltaToMoveThisFrame(movementPlane.ToPlane(position3D), distanceToEndOfPath, deltaTime);
 
 			// Rotate towards the direction we are moving in
 			// Slow down the rotation of the character very close to the endpoint of the path to prevent oscillations
-			var rotationSpeedFactor = targetIsEndPoint ? Mathf.Clamp01(1.1f * slowdownFactor - 0.1f) : 1f;
-			RotateTowards(deltaPosition, rotationSpeed * rotationSpeedFactor * deltaTime);
+			var rotationSpeedFactor = approachingPartEndpoint ? Mathf.Clamp01(1.1f * slowdownFactor - 0.1f) : 1f;
+			nextRotation = enableRotation ? SimulateRotationTowards(deltaPosition, rotationSpeed * rotationSpeedFactor * deltaTime) : simulatedRotation;
 
-			Move(movementPlane.ToWorld(position, elevation), movementPlane.ToWorld(deltaPosition, verticalVelocity * deltaTime));
+			nextPosition = position3D + movementPlane.ToWorld(deltaPosition, verticalVelocity * deltaTime);
 		}
 
-		protected override Vector3 ClampToNavmesh (Vector3 position) {
+		protected override Vector3 ClampToNavmesh (Vector3 position, out bool positionChanged) {
 			if (richPath != null) {
 				var funnel = richPath.GetCurrentPart() as RichFunnel;
-				if (funnel != null) return funnel.ClampToNavmesh(position);
+				if (funnel != null) {
+					var clampedPosition = funnel.ClampToNavmesh(position);
+
+					// We cannot simply check for equality because some precision may be lost
+					// if any coordinate transformations are used.
+					var difference = movementPlane.ToPlane(clampedPosition - position);
+					float sqrDifference = difference.sqrMagnitude;
+					if (sqrDifference > 0.001f*0.001f) {
+						// The agent was outside the navmesh. Remove that component of the velocity
+						// so that the velocity only goes along the direction of the wall, not into it
+						velocity2D -= difference * Vector2.Dot(difference, velocity2D) / sqrDifference;
+
+						// Make sure the RVO system knows that there was a collision here
+						// Otherwise other agents may think this agent continued
+						// to move forwards and avoidance quality may suffer
+						if (rvoController != null && rvoController.enabled) {
+							rvoController.SetCollisionNormal(difference);
+						}
+						positionChanged = true;
+						// Return the new position, but ignore any changes in the y coordinate from the ClampToNavmesh method as the y coordinates in the navmesh are rarely very accurate
+						return position + movementPlane.ToWorld(difference);
+					}
+				}
 			}
+
+			positionChanged = false;
 			return position;
 		}
 
@@ -509,6 +499,45 @@ namespace Pathfinding {
 			return normal*(wRight-wLeft);
 		}
 
+		/// <summary>Traverses an off-mesh link</summary>
+		protected virtual IEnumerator TraverseSpecial (RichSpecial link) {
+			traversingOffMeshLink = true;
+			// The current path part is a special part, for example a link
+			// Movement during this part of the path is handled by the TraverseSpecial coroutine
+			velocity2D = Vector3.zero;
+			var offMeshLinkCoroutine = onTraverseOffMeshLink != null ? onTraverseOffMeshLink(link) : TraverseOffMeshLinkFallback(link);
+			yield return StartCoroutine(offMeshLinkCoroutine);
+
+			// Off-mesh link traversal completed
+			traversingOffMeshLink = false;
+			NextPart();
+
+			// If a path completed during the time we traversed the special connection, we need to recalculate it
+			if (delayUpdatePath) {
+				delayUpdatePath = false;
+				// TODO: What if canSearch is false? How do we notify other scripts that might be handling the path calculation that a new path needs to be calculated?
+				if (canSearch) SearchPath();
+			}
+		}
+
+		/// <summary>
+		/// Fallback for traversing off-mesh links in case <see cref="onTraverseOffMeshLink"/> is not set.
+		/// This will do a simple linear interpolation along the link.
+		/// </summary>
+		protected IEnumerator TraverseOffMeshLinkFallback (RichSpecial link) {
+			float duration = maxSpeed > 0 ? Vector3.Distance(link.second.position, link.first.position) / maxSpeed : 1;
+			float startTime = Time.time;
+
+			while (true) {
+				var pos = Vector3.Lerp(link.first.position, link.second.position, Mathf.InverseLerp(startTime, startTime + duration, Time.time));
+				if (updatePosition) tr.position = pos;
+				else simulatedPosition = pos;
+
+				if (Time.time >= startTime + duration) break;
+				yield return null;
+			}
+		}
+
 		protected static readonly Color GizmoColorPath = new Color(8.0f/255, 78.0f/255, 194.0f/255);
 
 		protected override void OnDrawGizmos () {
@@ -516,63 +545,18 @@ namespace Pathfinding {
 
 			if (tr != null) {
 				Gizmos.color = GizmoColorPath;
-				Vector3 p = tr.position;
-				for (int i = 0; i < nextCorners.Count; p = nextCorners[i], i++) {
-					Gizmos.DrawLine(p, nextCorners[i]);
+				Vector3 lastPosition = position;
+				for (int i = 0; i < nextCorners.Count; lastPosition = nextCorners[i], i++) {
+					Gizmos.DrawLine(lastPosition, nextCorners[i]);
 				}
 			}
 		}
 
-		protected virtual IEnumerator TraverseSpecial (RichSpecial rs) {
-			traversingSpecialPath = true;
-			velocity2D = Vector3.zero;
-
-			var link = rs.nodeLink as AnimationLink;
-			if (link == null) {
-				Debug.LogError("Unhandled RichSpecial");
-				yield break;
-			}
-
-			// Rotate character to face the correct direction
-			// Magic number, should expose as variable
-			while (Vector2.Angle(movementPlane.ToPlane(rotationIn2D ? tr.up : tr.forward), movementPlane.ToPlane(rs.first.forward)) > 5f) {
-				RotateTowards(movementPlane.ToPlane(rs.first.forward), rotationSpeed * Time.deltaTime);
-				yield return null;
-			}
-
-			// Reposition
-			tr.parent.position = tr.position;
-
-			tr.parent.rotation = tr.rotation;
-			tr.localPosition = Vector3.zero;
-			tr.localRotation = Quaternion.identity;
-
-			// Set up animation speeds
-			if (rs.reverse && link.reverseAnim) {
-				anim[link.clip].speed = -link.animSpeed;
-				anim[link.clip].normalizedTime = 1;
-				anim.Play(link.clip);
-				anim.Sample();
-			} else {
-				anim[link.clip].speed = link.animSpeed;
-				anim.Rewind(link.clip);
-				anim.Play(link.clip);
-			}
-
-			// Fix required for animations in reverse direction
-			tr.parent.position -= tr.position-tr.parent.position;
-
-			// Wait for the animation to finish
-			yield return new WaitForSeconds(Mathf.Abs(anim[link.clip].length/link.animSpeed));
-
-			traversingSpecialPath = false;
-			NextPart();
-
-			// If a path completed during the time we traversed the special connection, we need to recalculate it
-			if (delayUpdatePath) {
-				delayUpdatePath = false;
-				UpdatePath();
-			}
+		protected override int OnUpgradeSerializedData (int version, bool unityThread) {
+#pragma warning disable 618
+			if (unityThread && animCompatibility != null) anim = animCompatibility;
+#pragma warning restore 618
+			return base.OnUpgradeSerializedData(version, unityThread);
 		}
 	}
 }

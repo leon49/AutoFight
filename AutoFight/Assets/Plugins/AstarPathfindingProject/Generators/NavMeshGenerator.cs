@@ -9,35 +9,70 @@ namespace Pathfinding {
 		void GetNodes (System.Action<GraphNode> del);
 	}
 
-	/** Generates graphs based on navmeshes.
-	 * \ingroup graphs
-	 * Navmeshes are meshes where each triangle defines a walkable area.
-	 * These are great because the AI can get so much more information on how it can walk.
-	 * Polygons instead of points mean that the funnel smoother can produce really nice looking paths and the graphs are also really fast to search
-	 * and have a low memory footprint because fewer nodes are usually needed to describe the same area compared to grid graphs.
-	 *
-	 * \see Pathfinding.RecastGraph
-	 *
-	 * \shadowimage{navmeshgraph_graph.png}
-	 * \shadowimage{navmeshgraph_inspector.png}
-	 */
+	/// <summary>
+	/// Generates graphs based on navmeshes.
+	/// \ingroup graphs
+	/// Navmeshes are meshes where each triangle defines a walkable area.
+	/// These are great because the AI can get so much more information on how it can walk.
+	/// Polygons instead of points mean that the funnel smoother can produce really nice looking paths and the graphs are also really fast to search
+	/// and have a low memory footprint because fewer nodes are usually needed to describe the same area compared to grid graphs.
+	///
+	/// See: Pathfinding.RecastGraph
+	///
+	/// [Open online documentation to see images]
+	/// [Open online documentation to see images]
+	/// </summary>
 	[JsonOptIn]
 	public class NavMeshGraph : NavmeshBase, IUpdatableGraph {
-		/** Mesh to construct navmesh from */
+		/// <summary>Mesh to construct navmesh from</summary>
 		[JsonMember]
 		public Mesh sourceMesh;
 
-		/** Offset in world space */
+		/// <summary>Offset in world space</summary>
 		[JsonMember]
 		public Vector3 offset;
 
-		/** Rotation in degrees */
+		/// <summary>Rotation in degrees</summary>
 		[JsonMember]
 		public Vector3 rotation;
 
-		/** Scale of the graph */
+		/// <summary>Scale of the graph</summary>
 		[JsonMember]
 		public float scale = 1;
+
+		/// <summary>
+		/// Determines how normals are calculated.
+		/// Disable for spherical graphs or other complicated surfaces that allow the agents to e.g walk on walls or ceilings.
+		///
+		/// By default the normals of the mesh will be flipped so that they point as much as possible in the upwards direction.
+		/// The normals are important when connecting adjacent nodes. Two adjacent nodes will only be connected if they are oriented the same way.
+		/// This is particularly important if you have a navmesh on the walls or even on the ceiling of a room. Or if you are trying to make a spherical navmesh.
+		/// If you do one of those things then you should set disable this setting and make sure the normals in your source mesh are properly set.
+		///
+		/// If you for example take a look at the image below. In the upper case then the nodes on the bottom half of the
+		/// mesh haven't been connected with the nodes on the upper half because the normals on the lower half will have been
+		/// modified to point inwards (as that is the direction that makes them face upwards the most) while the normals on
+		/// the upper half point outwards. This causes the nodes to not connect properly along the seam. When this option
+		/// is set to false instead the nodes are connected properly as in the original mesh all normals point outwards.
+		/// [Open online documentation to see images]
+		///
+		/// The default value of this field is true to reduce the risk for errors in the common case. If a mesh is supplied that
+		/// has all normals pointing downwards and this option is false, then some methods like <see cref="PointOnNavmesh"/> will not work correctly
+		/// as they assume that the normals point upwards. For a more complicated surface like a spherical graph those methods make no sense anyway
+		/// as there is no clear definition of what it means to be "inside" a triangle when there is no clear up direction.
+		/// </summary>
+		[JsonMember]
+		public bool recalculateNormals = true;
+
+		/// <summary>
+		/// Cached bounding box minimum of <see cref="sourceMesh"/>.
+		/// This is important when the graph has been saved to a file and is later loaded again, but the original mesh does not exist anymore (or has been moved).
+		/// In that case we still need to be able to find the bounding box since the <see cref="CalculateTransform"/> method uses it.
+		/// </summary>
+		[JsonMember]
+		Vector3 cachedSourceMeshBoundsMin;
+
+		protected override bool RecalculateNormals { get { return recalculateNormals; } }
 
 		public override float TileWorldSizeX {
 			get {
@@ -59,32 +94,29 @@ namespace Pathfinding {
 		}
 
 		public override GraphTransform CalculateTransform () {
-			return new GraphTransform(Matrix4x4.TRS(offset, Quaternion.Euler(rotation), Vector3.one) * Matrix4x4.TRS(sourceMesh != null ? sourceMesh.bounds.min * scale : Vector3.zero, Quaternion.identity, Vector3.one));
+			return new GraphTransform(Matrix4x4.TRS(offset, Quaternion.Euler(rotation), Vector3.one) * Matrix4x4.TRS(sourceMesh != null ? sourceMesh.bounds.min * scale : cachedSourceMeshBoundsMin * scale, Quaternion.identity, Vector3.one));
 		}
 
-		public GraphUpdateThreading CanUpdateAsync (GraphUpdateObject o) {
+		GraphUpdateThreading IUpdatableGraph.CanUpdateAsync (GraphUpdateObject o) {
 			return GraphUpdateThreading.UnityThread;
 		}
 
-		public void UpdateAreaInit (GraphUpdateObject o) {}
-		public void UpdateAreaPost (GraphUpdateObject o) {}
+		void IUpdatableGraph.UpdateAreaInit (GraphUpdateObject o) {}
+		void IUpdatableGraph.UpdateAreaPost (GraphUpdateObject o) {}
 
-		public void UpdateArea (GraphUpdateObject o) {
+		void IUpdatableGraph.UpdateArea (GraphUpdateObject o) {
 			UpdateArea(o, this);
 		}
 
-		public static void UpdateArea (GraphUpdateObject o, INavmesh graph) {
-			Bounds bounds = o.bounds;
-
-			// Bounding rectangle with floating point coordinates
-			Rect rect = Rect.MinMaxRect(bounds.min.x, bounds.min.z, bounds.max.x, bounds.max.z);
+		public static void UpdateArea (GraphUpdateObject o, INavmeshHolder graph) {
+			Bounds bounds = graph.transform.InverseTransform(o.bounds);
 
 			// Bounding rectangle with integer coordinates
 			var irect = new IntRect(
 				Mathf.FloorToInt(bounds.min.x*Int3.Precision),
 				Mathf.FloorToInt(bounds.min.z*Int3.Precision),
-				Mathf.FloorToInt(bounds.max.x*Int3.Precision),
-				Mathf.FloorToInt(bounds.max.z*Int3.Precision)
+				Mathf.CeilToInt(bounds.max.x*Int3.Precision),
+				Mathf.CeilToInt(bounds.max.z*Int3.Precision)
 				);
 
 			// Corners of the bounding rectangle
@@ -109,32 +141,29 @@ namespace Pathfinding {
 
 				// Check bounding box rect in XZ plane
 				for (int v = 0; v < 3; v++) {
-					Int3 p = node.GetVertex(v);
-					var vert = (Vector3)p;
+					Int3 p = node.GetVertexInGraphSpace(v);
 
 					if (irect.Contains(p.x, p.z)) {
 						inside = true;
 						break;
 					}
 
-					if (vert.x < rect.xMin) allLeft++;
-					if (vert.x > rect.xMax) allRight++;
-					if (vert.z < rect.yMin) allTop++;
-					if (vert.z > rect.yMax) allBottom++;
+					if (p.x < irect.xmin) allLeft++;
+					if (p.x > irect.xmax) allRight++;
+					if (p.z < irect.ymin) allTop++;
+					if (p.z > irect.ymax) allBottom++;
 				}
 
-				if (!inside) {
-					if (allLeft == 3 || allRight == 3 || allTop == 3 || allBottom == 3) {
-						return;
-					}
+				if (!inside && (allLeft == 3 || allRight == 3 || allTop == 3 || allBottom == 3)) {
+					return;
 				}
 
 				// Check if the polygon edges intersect the bounding rect
 				for (int v = 0; v < 3; v++) {
 					int v2 = v > 1 ? 0 : v+1;
 
-					Int3 vert1 = node.GetVertex(v);
-					Int3 vert2 = node.GetVertex(v2);
+					Int3 vert1 = node.GetVertexInGraphSpace(v);
+					Int3 vert2 = node.GetVertexInGraphSpace(v2);
 
 					if (VectorMath.SegmentsIntersectXZ(a, b, vert1, vert2)) { inside = true; break; }
 					if (VectorMath.SegmentsIntersectXZ(a, c, vert1, vert2)) { inside = true; break; }
@@ -143,7 +172,7 @@ namespace Pathfinding {
 				}
 
 				// Check if the node contains any corner of the bounding rect
-				if (inside || node.ContainsPoint(a) || node.ContainsPoint(b) || node.ContainsPoint(c) || node.ContainsPoint(d)) {
+				if (inside || node.ContainsPointInGraphSpace(a) || node.ContainsPointInGraphSpace(b) || node.ContainsPointInGraphSpace(c) || node.ContainsPointInGraphSpace(d)) {
 					inside = true;
 				}
 
@@ -156,7 +185,7 @@ namespace Pathfinding {
 
 				// Check y coordinate
 				for (int v = 0; v < 3; v++) {
-					Int3 p = node.GetVertex(v);
+					Int3 p = node.GetVertexInGraphSpace(v);
 					if (p.y < ymin) allBelow++;
 					if (p.y > ymax) allAbove++;
 				}
@@ -171,7 +200,7 @@ namespace Pathfinding {
 			});
 		}
 
-		/** Scans the graph using the path to an .obj mesh */
+		/// <summary>Scans the graph using the path to an .obj mesh</summary>
 		[System.Obsolete("Set the mesh to ObjImporter.ImportFile(...) and scan the graph the normal way instead")]
 		public void ScanInternal (string objMeshPath) {
 			Mesh mesh = ObjImporter.ImportFile(objMeshPath);
@@ -187,7 +216,8 @@ namespace Pathfinding {
 			while (scan.MoveNext()) {}
 		}
 
-		public override IEnumerable<Progress> ScanInternal () {
+		protected override IEnumerable<Progress> ScanInternal () {
+			cachedSourceMeshBoundsMin = sourceMesh != null ? sourceMesh.bounds.min : Vector3.zero;
 			transform = CalculateTransform();
 			tileZCount = tileXCount = 1;
 			tiles = new NavmeshTile[tileZCount*tileXCount];
@@ -217,20 +247,18 @@ namespace Pathfinding {
 			Int3[] compressedVertices = null;
 			int[] compressedTriangles = null;
 			Polygon.CompressMesh(intVertices, new List<int>(sourceMesh.triangles), out compressedVertices, out compressedTriangles);
-			ListPool<Int3>.Release(intVertices);
+			ListPool<Int3>.Release(ref intVertices);
 
 			yield return new Progress(0.2f, "Building Nodes");
 
 			ReplaceTile(0, 0, compressedVertices, compressedTriangles);
 
-			// This may be used by the TileHandlerHelper script to update the tiles
-			// while taking NavmeshCuts into account after the graph has been completely recalculated.
-			if (OnRecalculatedTiles != null) {
-				OnRecalculatedTiles(tiles.Clone() as NavmeshTile[]);
-			}
+			// Signal that tiles have been recalculated to the navmesh cutting system.
+			navmeshUpdateData.OnRecalculatedTiles(tiles);
+			if (OnRecalculatedTiles != null) OnRecalculatedTiles(tiles.Clone() as NavmeshTile[]);
 		}
 
-		public override void DeserializeSettingsCompatibility (GraphSerializationContext ctx) {
+		protected override void DeserializeSettingsCompatibility (GraphSerializationContext ctx) {
 			base.DeserializeSettingsCompatibility(ctx);
 
 			sourceMesh = ctx.DeserializeUnityObject() as Mesh;
