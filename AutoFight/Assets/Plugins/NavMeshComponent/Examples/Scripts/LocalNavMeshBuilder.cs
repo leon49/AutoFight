@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Serialization;
 using NavMeshBuilder = UnityEngine.AI.NavMeshBuilder;
 
 // Build and update a localized navmesh from the sources marked by NavMeshSourceTag
@@ -12,12 +13,23 @@ public class LocalNavMeshBuilder : MonoBehaviour
     public Transform m_Tracked;
 
     // The size of the build bounds
-    public Vector3 m_Size = new Vector3(80.0f, 20.0f, 80.0f);
+    [SerializeField]
+    Vector3 m_Size = new Vector3(80.0f, 20.0f, 80.0f);
+    public Vector3 size { get { return m_Size; } set { m_Size = value; } }
 
     NavMeshData m_NavMesh;
     AsyncOperation m_Operation;
     NavMeshDataInstance m_Instance;
     List<NavMeshBuildSource> m_Sources = new List<NavMeshBuildSource>();
+
+    
+     [SerializeField]
+    string m_SourceTag = "";
+    public string SourceTag { get { return m_SourceTag; } set { m_SourceTag = value; } }
+    
+    [SerializeField]
+    int m_AgentTypeID;
+    public int agentTypeID { get { return m_AgentTypeID; } set { m_AgentTypeID = value; } }
 
     IEnumerator Start()
     {
@@ -46,8 +58,8 @@ public class LocalNavMeshBuilder : MonoBehaviour
 
     void UpdateNavMesh(bool asyncUpdate = false)
     {
-        NavMeshSourceTag.Collect(ref m_Sources);
-        var defaultBuildSettings = NavMesh.GetSettingsByID(0);
+        NavMeshSourceTag.Collect(ref m_Sources,m_SourceTag);
+        var defaultBuildSettings = NavMesh.GetSettingsByID(m_AgentTypeID);
         var bounds = QuantizedBounds();
 
         defaultBuildSettings.overrideVoxelSize = true;
@@ -56,8 +68,12 @@ public class LocalNavMeshBuilder : MonoBehaviour
         defaultBuildSettings.overrideTileSize = true;
         defaultBuildSettings.tileSize = 1;
 
+        defaultBuildSettings.agentTypeID = m_AgentTypeID;
         defaultBuildSettings.agentRadius = 0.1f;
-
+        defaultBuildSettings.agentHeight = 1;
+        
+        //todo  针对 source需要添加 对layer的过滤
+        
         if (asyncUpdate)
             m_Operation = NavMeshBuilder.UpdateNavMeshDataAsync(m_NavMesh, defaultBuildSettings, m_Sources, bounds);
         else

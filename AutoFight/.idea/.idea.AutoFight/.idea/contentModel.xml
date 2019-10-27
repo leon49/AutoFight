@@ -1353,7 +1353,9 @@
           <e p="NavMeshComponent" t="Include">
             <e p="Examples" t="Include">
               <e p="Editor" t="Include">
+                <e p="LocalNavMeshBuilderEditor.cs" t="Include" />
                 <e p="NavMeshComponentsExamplesEditor.asmdef" t="Include" />
+                <e p="NavMeshComponentsGUIUtility.cs" t="Include" />
                 <e p="NavMeshPrefabInstanceEditor.cs" t="Include" />
               </e>
               <e p="NavMeshComponentsExamples.asmdef" t="Include" />
@@ -1471,8 +1473,9 @@
         <e p="Scripts" t="Include">
           <e p="CharactorRote.cs" t="Include" />
           <e p="Demo" t="Include">
+            <e p="GameController.cs" t="Include" />
             <e p="HeroAI.cs" t="Include" />
-            <e p="Main.cs" t="Include" />
+            <e p="HideMeshRender.cs" t="Include" />
           </e>
           <e p="Util" t="Include">
             <e p="EventSystem" t="Include">

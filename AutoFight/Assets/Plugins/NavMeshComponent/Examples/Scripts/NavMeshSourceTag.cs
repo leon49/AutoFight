@@ -8,49 +8,50 @@ using System.Collections.Generic;
 public class NavMeshSourceTag : MonoBehaviour
 {
     // Global containers for all active mesh/terrain tags
-    public static List<MeshFilter> m_Meshes = new List<MeshFilter>();
-    public static List<Terrain> m_Terrains = new List<Terrain>();
 
+    public static List<GameObject> m_GameObjects = new List<GameObject>();
+    
     void OnEnable()
     {
-        var m = GetComponent<MeshFilter>();
-        if (m != null)
-        {
-            m_Meshes.Add(m);
-        }
-
-        var t = GetComponent<Terrain>();
-        if (t != null)
-        {
-            m_Terrains.Add(t);
-        }
+        m_GameObjects.Add(gameObject);
     }
 
     void OnDisable()
     {
-        var m = GetComponent<MeshFilter>();
-        if (m != null)
-        {
-            m_Meshes.Remove(m);
-        }
-
-        var t = GetComponent<Terrain>();
-        if (t != null)
-        {
-            m_Terrains.Remove(t);
-        }
+        m_GameObjects.Remove(gameObject);
     }
 
     // Collect all the navmesh build sources for enabled objects tagged by this component
-    public static void Collect(ref List<NavMeshBuildSource> sources)
+    public static void Collect(ref List<NavMeshBuildSource> sources, string targetTag)
     {
         sources.Clear();
 
-        for (var i = 0; i < m_Meshes.Count; ++i)
+        List<MeshFilter> mMeshes = new List<MeshFilter>();
+        List<Terrain> mTerrains = new List<Terrain>();
+        
+        for (int i = 0; i < m_GameObjects.Count; i++)
         {
-            var mf = m_Meshes[i];
-            if (mf == null) continue;
+            if (!m_GameObjects[i].CompareTag(targetTag) && !m_GameObjects[i].CompareTag("Ground") )
+                continue;
+            
+            var m = m_GameObjects[i].GetComponent<MeshFilter>();
+            if (m != null)
+            {
+                mMeshes.Add(m);
+            }
 
+            var t = m_GameObjects[i].GetComponent<Terrain>();
+            if (t != null)
+            {
+                mTerrains.Add(t);
+            }
+        }
+        
+        for (var i = 0; i < mMeshes.Count; ++i)
+        {
+            var mf = mMeshes[i];
+            if (mf == null) continue;
+            
             var m = mf.sharedMesh;
             if (m == null) continue;
 
@@ -62,9 +63,9 @@ public class NavMeshSourceTag : MonoBehaviour
             sources.Add(s);
         }
 
-        for (var i = 0; i < m_Terrains.Count; ++i)
+        for (var i = 0; i < mTerrains.Count; ++i)
         {
-            var t = m_Terrains[i];
+            var t = mTerrains[i];
             if (t == null) continue;
 
             var s = new NavMeshBuildSource();
