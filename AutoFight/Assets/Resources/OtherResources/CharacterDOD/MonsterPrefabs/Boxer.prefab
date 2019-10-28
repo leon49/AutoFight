@@ -1459,6 +1459,8 @@ MonoBehaviour:
   enemyTag: Hero
   SightRange: 5
   AttackRange: 1
+  obstacle: {fileID: 4497655338210703654}
+  endTarget: {fileID: 0}
 --- !u!65 &208544539
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1487,6 +1489,8 @@ MonoBehaviour:
   enemyTag: Hero
   SightRange: 5
   AttackRange: 1
+  obstacle: {fileID: 4497655338210703654}
+  endTarget: {fileID: 0}
 --- !u!114 &208544538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1528,6 +1532,8 @@ MonoBehaviour:
   enemyTag: Hero
   SightRange: 5
   AttackRange: 1
+  obstacle: {fileID: 4497655338210703654}
+  endTarget: {fileID: 0}
 --- !u!195 &2056159874
 NavMeshAgent:
   m_ObjectHideFlags: 0

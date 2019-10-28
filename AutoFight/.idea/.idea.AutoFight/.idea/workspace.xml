@@ -2,25 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="170d5015-85ae-45a6-b937-2c508dc8510d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Editor/LocalNavMeshBuilderEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Editor/LocalNavMeshBuilderEditor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Editor/NavMeshComponentsGUIUtility.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Editor/NavMeshComponentsGUIUtility.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Demo/GameController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Demo/HideMeshRender.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Demo/HideMeshRender.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AutoFight/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AutoFight/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AutoFight/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AutoFight/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AutoFight/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AutoFight/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/LocalNavMeshBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/LocalNavMeshBuilder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/NavMeshSourceTag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/NavMeshSourceTag.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/GenericRunWithWeapon.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/GenericRunWithWeapon.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/Roar.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/Roar.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/SA1.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/SA1.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/SA3.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/SA3.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/SB.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/SB.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/SC.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/SC.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/SR.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/SR.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/SS.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/SS.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/Skill.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/Skill.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/WarriorAppear.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/WarriorAppear.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/dunji.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/dunji.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/jiankan(2).anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/jiankan(2).anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Anims/Boxer/BoxerAttack1.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Anims/Boxer/BoxerAttack1.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Anims/Boxer/BoxerAttack2.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Anims/Boxer/BoxerAttack2.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Anims/Boxer/BoxerAttack3.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Anims/Boxer/BoxerAttack3.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Anims/Boxer/BoxerBuff.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Anims/Boxer/BoxerBuff.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Anims/Boxer/BoxerShoot.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Anims/Boxer/BoxerShoot.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/CharacterPrefabs/Warrior.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/CharacterPrefabs/Warrior.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/MonsterPrefabs/Boxer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/MonsterPrefabs/Boxer.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/Main 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/Main 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/RoleAnimator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/RoleAnimator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Demo/Main.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Demo/Main.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Demo/GameController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/SetAgentTarget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/SetAgentTarget.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Demo/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Demo/GameController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/GameController.cs.meta" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,44 +42,55 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/RTS_nav/SetAgentTarget.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/RTS_nav/DrawLine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/NavMeshPrefabInstance.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/RTS_OnMobile/NavAgentCom.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Demo/HideMeshRender.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C8D2DEAE-EB3A-4471-B3E2-24C2A136823A/49/1c2659ea/Gizmos.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/LocalNavMeshBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example11_RVO/RVOExampleAgent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DEBE1A1E-1289-4620-9E66-18C9B516B882/fc/a1c14b42/NavMesh.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/NavMeshSourceTag.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/ExampleScripts/DynamicGridObstacle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Editor/NavMeshComponentsGUIUtility.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CD1994B8-49B2-4D37-BA83-AE1304579472/a2/a9712396/NavMeshBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Editor/NavMeshComponentsExamplesEditor.asmdef" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Editor/NavMeshPrefabInstanceEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/MonsterPrefabs/Boxer.prefab" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Editor/NavMeshComponentsGUIUtility.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Editor/NavMeshLinkEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Editor/NavMeshModifierEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/AstarPathfindingProject.asmdef" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/changelog.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/NavMeshPrefabInstance.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Editor/NavMeshSurfaceEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scenes/RTS_OnMobile/NavAgentCom.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Demo/HideMeshRender.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CD1994B8-49B2-4D37-BA83-AE1304579472/a2/8527d5ce/Editor.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C8D2DEAE-EB3A-4471-B3E2-24C2A136823A/49/1c2659ea/Gizmos.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/RVO/RVOSquareObstacle.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/LocalNavMeshBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example11_RVO/RVOExampleAgent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Scripts/NavMeshSurface.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DEBE1A1E-1289-4620-9E66-18C9B516B882/fc/a1c14b42/NavMesh.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/Navmesh/NavmeshCut.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/RVO/RVOController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Editor/LocalNavMeshBuilderEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C8D2DEAE-EB3A-4471-B3E2-24C2A136823A/4a/3d84cdb5/DefaultExecutionOrder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharactorRote.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/NavMeshSourceTag.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Demo/GameController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/ExampleScripts/DynamicGridObstacle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C8D2DEAE-EB3A-4471-B3E2-24C2A136823A/ee/5419e1b7/LineRenderer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/RTS_nav/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Demo/HeroAI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C8D2DEAE-EB3A-4471-B3E2-24C2A136823A/f3/29649960/LayerMask.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Editor/NavMeshComponentsGUIUtility.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C8D2DEAE-EB3A-4471-B3E2-24C2A136823A/ae/97543904/Component.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CD1994B8-49B2-4D37-BA83-AE1304579472/a2/a9712396/NavMeshBuilder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C8D2DEAE-EB3A-4471-B3E2-24C2A136823A/cc/994e45d4/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/Behaviors/AIDestinationSetter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/Core/AI/AIPath.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Editor/NavMeshComponentsExamplesEditor.asmdef" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/Core/AI/AIBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/RTS_nav/RoleAnimator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Editor/NavMeshPrefabInstanceEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C8D2DEAE-EB3A-4471-B3E2-24C2A136823A/80/069efecc/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/MonsterPrefabs/Boxer.prefab" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Editor/NavMeshComponentsGUIUtility.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -79,7 +98,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Demo/HeroAI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/RTS_OnMobile/NavAgentCom.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/RTS_nav/HeroAnimator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scenes/RTS_nav/SetAgentTarget.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Demo/Main.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Demo/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Editor/LocalNavMeshBuilderEditor.cs" />
@@ -87,8 +105,12 @@
         <option value="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Editor/LocalNavMeshBuilderEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/NavMeshSourceTag.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Demo/HideMeshRender.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scenes/RTS_nav/RoleAnimator.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/LocalNavMeshBuilder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Demo/WarriorAnimator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/RTS_nav/SetAgentTarget.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/RTS_nav/DrawLine.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/RTS_nav/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/RTS_nav/RoleAnimator.cs" />
       </list>
     </option>
   </component>
@@ -102,7 +124,7 @@
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="D:/Git/bin/git.exe" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys_rider" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -124,10 +146,10 @@
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="10564">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="13828">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="10564" />
+      <option name="pid" value="13828" />
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
@@ -158,6 +180,7 @@
       <workItem from="1572074453994" duration="31000" />
       <workItem from="1572074871904" duration="7897000" />
       <workItem from="1572167554096" duration="7527000" />
+      <workItem from="1572265994520" duration="10225000" />
     </task>
     <task id="LOCAL-00001" summary="commit new version of AStarProjectPro">
       <created>1571475131951</created>
@@ -199,6 +222,20 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <condition expression="gameObject.name.Contains(&quot;9&quot;)" language="C#" custom="RiderImportsList:" />
+          <url>file://$PROJECT_DIR$/Assets/Scenes/RTS_nav/RoleAnimator.cs</url>
+          <line>149</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/RoleAnimator.cs" initialLine="149">
+            <startOffsets>
+              <option value="4038" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4065" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

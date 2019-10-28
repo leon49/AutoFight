@@ -1463,6 +1463,8 @@
         </e>
         <e p="Scenes" t="Include">
           <e p="RTS_nav" t="Include">
+            <e p="DrawLine.cs" t="Include" />
+            <e p="GameController.cs" t="Include" />
             <e p="RoleAnimator.cs" t="Include" />
             <e p="SetAgentTarget.cs" t="Include" />
           </e>
@@ -1473,7 +1475,6 @@
         <e p="Scripts" t="Include">
           <e p="CharactorRote.cs" t="Include" />
           <e p="Demo" t="Include">
-            <e p="GameController.cs" t="Include" />
             <e p="HeroAI.cs" t="Include" />
             <e p="HideMeshRender.cs" t="Include" />
           </e>
