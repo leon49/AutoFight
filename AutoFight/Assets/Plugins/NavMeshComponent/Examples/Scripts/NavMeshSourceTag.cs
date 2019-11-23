@@ -31,8 +31,18 @@ public class NavMeshSourceTag : MonoBehaviour
         
         for (int i = 0; i < m_GameObjects.Count; i++)
         {
-            if (!m_GameObjects[i].CompareTag(targetTag) && !m_GameObjects[i].CompareTag("Ground") )
+            string[] tag = targetTag.Split(';');
+            bool tagCompared = false;
+            for (int j = 0; j < tag.Length; j++)
+            {
+                if (m_GameObjects[i].CompareTag(tag[j]) || m_GameObjects[i].CompareTag("Ground") )
+                    tagCompared = true;
+            }
+
+            if (!tagCompared)
+            {
                 continue;
+            }
             
             var m = m_GameObjects[i].GetComponent<MeshFilter>();
             if (m != null)

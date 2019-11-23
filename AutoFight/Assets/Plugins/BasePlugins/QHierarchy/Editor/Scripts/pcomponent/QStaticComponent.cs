@@ -62,7 +62,7 @@ namespace qtools.qhierarchy.pcomponent
                 GenericMenu menu = new GenericMenu();
                 menu.AddItem(new GUIContent("Nothing"                   ), intStaticFlags == 0, staticChangeHandler, 0);
                 menu.AddItem(new GUIContent("Everything"                ), intStaticFlags == -1, staticChangeHandler, -1);
-                menu.AddItem(new GUIContent("Lightmap Static"           ), (intStaticFlags & (int)StaticEditorFlags.LightmapStatic) > 0, staticChangeHandler, (int)StaticEditorFlags.LightmapStatic);
+                menu.AddItem(new GUIContent("Lightmap Static"           ), (intStaticFlags & (int)StaticEditorFlags.ContributeGI) > 0, staticChangeHandler, (int)StaticEditorFlags.ContributeGI);
                 menu.AddItem(new GUIContent("Occluder Static"           ), (intStaticFlags & (int)StaticEditorFlags.OccluderStatic) > 0, staticChangeHandler, (int)StaticEditorFlags.OccluderStatic);
                 menu.AddItem(new GUIContent("Batching Static"           ), (intStaticFlags & (int)StaticEditorFlags.BatchingStatic) > 0, staticChangeHandler, (int)StaticEditorFlags.BatchingStatic);
                 menu.AddItem(new GUIContent("Navigation Static"         ), (intStaticFlags & (int)StaticEditorFlags.NavigationStatic) > 0, staticChangeHandler, (int)StaticEditorFlags.NavigationStatic);

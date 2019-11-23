@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -6,9 +7,12 @@ namespace Demo
 {
     public class GameController : BehaviourSingleton<GameController>
     {
-        public GameObject[] GameObjectHeroes;
-        public GameObject[] GameObjectsMonsters;
+        public List<GameObject> GameObjectHeroes;
+        public List<GameObject> GameObjectsMonsters;
 
+        public GameObject hero;
+        public GameObject monster;
+        
         private GameObject _gameObjectMouseSelected;
         private Vector3 LastMouseDownPos;
 
@@ -28,6 +32,23 @@ namespace Demo
                     {
                         _gameObjectMouseSelected = hit.collider.gameObject;
                     }
+                    
+//                    Vector3 mousepos = Input.mousePosition;
+//                    mousepos.z = 10;
+//                    mousepos = Camera.main.ScreenToWorldPoint(mousepos);
+//                    mousepos.y = 0;
+//                    
+//                    if (hit.collider.gameObject.name == "HeroSpawner")
+//                    {
+//                        mousepos.z = 10;
+//                        GameObjectHeroes.Add(Instantiate(hero, mousepos , Quaternion.Inverse(Quaternion.identity)));
+//                    }
+//
+//                    if (hit.collider.gameObject.name == "MonsterSpawner")
+//                    {
+//                        mousepos.z = -10;
+//                        GameObjectsMonsters.Add(Instantiate(monster, mousepos , Quaternion.identity));
+//                    }
                 }
                 else
                 {
@@ -70,10 +91,16 @@ namespace Demo
             }
         }
 
+        public void DestroyARole( GameObject gameObject )
+        {
+                GameObjectHeroes.Remove(gameObject);
+                GameObjectsMonsters.Remove(gameObject);
+        }
+        
         private void Awake()
         {
-            GameObjectHeroes = GameObject.FindGameObjectsWithTag("Hero");
-            GameObjectsMonsters = GameObject.FindGameObjectsWithTag("Monster");
+            GameObjectHeroes = new List<GameObject>(GameObject.FindGameObjectsWithTag("Hero"));
+            GameObjectsMonsters =  new List<GameObject>(GameObject.FindGameObjectsWithTag("Monster"));
         }
 
         private void Start()

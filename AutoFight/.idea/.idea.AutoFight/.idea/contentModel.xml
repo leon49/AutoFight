@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Administrator\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Administrator\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_AutoFight.-586043197.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Administrator\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Administrator\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_AutoFight.-586043197.00" t="ExcludeRecursive" />
     <e p="D:\Projects\AutoFight\AutoFight" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
@@ -1465,7 +1465,9 @@
           <e p="RTS_nav" t="Include">
             <e p="DrawLine.cs" t="Include" />
             <e p="GameController.cs" t="Include" />
+            <e p="MonsterAttackingEvent.cs" t="Include" />
             <e p="RoleAnimator.cs" t="Include" />
+            <e p="RoleDeadEvent.cs" t="Include" />
             <e p="SetAgentTarget.cs" t="Include" />
           </e>
           <e p="RTS_OnMobile" t="Include">
@@ -1477,6 +1479,12 @@
           <e p="Demo" t="Include">
             <e p="HeroAI.cs" t="Include" />
             <e p="HideMeshRender.cs" t="Include" />
+          </e>
+          <e p="DemoPlaneFight" t="Include">
+            <e p="GameController.cs" t="Include" />
+            <e p="ObstacleController.cs" t="Include" />
+            <e p="ObstacleCube.cs" t="Include" />
+            <e p="PlaneRotation.cs" t="Include" />
           </e>
           <e p="Util" t="Include">
             <e p="EventSystem" t="Include">
@@ -1492,11 +1500,39 @@
             </e>
           </e>
         </e>
-        <e p="unity3d.txt" t="Include" />
+        <e p="TextMesh Pro" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+            <e p="Shaders" t="Include">
+              <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+              <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+              <e p="TMP_Bitmap.shader" t="Include" />
+              <e p="TMP_SDF Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface.shader" t="Include" />
+              <e p="TMP_SDF.shader" t="Include" />
+              <e p="TMP_Sprite.shader" t="Include" />
+              <e p="TMPro.cginc" t="Include" />
+              <e p="TMPro_Properties.cginc" t="Include" />
+              <e p="TMPro_Surface.cginc" t="Include" />
+            </e>
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
+        </e>
       </e>
       <e p="AstarPathfindingProject.csproj" t="IncludeRecursive" />
       <e p="AstarPathfindingProjectEditor.csproj" t="IncludeRecursive" />
       <e p="AutoFight.sln" t="IncludeFlat" />
+      <e p="Library" t="ExcludeRecursive" />
       <e p="NavMeshComponents.csproj" t="IncludeRecursive" />
       <e p="NavMeshComponentsEditor.csproj" t="IncludeRecursive" />
       <e p="NavMeshComponentsExamples.csproj" t="IncludeRecursive" />
@@ -1504,7 +1540,9 @@
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="PackageToolsEditor.csproj" t="IncludeRecursive" />
-      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
     </e>
   </component>
 </project>

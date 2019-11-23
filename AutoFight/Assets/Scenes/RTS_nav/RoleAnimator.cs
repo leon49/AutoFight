@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.AI;
@@ -7,8 +8,31 @@ namespace Demo
 {
     public class RoleAnimator : MonoBehaviour
     {
+        public GameObject bloodImg;
+        public Canvas imgCan;
+        
+        private long HpValue = 0;
+        public long MaxHpValue = 200;
+
+        public void BeAttack( long aDamage )
+        {
+            HpValue -= aDamage;
+            if (HpValue < 0)
+            {
+                HpValue = 0;
+            }
+            bloodImg.transform.localScale = new Vector3((float)(MaxHpValue-HpValue) / (float)MaxHpValue,1,1);
+            
+            if (HpValue==0)
+            {
+                EventCenter.Instance.Raise(new RoleDeadEvent(gameObject));
+                GameController.Instance.DestroyARole(gameObject);
+                Destroy(gameObject);
+            }
+        }
+        
         public string enemyTag = "";
-        public uint SightRange = 4;
+        public uint SightRange = 14;
         public uint AttackRange = 2;
 
         private Animator anim;
@@ -16,10 +40,26 @@ namespace Demo
         private NavMeshAgent navMeshAgent;
         public GameObject obstacle;
 
-        public Transform endTarget;
+        
+        public string endTargetName;
         
         private void Awake()
         {
+            HpValue = MaxHpValue;
+            EventCenter.Instance.AddListener<RoleDeadEvent>(EventHandler);
+        }
+
+        private void OnDestroy()
+        {
+            EventCenter.Instance.RemoveListener<RoleDeadEvent>(EventHandler);
+        }
+
+        void EventHandler( RoleDeadEvent evt )
+        {
+            if (lastEnemy == evt.GameObject)
+            {
+                CancelAttack();
+            }
         }
 
         private void Start()
@@ -28,7 +68,7 @@ namespace Demo
             anim = GetComponent<Animator>();
             navMeshAgent = GetComponent<NavMeshAgent>();
 
-            navMeshAgent.SetDestination(endTarget.position);
+            navMeshAgent.SetDestination(GameObject.Find(endTargetName).transform.position);
 
             Transform tTra = GetComponent<Transform>().Find("Obstacle");
             if (tTra != null)
@@ -63,17 +103,10 @@ namespace Demo
             });
         }
 
-        private void OnTriggerEnter(Collider other)
-        {
-            if (other.gameObject.tag.Contains(enemyTag))
-            {
-//                attack(other.gameObject);
-            }
-        }
 
         private bool isAttacking = false;
-        private GameObject lastEnemy;
-
+        public GameObject lastEnemy;
+        
         private void attack(GameObject gameObject)
         {
             if (isAttacking)
@@ -84,7 +117,12 @@ namespace Demo
             lastEnemy = gameObject;
             isAttacking = true;
             anim.Play("Attacking1");
-            transform.LookAt(gameObject.transform);
+
+            if (gameObject != null)
+            {
+                transform.LookAt(gameObject.transform);    
+            }
+            
 
             if (obstacle != null)
             {
@@ -92,6 +130,8 @@ namespace Demo
             }
 
             navMeshAgent.enabled = false;
+//            navMeshAgent.velocity = Vector3.zero;
+//            navMeshAgent.Stop(true);
         }
 
         void CancelAttack()
@@ -101,23 +141,29 @@ namespace Demo
                 return;
             }
             lastEnemy = null;
-            
-            if (obstacle != null)
-            {
-                obstacle.SetActive(false);
-            }
 
-            TimerManager.Instance.addTimer(20, timer =>
+            GameObject tEnemy = findEnemy2Attack();
+            if (tEnemy == null)
             {
-                isAttacking = false;
-                anim.Play("Run");
-                navMeshAgent.enabled = true;
-                navMeshAgent.SetDestination(endTarget.position);
-            });
+                if (obstacle != null  )
+                {
+                    obstacle.SetActive(false);
+                }
+
+                TimerManager.Instance.addTimer(10, timer =>
+                {
+                    isAttacking = false;
+                    anim.Play("Run");
+                    navMeshAgent.enabled = true;
+                    navMeshAgent.SetDestination(GameObject.Find(endTargetName).transform.position);
+                });
+            }
         }
 
         private void Update()
         {
+            imgCan.transform.rotation = Quaternion.identity;
+            
             if ( isForcing && navMeshAgent.enabled && !navMeshAgent.pathPending)
             {
                 if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
@@ -128,20 +174,35 @@ namespace Demo
                     }
                 }
             }
-            
+
             if (isForcing)
             {
                 return;
             }
 
-            GameObject[] gameObjects = enemyTag == "Monster"
+            if (lastEnemy!=null)
+            {
+                    float dis = Vector3.Distance(lastEnemy.transform.position,
+                        transform.position);
+                    if (dis >= AttackRange * 2)
+                    {
+                        lastEnemy = null;
+                    }
+            }
+
+            refreshEnemy();
+        }
+
+        void refreshEnemy()
+        {
+            List<GameObject> gameObjects = enemyTag == "Monster"
                 ? GameController.Instance.GameObjectsMonsters
                 : GameController.Instance.GameObjectHeroes;
 
             GameObject tEnemyToChase = null;
             float minDis = 99999999;
             bool hasEnemy2Attack = false;
-            for (int i = 0; i < gameObjects.Length; i++)
+            for (int i = 0; i < gameObjects.Count; i++)
             {
                 GameObject tEnemy = gameObjects[i];
                 float dis = Vector3.Distance(tEnemy.transform.position,
@@ -150,18 +211,14 @@ namespace Demo
                 if (dis <= AttackRange * 2)
                 {
                     hasEnemy2Attack = true;
-                    if ( lastEnemy != null && lastEnemy != tEnemy)
-                    {
-                        transform.LookAt(tEnemy.transform);
-                    }
-                    else
+                    if ( lastEnemy == null )
                     {
                         attack(tEnemy);        
                     }
                     break;
                 }
 
-                if (dis <= SightRange && dis > AttackRange * 2)
+                if (dis <= SightRange && dis > AttackRange * 2 )
                 {
                     if (minDis > dis)
                     {
@@ -183,29 +240,59 @@ namespace Demo
             }
         }
 
+        GameObject findEnemy2Attack()
+        {
+            List<GameObject> gameObjects = enemyTag == "Monster"
+                ? GameController.Instance.GameObjectsMonsters
+                : GameController.Instance.GameObjectHeroes;
+
+            GameObject tEnemyToChase = null;
+            float minDis = 99999999;
+            bool hasEnemy2Attack = false;
+            for (int i = 0; i < gameObjects.Count; i++)
+            {
+                GameObject tEnemy = gameObjects[i];
+                float dis = Vector3.Distance(tEnemy.transform.position,
+                    transform.position);
+
+                if (dis <= AttackRange * 2)
+                {
+                    hasEnemy2Attack = true;
+                    if (lastEnemy == null)
+                    {
+                        return tEnemy;
+                    }
+
+                    break;
+                }
+            }
+
+            return null;
+        }
+
 #if UNITY_EDITOR
         private void OnDrawGizmos()
         {
-            Transform tTra = GetComponent<Transform>().Find("Obstacle");
-            if (tTra != null)
-            {
-                obstacle = tTra.gameObject;
-            }
-
-            if (obstacle != null)
-            {
-                if ((Selection.activeGameObject == gameObject || Selection.activeGameObject == obstacle) &&
-                    !obstacle.GetComponent<MeshRenderer>().enabled)
-                {
-                    obstacle.GetComponent<MeshRenderer>().enabled = true;
-                }
-
-                if (Selection.activeGameObject != gameObject && Selection.activeGameObject != obstacle &&
-                    obstacle.GetComponent<MeshRenderer>().enabled)
-                {
-                    obstacle.GetComponent<MeshRenderer>().enabled = false;
-                }
-            }
+//            Transform tTra = GetComponent<Transform>().Find("Obstacle");
+//            if (tTra != null)
+//            {
+//                obstacle = tTra.gameObject;
+//            }
+//
+//            if (obstacle != null)
+//            {
+//                if ((Selection.activeGameObject == gameObject || Selection.activeGameObject == obstacle) &&
+//                    !obstacle.GetComponent<MeshRenderer>().enabled)
+//                {
+//                    obstacle.GetComponent<MeshRenderer>().enabled = true;
+//                }
+//
+//                if (Selection.activeGameObject != gameObject && Selection.activeGameObject != obstacle &&
+//                    obstacle.GetComponent<MeshRenderer>().enabled)
+//                {
+//                    obstacle.GetComponent<MeshRenderer>().enabled = false;
+//                }
+//            }
         }
         
         private void OnDrawGizmosSelected()

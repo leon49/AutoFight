@@ -2,33 +2,134 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="170d5015-85ae-45a6-b937-2c508dc8510d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/MonsterAttackingEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/MonsterAttackingEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/RoleDeadEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/RoleDeadEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DemoPlaneFight.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DemoPlaneFight/GameController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DemoPlaneFight/ObstacleController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DemoPlaneFight/ObstacleController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DemoPlaneFight/ObstacleCube.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DemoPlaneFight/ObstacleCube.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DemoPlaneFight/PlaneRotation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DemoPlaneFight/PlaneRotation.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AutoFight/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AutoFight/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AutoFight/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AutoFight/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AutoFight/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AutoFight/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/GenericRunWithWeapon.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/GenericRunWithWeapon.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/Roar.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/Roar.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Help.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Help.pdf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/More Assets.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/More Assets.url.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example14_TurnBased_Hexagon/Textures/hexagon.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example14_TurnBased_Hexagon/Textures/hexagon.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example16_RVO 2D/grid_tile.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example16_RVO 2D/grid_tile.psd.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example6_Navmesh/example6.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example6_Navmesh/example6.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Prefabs/MineBot/mine_bot.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Prefabs/MineBot/mine_bot.FBX.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Prefabs/MineBot/mine_bot@awake.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Prefabs/MineBot/mine_bot@awake.FBX.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Prefabs/MineBot/mine_bot@back.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Prefabs/MineBot/mine_bot@back.FBX.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Prefabs/MineBot/mine_bot@forward.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Prefabs/MineBot/mine_bot@forward.FBX.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Prefabs/MineBot/mine_bot@left.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Prefabs/MineBot/mine_bot@left.FBX.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Prefabs/MineBot/mine_bot@right.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Prefabs/MineBot/mine_bot@right.FBX.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/ConsolePro.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/ConsolePro.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Demigiant.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Demigiant.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/QHierarchy.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/QHierarchy.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/QHierarchy/Editor/Scripts/pcomponent/QStaticComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/QHierarchy/Editor/Scripts/pcomponent/QStaticComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/RainbowAssets.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/RainbowAssets.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Reporter.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Reporter.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/bow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/bow.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/definitely_a_spear.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/definitely_a_spear.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/potionGreen.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/potionGreen.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/tools.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/tools.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/upg_armor.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/upg_armor.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/upg_hammer.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/upg_hammer.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/upg_helmet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/upg_helmet.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/upg_shield.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/upg_shield.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/woodSword.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/woodSword.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/UnityEditorSnippets.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/UnityEditorSnippets.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Materials/modify_crosshair.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Materials/modify_crosshair.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/NavMeshSourceTag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/NavMeshSourceTag.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/SA1.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/SA1.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/SA3.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/SA3.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/SB.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/SB.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/SC.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/SC.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/SR.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/SR.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/SS.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/SS.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/Skill.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/Skill.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/WarriorAppear.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/WarriorAppear.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/dunji.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/dunji.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/jiankan(2).anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/jiankan(2).anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Animators/Boxer.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Animators/Boxer.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Anims/Boxer/BoxerAttack1.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Anims/Boxer/BoxerAttack1.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Anims/Boxer/BoxerAttack2.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Anims/Boxer/BoxerAttack2.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Anims/Boxer/BoxerAttack3.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Anims/Boxer/BoxerAttack3.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Anims/Boxer/BoxerBuff.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Anims/Boxer/BoxerBuff.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Anims/Boxer/BoxerShoot.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Anims/Boxer/BoxerShoot.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/CharacterPrefabs/Warrior.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/CharacterPrefabs/Warrior.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/MonsterPrefabs/Boxer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/MonsterPrefabs/Boxer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Arrow_crowd.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Arrow_crowd.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Blood_splash.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Blood_splash.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Blue_Hole.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Blue_Hole.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Blue_firework.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Blue_firework.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Cold_bark.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Cold_bark.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Combo_knock.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Combo_knock.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Explosive.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Explosive.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Fallbreeze.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Fallbreeze.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Forward_cavalierattack.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Forward_cavalierattack.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Forward_forge.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Forward_forge.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Forward_freeze.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Forward_freeze.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Forward_ray.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Forward_ray.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Forward_steel_attack.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Forward_steel_attack.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Forward_thurder.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Forward_thurder.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Green_invade.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Green_invade.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Thunder_horn.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Thunder_horn.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Thunder_rage.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Thunder_rage.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_X_chop.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_X_chop.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_astrostone.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_astrostone.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_blue_hit.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_blue_hit.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_bluecandle_once.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_bluecandle_once.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_bluetorgue.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_bluetorgue.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_chilly_kick.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_chilly_kick.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_claydrain.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_claydrain.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_comb_bit.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_comb_bit.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_desperate.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_desperate.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_devilwake.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_devilwake.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_divine.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_divine.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_elegent_beat.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_elegent_beat.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_essence_found.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_essence_found.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_evilcord_splash.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_evilcord_splash.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_extreme_side.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_extreme_side.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_fire_furious.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_fire_furious.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_fullsight.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_fullsight.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_land_snaze.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_land_snaze.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_mistery_hit.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_mistery_hit.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_muddy.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_muddy.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_noble_hit.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_noble_hit.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_pet_hit.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_pet_hit.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_rock_ball.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_rock_ball.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_rock_curricane.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_rock_curricane.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_rock_monster.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_rock_monster.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_royal_beat.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_royal_beat.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_royal_hit.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_royal_hit.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_rubysun.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_rubysun.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_shoop_spot.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_shoop_spot.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_simple_bomn.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_simple_bomn.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_somewhat.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_somewhat.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_sound_attack.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_sound_attack.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_sparkle_stream.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_sparkle_stream.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_spell01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_spell01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_spell02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_spell02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_spell03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_spell03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_spell04.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_spell04.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_spell05.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_spell05.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_stone_emerge.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_stone_emerge.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_stranger_light.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_stranger_light.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_sword_hit.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_sword_hit.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_technology.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_technology.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_wildblue.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_wildblue.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_witch_ward.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_witch_ward.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RTS_OnMobile.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_OnMobile.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/GameController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/Main 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/Main 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/RoleAnimator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/RoleAnimator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/SetAgentTarget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/SetAgentTarget.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Demo/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Demo/GameController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/GameController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/unity3d.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/unity3d.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/Packages-Update.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/Packages-Update.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,61 +137,93 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scenes/RTS_nav/RoleAnimator.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="129" column="13" lean-forward="true" selection-start-line="129" selection-start-column="13" selection-end-line="129" selection-end-column="13" />
+              <folding>
+                <marker date="1573134720341" expanded="false" signature="6:107" ph="..." />
+                <marker date="1573134720341" expanded="true" signature="123:9083" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="171:9081" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="370:865" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="441:498" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="649:855" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="1218:1347" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="1381:1479" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="1527:1652" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="1582:1642" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="1682:2281" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="2042:2157" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="2371:2821" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="2445:2516" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="2573:2809" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="2962:3546" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="3001:3053" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="3196:3284" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="3332:3402" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="3446:3536" ph="/* navMeshAgent.velocity = Vector3.zero; ... */" />
+                <marker date="1573134720341" expanded="true" signature="3575:4270" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="3615:3667" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="3782:4260" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="3836:3919" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="3980:4244" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="4301:5243" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="4466:4804" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="4565:4790" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="4685:4772" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="4832:4884" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="4918:5204" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="5104:5190" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="5272:6724" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="5650:6402" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="5874:6118" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="5981:6073" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="6184:6388" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="6240:6370" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="6437:6497" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="6566:6714" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="6763:7649" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="7141:7613" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="7365:7599" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="7470:7553" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="7703:8572" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="7714:8562" ph="/* Transform tTra = GetComponent&lt;Transform&gt;().Find(&quot;Obstacle&quot;); ... */" />
+                <marker date="1573134720341" expanded="true" signature="8625:8953" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="8997:9017" ph="{...}" />
+                <marker date="1573134720341" expanded="true" signature="9055:9075" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scenes/RTS_nav/SetAgentTarget.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scenes/RTS_nav/DrawLine.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/NavMeshPrefabInstance.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scenes/RTS_OnMobile/NavAgentCom.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Demo/HideMeshRender.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C8D2DEAE-EB3A-4471-B3E2-24C2A136823A/49/1c2659ea/Gizmos.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/LocalNavMeshBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example11_RVO/RVOExampleAgent.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DEBE1A1E-1289-4620-9E66-18C9B516B882/fc/a1c14b42/NavMesh.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/NavMeshSourceTag.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/ExampleScripts/DynamicGridObstacle.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Editor/NavMeshComponentsGUIUtility.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CD1994B8-49B2-4D37-BA83-AE1304579472/a2/a9712396/NavMeshBuilder.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Editor/NavMeshComponentsExamplesEditor.asmdef" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Editor/NavMeshPrefabInstanceEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/MonsterPrefabs/Boxer.prefab" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Editor/NavMeshComponentsGUIUtility.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Editor/NavMeshLinkEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Editor/NavMeshModifierEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/AstarPathfindingProject.asmdef" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/changelog.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Editor/NavMeshSurfaceEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CD1994B8-49B2-4D37-BA83-AE1304579472/a2/8527d5ce/Editor.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/RVO/RVOSquareObstacle.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Scripts/NavMeshSurface.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/Navmesh/NavmeshCut.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/RVO/RVOController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Editor/LocalNavMeshBuilderEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C8D2DEAE-EB3A-4471-B3E2-24C2A136823A/4a/3d84cdb5/DefaultExecutionOrder.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharactorRote.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C8D2DEAE-EB3A-4471-B3E2-24C2A136823A/ee/5419e1b7/LineRenderer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scenes/RTS_nav/GameController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Demo/HeroAI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C8D2DEAE-EB3A-4471-B3E2-24C2A136823A/f3/29649960/LayerMask.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C8D2DEAE-EB3A-4471-B3E2-24C2A136823A/ae/97543904/Component.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C8D2DEAE-EB3A-4471-B3E2-24C2A136823A/cc/994e45d4/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/RTS_OnMobile/NavAgentCom.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/MonsterPrefabs/Boxer.prefab" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example11_RVO/RVOExampleAgent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/changelog.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/AstarPathfindingProject.asmdef" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Util/TimerManger/Timer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/Behaviors/AIDestinationSetter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/Navmesh/NavmeshCut.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/Core/AI/AIPath.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/Core/AI/AIBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharactorRote.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/RTS_nav/SetAgentTarget.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Demo/HeroAI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/bow.png.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/RTS_nav/RoleAnimator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C8D2DEAE-EB3A-4471-B3E2-24C2A136823A/80/069efecc/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/Core/AI/AIBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/ExampleScripts/DynamicGridObstacle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/RVO/RVOController.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -103,20 +236,38 @@
         <option value="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Editor/LocalNavMeshBuilderEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Editor/NavMeshComponentsGUIUtility.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Editor/LocalNavMeshBuilderEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/NavMeshSourceTag.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Demo/HideMeshRender.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/LocalNavMeshBuilder.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Demo/WarriorAnimator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/RTS_nav/SetAgentTarget.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/RTS_nav/DrawLine.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/NavMeshSourceTag.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/RTS_nav/MonsterAttackingEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/RTS_nav/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/RTS_nav/RoleDeadEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DemoPlaneFight/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DemoPlaneFight/ObstacleController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DemoPlaneFight/ObstacleCube.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DemoPlaneFight/PlaneRotation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/RTS_nav/RoleAnimator.cs" />
       </list>
     </option>
   </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="260" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
   <component name="ProjectId" id="1SecutnKkodeOTvQpZrlfe9AB2b" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="Discover.Launch.Via.Unity" value="true" />
@@ -143,14 +294,12 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
-      <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="13828">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="17440">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="13828" />
-      <option name="userSelectedPid" value="false" />
+      <option name="pid" value="17440" />
       <method v="2" />
     </configuration>
   </component>
@@ -181,6 +330,11 @@
       <workItem from="1572074871904" duration="7897000" />
       <workItem from="1572167554096" duration="7527000" />
       <workItem from="1572265994520" duration="10225000" />
+      <workItem from="1572610934816" duration="14919000" />
+      <workItem from="1572767888304" duration="10135000" />
+      <workItem from="1572868106080" duration="9474000" />
+      <workItem from="1572962413823" duration="7477000" />
+      <workItem from="1573134666952" duration="649000" />
     </task>
     <task id="LOCAL-00001" summary="commit new version of AStarProjectPro">
       <created>1571475131951</created>
@@ -191,6 +345,52 @@
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="649000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="Capture Tool" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="NuGet" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unity" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Unit Tests" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Performance Profiler" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Errors In Solution" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Unit Tests Coverage" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -203,8 +403,28 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
               <option name="COLUMN_ORDER" />
             </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
           </value>
         </entry>
       </map>
@@ -222,21 +442,72 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <condition expression="gameObject.name.Contains(&quot;9&quot;)" language="C#" custom="RiderImportsList:" />
-          <url>file://$PROJECT_DIR$/Assets/Scenes/RTS_nav/RoleAnimator.cs</url>
-          <line>149</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/RoleAnimator.cs" initialLine="149">
-            <startOffsets>
-              <option value="4038" />
-            </startOffsets>
-            <endOffsets>
-              <option value="4065" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="UNITY_DEBUG_RUN_CONFIGURATION">
+        <watch expression="gameObject" language="C#" custom="RiderImportsList:" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/RTS_nav/RoleAnimator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="129" column="13" lean-forward="true" selection-start-line="129" selection-start-column="13" selection-end-line="129" selection-end-column="13" />
+          <folding>
+            <marker date="1573134720341" expanded="false" signature="6:107" ph="..." />
+            <marker date="1573134720341" expanded="true" signature="123:9083" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="171:9081" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="370:865" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="441:498" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="649:855" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="1218:1347" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="1381:1479" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="1527:1652" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="1582:1642" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="1682:2281" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="2042:2157" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="2371:2821" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="2445:2516" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="2573:2809" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="2962:3546" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="3001:3053" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="3196:3284" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="3332:3402" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="3446:3536" ph="/* navMeshAgent.velocity = Vector3.zero; ... */" />
+            <marker date="1573134720341" expanded="true" signature="3575:4270" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="3615:3667" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="3782:4260" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="3836:3919" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="3980:4244" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="4301:5243" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="4466:4804" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="4565:4790" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="4685:4772" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="4832:4884" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="4918:5204" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="5104:5190" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="5272:6724" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="5650:6402" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="5874:6118" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="5981:6073" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="6184:6388" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="6240:6370" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="6437:6497" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="6566:6714" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="6763:7649" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="7141:7613" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="7365:7599" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="7470:7553" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="7703:8572" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="7714:8562" ph="/* Transform tTra = GetComponent&lt;Transform&gt;().Find(&quot;Obstacle&quot;); ... */" />
+            <marker date="1573134720341" expanded="true" signature="8625:8953" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="8997:9017" ph="{...}" />
+            <marker date="1573134720341" expanded="true" signature="9055:9075" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
