@@ -2,134 +2,556 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="170d5015-85ae-45a6-b937-2c508dc8510d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/MonsterAttackingEvent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/MonsterAttackingEvent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/RoleDeadEvent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/RoleDeadEvent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DemoPlaneFight.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DemoPlaneFight/GameController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DemoPlaneFight/ObstacleController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DemoPlaneFight/ObstacleController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DemoPlaneFight/ObstacleCube.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DemoPlaneFight/ObstacleCube.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DemoPlaneFight/PlaneRotation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DemoPlaneFight/PlaneRotation.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/BasePlane.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/BasePlane.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Bullet.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Bullet/BulletLogic.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Bullet/BulletLogic.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Bullet/Weapon.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Bullet/Weapon.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Enemies.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Enemies/BaseEnemy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Enemies/EnemyGenerator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Enemies/EnemyGenerator.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Enemies/NormalEnemy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Enemies/NormalEnemy.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/ObjectPool.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/ObjectPool.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Obstacles.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Obstacles/ChildTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Obstacles/ChildTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Plane.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Plane/MasterPlane.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Plane/MasterPlane.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Plane/PlaneAttackLogic.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Plane/PlaneAttackLogic.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Plane/PlaneMove.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Plane/PlaneMove.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/ResourceMgr.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/ResourceMgr.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/48 Particle Effect Pack/Script/csParticleScaleControl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/48 Particle Effect Pack/Script/csParticleScaleControl.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AutoFight/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AutoFight/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AutoFight/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AutoFight/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AutoFight/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AutoFight/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Help.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Help.pdf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/More Assets.url" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/More Assets.url.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example14_TurnBased_Hexagon/Textures/hexagon.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example14_TurnBased_Hexagon/Textures/hexagon.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example16_RVO 2D/grid_tile.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example16_RVO 2D/grid_tile.psd.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example6_Navmesh/example6.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example6_Navmesh/example6.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Prefabs/MineBot/mine_bot.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Prefabs/MineBot/mine_bot.FBX.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Prefabs/MineBot/mine_bot@awake.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Prefabs/MineBot/mine_bot@awake.FBX.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Prefabs/MineBot/mine_bot@back.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Prefabs/MineBot/mine_bot@back.FBX.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Prefabs/MineBot/mine_bot@forward.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Prefabs/MineBot/mine_bot@forward.FBX.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Prefabs/MineBot/mine_bot@left.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Prefabs/MineBot/mine_bot@left.FBX.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Prefabs/MineBot/mine_bot@right.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Prefabs/MineBot/mine_bot@right.FBX.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/ConsolePro.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/ConsolePro.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Demigiant.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Demigiant.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/QHierarchy.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/QHierarchy.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/QHierarchy/Editor/Scripts/pcomponent/QStaticComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/QHierarchy/Editor/Scripts/pcomponent/QStaticComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/RainbowAssets.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/RainbowAssets.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Reporter.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Reporter.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/bow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/bow.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/definitely_a_spear.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/definitely_a_spear.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/potionGreen.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/potionGreen.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/tools.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/tools.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/upg_armor.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/upg_armor.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/upg_hammer.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/upg_hammer.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/upg_helmet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/upg_helmet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/upg_shield.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/upg_shield.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/woodSword.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/woodSword.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/UnityEditorSnippets.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/UnityEditorSnippets.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Materials/modify_crosshair.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Materials/modify_crosshair.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/NavMeshSourceTag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/NavMeshSourceTag.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/SA1.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Character/Anims/Warriors/Animates/SA1.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Animators/Boxer.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Animators/Boxer.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Anims/Boxer/BoxerAttack1.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Anims/Boxer/BoxerAttack1.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/CharacterPrefabs/Warrior.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/CharacterPrefabs/Warrior.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/MonsterPrefabs/Boxer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/MonsterPrefabs/Boxer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Arrow_crowd.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Arrow_crowd.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Blood_splash.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Blood_splash.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Blue_Hole.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Blue_Hole.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Blue_firework.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Blue_firework.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Cold_bark.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Cold_bark.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Combo_knock.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Combo_knock.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Explosive.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Explosive.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Fallbreeze.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Fallbreeze.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Forward_cavalierattack.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Forward_cavalierattack.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Forward_forge.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Forward_forge.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Forward_freeze.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Forward_freeze.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Forward_ray.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Forward_ray.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Forward_steel_attack.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Forward_steel_attack.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Forward_thurder.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Forward_thurder.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Green_invade.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Green_invade.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Thunder_horn.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Thunder_horn.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Thunder_rage.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_Thunder_rage.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_X_chop.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_X_chop.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_astrostone.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_astrostone.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_blue_hit.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_blue_hit.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_bluecandle_once.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_bluecandle_once.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_bluetorgue.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_bluetorgue.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_chilly_kick.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_chilly_kick.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_claydrain.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_claydrain.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_comb_bit.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_comb_bit.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_desperate.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_desperate.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_devilwake.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_devilwake.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_divine.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_divine.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_elegent_beat.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_elegent_beat.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_essence_found.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_essence_found.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_evilcord_splash.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_evilcord_splash.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_extreme_side.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_extreme_side.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_fire_furious.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_fire_furious.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_fullsight.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_fullsight.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_land_snaze.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_land_snaze.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_mistery_hit.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_mistery_hit.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_muddy.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_muddy.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_noble_hit.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_noble_hit.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_pet_hit.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_pet_hit.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_rock_ball.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_rock_ball.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_rock_curricane.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_rock_curricane.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_rock_monster.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_rock_monster.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_royal_beat.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_royal_beat.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_royal_hit.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_royal_hit.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_rubysun.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_rubysun.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_shoop_spot.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_shoop_spot.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_simple_bomn.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_simple_bomn.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_somewhat.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_somewhat.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_sound_attack.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_sound_attack.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_sparkle_stream.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_sparkle_stream.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_spell01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_spell01.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_spell02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_spell02.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_spell03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_spell03.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_spell04.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_spell04.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_spell05.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_spell05.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_stone_emerge.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_stone_emerge.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_stranger_light.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_stranger_light.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_sword_hit.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_sword_hit.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_technology.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_technology.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_wildblue.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_wildblue.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_witch_ward.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Tazo_2D/Icon/S_witch_ward.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RTS_OnMobile.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_OnMobile.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/Main 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/Main 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/RoleAnimator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/RoleAnimator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/unity3d.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/unity3d.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example12_Procedural/TopDownOverlay.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example12_Procedural/TopDownOverlay.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example13_Moving/Materials/No Name.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example13_Moving/Materials/No Name.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example13_Moving/WaterPlane.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example13_Moving/WaterPlane.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example14_TurnBased_Hexagon/Materials/hexagon_blue.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example14_TurnBased_Hexagon/Materials/hexagon_blue.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example14_TurnBased_Hexagon/Materials/hexagon_green.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example14_TurnBased_Hexagon/Materials/hexagon_green.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example14_TurnBased_Hexagon/Materials/hexagon_purple.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example14_TurnBased_Hexagon/Materials/hexagon_purple.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example14_TurnBased_Hexagon/Materials/hexagon_red.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example14_TurnBased_Hexagon/Materials/hexagon_red.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example14_TurnBased_Hexagon/Materials/hexagon_yellow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example14_TurnBased_Hexagon/Materials/hexagon_yellow.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example14_TurnBased_Hexagon/Materials/hexagon_yellow_transparent.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example14_TurnBased_Hexagon/Materials/hexagon_yellow_transparent.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example3_Recast_Navmesh1/Materials/Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example3_Recast_Navmesh1/Materials/Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example3_Recast_Navmesh1/Materials/structure2-Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example3_Recast_Navmesh1/Materials/structure2-Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example6_Navmesh/Materials/navmesh-navmesh_example6navmeshMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example6_Navmesh/Materials/navmesh-navmesh_example6navmeshMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Materials/BlueBox.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Materials/BlueBox.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Materials/Door.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Materials/Door.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Materials/Ground.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Materials/Ground.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Materials/GroundRTS.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Materials/GroundRTS.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Materials/OrangeGround.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Materials/OrangeGround.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Materials/PathBlueArea.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Materials/PathBlueArea.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Materials/PathGreyCube.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Materials/PathGreyCube.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Materials/PathRedArea.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Materials/PathRedArea.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Materials/SomeBox.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Materials/SomeBox.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Materials/Wall.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Materials/Wall.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Prefabs/MineBot/Materials/mine_bot-01 - Default.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Prefabs/MineBot/Materials/mine_bot-01 - Default.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Prefabs/MineBot/Materials/mine_bot-minebot.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Prefabs/MineBot/Materials/mine_bot-minebot.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Prefabs/MineBot/Materials/mine_bot@awake-01 - Default.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Prefabs/MineBot/Materials/mine_bot@awake-01 - Default.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Prefabs/MineBot/Materials/mine_bot@back-01 - Default.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Prefabs/MineBot/Materials/mine_bot@back-01 - Default.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Prefabs/MineBot/Materials/mine_bot@forward-01 - Default.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Prefabs/MineBot/Materials/mine_bot@forward-01 - Default.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Prefabs/MineBot/Materials/mine_bot@left-01 - Default.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Prefabs/MineBot/Materials/mine_bot@left-01 - Default.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Prefabs/MineBot/Materials/mine_bot@right-01 - Default.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Prefabs/MineBot/Materials/mine_bot@right-01 - Default.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Assemblies.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Assemblies/NoEditor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Assemblies/NoEditor/Sirenix.Serialization.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Assemblies/NoEditor/Sirenix.Serialization.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Assemblies/NoEditor/Sirenix.Utilities.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Assemblies/NoEditor/Sirenix.Utilities.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Assemblies/NoEmitAndNoEditor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Serialization.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Serialization.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Utilities.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Utilities.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.xml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.xml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Assemblies/Sirenix.Serialization.Config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Assemblies/Sirenix.Serialization.Config.xml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Assemblies/Sirenix.Serialization.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Assemblies/Sirenix.Serialization.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.xml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Assemblies/Sirenix.Utilities.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Assemblies/Sirenix.Utilities.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Assemblies/Sirenix.Utilities.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Assemblies/Sirenix.Utilities.xml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Assemblies/link.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Assemblies/link.xml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Assets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Assets/Prefab Related Attributes.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Assets/Prefab Related Attributes.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Attributes Overview.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Attributes Overview.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/AssetListExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/AssetListExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/AttributesOnClassesExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/AttributesOnClassesExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/BoxGroupExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/BoxGroupExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/ButtonExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/ButtonExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/ButtonGroupExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/ButtonGroupExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/ButtonWithParametersExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/ButtonWithParametersExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/ColorPaletteExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/ColorPaletteExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/CombineGroupAttributeExample1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/CombineGroupAttributeExample1.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/CombineGroupAttributeExample2.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/CombineGroupAttributeExample2.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/CombineGroupAttributeExample3.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/CombineGroupAttributeExample3.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/CustomContextMenuExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/CustomContextMenuExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/CustomValueDrawerExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/CustomValueDrawerExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/DebugSerializationExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/DebugSerializationExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/DefaultDrawerChanges.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/DefaultDrawerChanges.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/DelegateExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/DelegateExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/DictionaryExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/DictionaryExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/DisableContextMenuExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/DisableContextMenuExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/DisableInEditorAndPlayModeExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/DisableInEditorAndPlayModeExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/DisplayAsStringExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/DisplayAsStringExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/DrawWithUnityExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/DrawWithUnityExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/EnableAndDisableIfExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/EnableAndDisableIfExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/EnumPagingExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/EnumPagingExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/EnumToggleButtonsExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/EnumToggleButtonsExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/FilePathExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/FilePathExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/FolderPathExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/FolderPathExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/FoldoutGroupAttributeExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/FoldoutGroupAttributeExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/GUIColorExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/GUIColorExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/HideInEditorAndPlayModeExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/HideInEditorAndPlayModeExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/HideLabelExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/HideLabelExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/HideReferenceObjectPickerExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/HideReferenceObjectPickerExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/HorizontalGroupAttributeExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/HorizontalGroupAttributeExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/IncorrectUseOfOdinSerializeAttributeExamples1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/IncorrectUseOfOdinSerializeAttributeExamples1.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/IncorrectUseOfOdinSerializeAttributeExamples2.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/IncorrectUseOfOdinSerializeAttributeExamples2.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/IndentExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/IndentExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/InfoBoxExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/InfoBoxExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/InlineButtonExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/InlineButtonExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/InlineEditorExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/InlineEditorExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/InlinePropertyExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/InlinePropertyExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/LabelTextExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/LabelTextExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/ListExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/ListExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/MinMaxSliderExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/MinMaxSliderExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/MinMaxValueValueExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/MinMaxValueValueExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/MultiLinePropertyExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/MultiLinePropertyExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/NoBoilerplate.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/NoBoilerplate.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/OnInspectorGUIExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/OnInspectorGUIExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/OnValueChangedExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/OnValueChangedExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/PrefabRelatedAttributesExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/PrefabRelatedAttributesExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/ProgressBarExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/ProgressBarExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/PropertyOrderExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/PropertyOrderExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/PropertyTooltipExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/PropertyTooltipExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/ReadOnlyExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/ReadOnlyExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/RequiredExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/RequiredExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/ResponsiveButtonGroupExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/ResponsiveButtonGroupExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/SceneAndAssetsOnlyExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/SceneAndAssetsOnlyExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/SerializeAnything.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/SerializeAnything.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/ShowAndHideIfExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/ShowAndHideIfExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/ShowDrawerChainExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/ShowDrawerChainExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/ShowInInspectorExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/ShowInInspectorExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/ShowPropertiesInTheInspectorExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/ShowPropertiesInTheInspectorExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/StaticInspectorsExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/StaticInspectorsExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/SuffixLabelExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/SuffixLabelExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/TabExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/TabExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/TableListExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/TableListExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/TableMatrixExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/TableMatrixExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/TitleExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/TitleExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/TitleGroupExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/TitleGroupExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/ToggleExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/ToggleExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/ToggleLeftExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/ToggleLeftExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/TwoDimensionalArrayExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/TwoDimensionalArrayExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/TypeFilterExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/TypeFilterExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/UnityPreviewFieldsExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/UnityPreviewFieldsExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/ValidateInputExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/ValidateInputExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/ValueDropdownExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/ValueDropdownExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/VerticalGroupExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/VerticalGroupExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/WrapExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Attributes Overview/Scripts/WrapExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Attribute Processors.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Attribute Processors/Custom Attribute Processors.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Attribute Processors/Custom Attribute Processors.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Attribute Processors/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Attribute Processors/Scripts/AttributeProcessorForListItemsExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Attribute Processors/Scripts/AttributeProcessorForListItemsExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Attribute Processors/Scripts/AttributeProcessorPriorityExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Attribute Processors/Scripts/AttributeProcessorPriorityExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Attribute Processors/Scripts/Bar.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Attribute Processors/Scripts/Bar.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Attribute Processors/Scripts/BasicAttributeProcessorExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Attribute Processors/Scripts/BasicAttributeProcessorExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Attribute Processors/Scripts/CustomAttributeProcessorLocatorExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Attribute Processors/Scripts/CustomAttributeProcessorLocatorExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Attribute Processors/Scripts/CustomizeDictionaryKeyValueExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Attribute Processors/Scripts/CustomizeDictionaryKeyValueExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Attribute Processors/Scripts/Foo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Attribute Processors/Scripts/Foo.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Attribute Processors/Scripts/PutAttributesOnAnyType.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Attribute Processors/Scripts/PutAttributesOnAnyType.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Attribute Processors/Scripts/SelfAndChildrenExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Attribute Processors/Scripts/SelfAndChildrenExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Attribute Processors/Scripts/TabGroupByDeclaringType.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Attribute Processors/Scripts/TabGroupByDeclaringType.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Drawers.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Drawers/Custom Drawers.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Drawers/Custom Drawers.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Drawers/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Drawers/Scripts/CustomDrawerExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Drawers/Scripts/CustomDrawerExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Drawers/Scripts/CustomGroupExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Drawers/Scripts/CustomGroupExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Drawers/Scripts/GenericDrawerExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Drawers/Scripts/GenericDrawerExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Drawers/Scripts/GenericMenuExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Drawers/Scripts/GenericMenuExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Drawers/Scripts/HealthBarExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Drawers/Scripts/HealthBarExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Drawers/Scripts/InstancedDrawerExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Drawers/Scripts/InstancedDrawerExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Drawers/Scripts/MinesweeperExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Drawers/Scripts/MinesweeperExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Drawers/Scripts/PriorityExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Drawers/Scripts/PriorityExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Drawers/Scripts/ReflectionExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Drawers/Scripts/ReflectionExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Drawers/Scripts/StringMemberHelperExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Drawers/Scripts/StringMemberHelperExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Drawers/Scripts/ValidationExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Custom Drawers/Scripts/ValidationExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Editor Windows.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Editor Windows/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Editor Windows/Scripts/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Editor Windows/Scripts/Editor/BasicOdinEditorExampleWindow.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Editor Windows/Scripts/Editor/BasicOdinEditorExampleWindow.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Editor Windows/Scripts/Editor/OdinMenuEditorWindowExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Editor Windows/Scripts/Editor/OdinMenuEditorWindowExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Editor Windows/Scripts/Editor/OdinMenuStyleExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Editor Windows/Scripts/Editor/OdinMenuStyleExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Editor Windows/Scripts/Editor/OverrideGetTargetsExampleWindow.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Editor Windows/Scripts/Editor/OverrideGetTargetsExampleWindow.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Editor Windows/Scripts/Editor/QuicklyInspectObjects.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Editor Windows/Scripts/Editor/QuicklyInspectObjects.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Editor Windows/Scripts/Editor/SomeData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Editor Windows/Scripts/Editor/SomeData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Editor Windows/Scripts/Editor/SomeTextureToolWindow.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Editor Windows/Scripts/Editor/SomeTextureToolWindow.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Character.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Character/Baldr.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Character/Baldr.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Character/Loki.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Character/Loki.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Character/Odin.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Character/Odin.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Character/Thor.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Character/Thor.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Characters.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Characters/CharacterOverview.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Characters/CharacterOverview.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/bow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/bow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/definitely_a_spear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/definitely_a_spear.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/icons_by_ravenmore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/icons_by_ravenmore.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/potionGreen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/potionGreen.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/tools.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/tools.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/upg_armor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/upg_armor.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/upg_hammer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/upg_hammer.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/upg_helmet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/upg_helmet.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/upg_shield.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/upg_shield.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/woodSword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/woodSword.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Items.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Items/Armours.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Items/Armours/Helmet.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Items/Armours/Helmet.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Items/Armours/Megingjord.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Items/Armours/Megingjord.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Items/Consumables.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Items/Consumables/Mead.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Items/Consumables/Mead.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Items/Consumables/New Item.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Items/Consumables/New Item.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Items/Weapons.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Items/Weapons/Gungnir.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Items/Weapons/Gungnir.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Items/Weapons/Mistletoe Arrow.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Items/Weapons/Mistletoe Arrow.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Items/Weapons/Mjolnir.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Items/Weapons/Mjolnir.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Items/Weapons/Weaponized Mead.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Items/Weapons/Weaponized Mead.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Character.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Character/Character.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Character/Character.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Character/CharacterAlignment.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Character/CharacterAlignment.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Character/CharacterEquipment.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Character/CharacterEquipment.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Character/CharacterOverview.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Character/CharacterOverview.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Character/CharacterStats.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Character/CharacterStats.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Editor/CharacterTable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Editor/CharacterTable.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Editor/ItemDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Editor/ItemDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Editor/ItemSlotCellDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Editor/ItemSlotCellDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Editor/RPGEditorWindow.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Editor/RPGEditorWindow.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Editor/ScriptableObjectCreator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Editor/ScriptableObjectCreator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Items.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Items/Armor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Items/Armor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Items/ConsumableItem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Items/ConsumableItem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Items/EquipableItem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Items/EquipableItem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Items/Item.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Items/Item.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Items/ItemTypes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Items/ItemTypes.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Items/WeaponItem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Items/WeaponItem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Misc.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Misc/ItemSlot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Misc/ItemSlot.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Misc/StatList.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Misc/StatList.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Misc/StatType.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Misc/StatType.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Misc/StatValue.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Scripts/Misc/StatValue.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Assets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Assets/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Assets/Editor/Odin Inspector Logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Assets/Editor/Odin Inspector Logo.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Config.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Config/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Config/Editor/AOTGenerationConfig.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Config/Editor/AOTGenerationConfig.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Config/Editor/ColorPaletteManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Config/Editor/ColorPaletteManager.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Config/Editor/GeneralDrawerConfig.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Config/Editor/GeneralDrawerConfig.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Config/Editor/ImportSettingsConfig.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Config/Editor/ImportSettingsConfig.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Config/Editor/InspectorConfig.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Config/Editor/InspectorConfig.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Config/Resources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Config/Resources/Sirenix.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Config/Resources/Sirenix/GlobalSerializationConfig.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Config/Resources/Sirenix/GlobalSerializationConfig.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Scripts/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Scripts/Editor/AssemblyImportSettingsAutomation.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Scripts/Editor/AssemblyImportSettingsAutomation.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Scripts/Editor/BuildAOTAutomation.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Scripts/Editor/BuildAOTAutomation.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Scripts/Editor/EnsureOdinInspectorDefine.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Scripts/Editor/EnsureOdinInspectorDefine.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Scripts/Editor/FixBrokenUnityObjectWrapperDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Scripts/Editor/FixBrokenUnityObjectWrapperDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Scripts/Editor/SyncListDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Scripts/Editor/SyncListDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Scripts/Editor/SyncVarAttributeDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Scripts/Editor/SyncVarAttributeDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Scripts/Editor/Vector2IntMinMaxAttributeDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Scripts/Editor/Vector2IntMinMaxAttributeDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Scripts/Editor/VectorIntDrawers.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Scripts/Editor/VectorIntDrawers.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Scripts/Editor/VectorIntPropertyResolvers.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Scripts/Editor/VectorIntPropertyResolvers.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Scripts/SerializedNetworkBehaviour.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Scripts/SerializedNetworkBehaviour.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Scripts/VectorIntFormatters.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Odin Inspector/Scripts/VectorIntFormatters.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Readme.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Source.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Source/Source.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Source/Source.zip.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Materials/brightgreen.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Materials/brightgreen.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Materials/brown.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Materials/brown.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Materials/floor.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Materials/floor.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Materials/green.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Materials/green.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Materials/grey.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Materials/grey.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Materials/red.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Materials/red.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Materials/yellow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Materials/yellow.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile0.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile0.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile10.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile10.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile11.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile11.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile12.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile12.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile13.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile13.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile14.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile14.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile15.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile15.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile4.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile5.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile5.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile6.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile6.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile7.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile7.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile8.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile8.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile9.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile9.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/Materials/BanyanBark.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/Materials/BanyanBark.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/Materials/BanyanBranches.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/Materials/BanyanBranches.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/Advanced Toon Shading/Materials/Ground/Ground.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/Advanced Toon Shading/Materials/Ground/Ground.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Monster/Other/Materials/ChestMonster.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/3DModel/Monster/Other/Materials/ChestMonster.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Anims/Medusa/Materials/item2AAAsherenzu1_warrior07___Default_Base_Color.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Anims/Medusa/Materials/item2AAAsherenzu1_warrior07___Default_Base_Color.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Anims/ObsidianGolem/Materials/heiyaoshi.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Anims/ObsidianGolem/Materials/heiyaoshi.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Anims/ObsidianGolem/Materials/lambert1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Anims/ObsidianGolem/Materials/lambert1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Anims/Pyro/Materials/Inside.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Anims/Pyro/Materials/Inside.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Anims/Pyro/Materials/Outer.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Anims/Pyro/Materials/Outer.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Anims/Pyro/Materials/fire2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Anims/Pyro/Materials/fire2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Anims/Pyro/Materials/fireMotionMask.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Anims/Pyro/Materials/fireMotionMask.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Anims/SnakeTutor/Materials/2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/Art/VolcanoMonsterPrefabs/Anims/SnakeTutor/Materials/2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/CharacterPrefabs/Paladin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/CharacterPrefabs/Paladin.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlaneBattle.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlaneBattle/Cube.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlaneBattle/Cube.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlaneBattle/New Scene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlaneBattle/New Scene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/DrawLine.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/DrawLine.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/GameController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/GameController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/Main 1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/Main 1.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/Main 1.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/MonsterAttackingEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/MonsterAttackingEvent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/RoleAnimator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/RoleAnimator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/RoleDeadEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/RoleDeadEvent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/SetAgentTarget.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/SetAgentTarget.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Demo/Materails/Ground.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Demo/Materails/Ground.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DemoPlaneFight.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DemoPlaneFight/GameController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DemoPlaneFight/GameController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DemoPlaneFight/ObstacleController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DemoPlaneFight/ObstacleController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DemoPlaneFight/ObstacleCube.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DemoPlaneFight/ObstacleCube.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DemoPlaneFight/PlaneRotation.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DemoPlaneFight/PlaneRotation.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Util/TimerManger/TimerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Util/TimerManger/TimerManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/Packages-Update.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/Packages-Update.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -137,93 +559,63 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scenes/RTS_nav/RoleAnimator.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="129" column="13" lean-forward="true" selection-start-line="129" selection-start-column="13" selection-end-line="129" selection-end-column="13" />
-              <folding>
-                <marker date="1573134720341" expanded="false" signature="6:107" ph="..." />
-                <marker date="1573134720341" expanded="true" signature="123:9083" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="171:9081" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="370:865" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="441:498" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="649:855" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="1218:1347" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="1381:1479" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="1527:1652" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="1582:1642" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="1682:2281" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="2042:2157" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="2371:2821" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="2445:2516" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="2573:2809" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="2962:3546" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="3001:3053" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="3196:3284" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="3332:3402" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="3446:3536" ph="/* navMeshAgent.velocity = Vector3.zero; ... */" />
-                <marker date="1573134720341" expanded="true" signature="3575:4270" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="3615:3667" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="3782:4260" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="3836:3919" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="3980:4244" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="4301:5243" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="4466:4804" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="4565:4790" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="4685:4772" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="4832:4884" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="4918:5204" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="5104:5190" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="5272:6724" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="5650:6402" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="5874:6118" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="5981:6073" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="6184:6388" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="6240:6370" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="6437:6497" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="6566:6714" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="6763:7649" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="7141:7613" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="7365:7599" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="7470:7553" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="7703:8572" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="7714:8562" ph="/* Transform tTra = GetComponent&lt;Transform&gt;().Find(&quot;Obstacle&quot;); ... */" />
-                <marker date="1573134720341" expanded="true" signature="8625:8953" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="8997:9017" ph="{...}" />
-                <marker date="1573134720341" expanded="true" signature="9055:9075" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/RVO/RVOSquareObstacle.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Bullet/BulletLogic.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/RTS_OnMobile/NavAgentCom.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/MonsterPrefabs/Boxer.prefab" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Bullet.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/48 Particle Effect Pack/Script/csParticleScaleControl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Plane/MasterPlane.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Enemies/NormalEnemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example11_RVO/RVOExampleAgent.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/changelog.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/AstarPathfindingProject.asmdef" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Util/TimerManger/Timer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/Behaviors/AIDestinationSetter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/Navmesh/NavmeshCut.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/Core/AI/AIPath.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharactorRote.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scenes/RTS_nav/SetAgentTarget.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Demo/HeroAI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/BasePlugins/Sirenix/Demos/Sample - RPG Editor/Icons/bow.png.meta" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scenes/RTS_nav/RoleAnimator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/Core/AI/AIBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/c5/41a95146/Random.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/77/50eed0fa/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FlyDemo/SkyBox/StarNestSkybox/Scripts/SkyboxSwitcher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Plane/PlaneMove.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/81/aab0b849/Transform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/ExampleScripts/DynamicGridObstacle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/ResourceMgr.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Plane/PlaneRotation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B7EA4E17-1526-44EA-B00E-0F80D68C43DC/d2/435af3ea/TweenSettingsExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Bullet/Weapon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0FB38736-02AD-4F16-A30D-E8CE8E1A6F6D/1e/1c1b0b24/Action`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Obstacles/CommonObstacle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/ObjectPool.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Obstacles/ObstacleLogic.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/GameController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/MonsterPrefabs/Boxer.prefab" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Enemies/EnemyGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Plane/PlaneAttackLogic.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/AstarPathfindingProject.asmdef" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/changelog.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Obstacles/ChildTrigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/48 Particle Effect Pack/Script/csDestroyEffect.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/RVO/RVOSquareObstacle.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/48 Particle Effect Pack/Script/csParticleMove.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/Navmesh/NavmeshCut.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/RVO/RVOController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/48 Particle Effect Pack/Script/csShowAllEffect.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/48 Particle Effect Pack/Script/csParticleEffectPackLightControl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B7EA4E17-1526-44EA-B00E-0F80D68C43DC/13/bb4bd8b5/ShortcutExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharactorRote.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/BasePlane.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/49/2a50d501/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Demo/HeroAI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/8a/9147425c/Component.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Enemies/BaseEnemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/Behaviors/AIDestinationSetter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/0f/69c9f98c/Quaternion.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/43/c668e3a3/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/Core/AI/AIPath.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/Core/AI/AIBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Util/TimerManger/TimerManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Util/TimerManger/Singleton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Util/TimerManger/Timer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/509B38DE-0BB8-4FDE-A4B2-340764259EC3/25/bdc912da/ParticleSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Environment/PlanetRotate.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -245,29 +637,46 @@
         <option value="$PROJECT_DIR$/Assets/Scenes/RTS_nav/MonsterAttackingEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/RTS_nav/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/RTS_nav/RoleDeadEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DemoPlaneFight/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DemoPlaneFight/ObstacleController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DemoPlaneFight/ObstacleCube.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DemoPlaneFight/PlaneRotation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DemoPlaneFight/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Particle Playground/Examples/Example Project/Scripts/TextFader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Ian's Explosion Pack/Scripts/Editor/ScaleEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/AdvancedParticleEffects/Resources/Magic_forest/Scripts/Dust.cs" />
+        <option value="$PROJECT_DIR$/Assets/AdvancedParticleEffects/scripts/WeatherChanger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/48 Particle Effect Pack/Script/csParticleScaleControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/PlaneMove.cs" />
+        <option value="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Bullet/BulletPool.cs" />
+        <option value="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/ObjectPool.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Util/TimerManger/TimerManager.cs" />
+        <option value="D:/Unity All/2019.2.11f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Slider.cs" />
+        <option value="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Plane/PlaneRotation.cs" />
+        <option value="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Plane/PlaneLogic.cs" />
+        <option value="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Obstacles/ObstacleLogic.cs" />
+        <option value="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Plane/BasePlane.cs" />
+        <option value="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Obstacles/ObstacleCube.cs" />
+        <option value="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Enemies/BaseEnemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Obstacles/ChildTrigger.cs" />
+        <option value="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Obstacles/CommonObstacle.cs" />
+        <option value="$PROJECT_DIR$/Assets/FlyDemo/SkyBox/StarNestSkybox/Scripts/SkyboxSwitcher.cs" />
+        <option value="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Environment/PlanetRotate.cs" />
+        <option value="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Plane/MasterPlane.cs" />
+        <option value="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Enemies/EnemyGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/ResourceMgr.cs" />
+        <option value="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Bullet/BulletLogic.cs" />
+        <option value="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Bullet/Weapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Plane/PlaneAttackLogic.cs" />
+        <option value="$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Enemies/NormalEnemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/48 Particle Effect Pack/Script/csShowAllEffect.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/RTS_nav/RoleAnimator.cs" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
-    <option name="y" value="20" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
-  </component>
   <component name="ProjectId" id="1SecutnKkodeOTvQpZrlfe9AB2b" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="Discover.Launch.Via.Unity" value="true" />
@@ -275,7 +684,7 @@
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="D:/Git/bin/git.exe" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -294,12 +703,14 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
+      <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="17440">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="14632">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="17440" />
+      <option name="pid" value="14632" />
+      <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
   </component>
@@ -335,6 +746,18 @@
       <workItem from="1572868106080" duration="9474000" />
       <workItem from="1572962413823" duration="7477000" />
       <workItem from="1573134666952" duration="649000" />
+      <workItem from="1574512015639" duration="992000" />
+      <workItem from="1574513040850" duration="143000" />
+      <workItem from="1574513269533" duration="4000" />
+      <workItem from="1574520761143" duration="83000" />
+      <workItem from="1574520868880" duration="7051000" />
+      <workItem from="1574568585890" duration="14959000" />
+      <workItem from="1575185190580" duration="18919000" />
+      <workItem from="1575696805319" duration="666000" />
+      <workItem from="1575784447084" duration="8677000" />
+      <workItem from="1576323134142" duration="2483000" />
+      <workItem from="1576334176510" duration="2086000" />
+      <workItem from="1576381318234" duration="3700000" />
     </task>
     <task id="LOCAL-00001" summary="commit new version of AStarProjectPro">
       <created>1571475131951</created>
@@ -345,52 +768,6 @@
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="649000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Image Layers" />
-      <window_info id="Capture Tool" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="NuGet" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Unity" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Unit Tests" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Performance Profiler" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Errors In Solution" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Unit Tests Coverage" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -403,12 +780,6 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
@@ -449,65 +820,5 @@
         <watch expression="gameObject" language="C#" custom="RiderImportsList:" />
       </configuration>
     </watches-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scenes/RTS_nav/RoleAnimator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="129" column="13" lean-forward="true" selection-start-line="129" selection-start-column="13" selection-end-line="129" selection-end-column="13" />
-          <folding>
-            <marker date="1573134720341" expanded="false" signature="6:107" ph="..." />
-            <marker date="1573134720341" expanded="true" signature="123:9083" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="171:9081" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="370:865" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="441:498" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="649:855" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="1218:1347" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="1381:1479" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="1527:1652" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="1582:1642" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="1682:2281" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="2042:2157" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="2371:2821" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="2445:2516" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="2573:2809" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="2962:3546" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="3001:3053" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="3196:3284" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="3332:3402" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="3446:3536" ph="/* navMeshAgent.velocity = Vector3.zero; ... */" />
-            <marker date="1573134720341" expanded="true" signature="3575:4270" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="3615:3667" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="3782:4260" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="3836:3919" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="3980:4244" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="4301:5243" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="4466:4804" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="4565:4790" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="4685:4772" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="4832:4884" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="4918:5204" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="5104:5190" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="5272:6724" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="5650:6402" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="5874:6118" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="5981:6073" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="6184:6388" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="6240:6370" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="6437:6497" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="6566:6714" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="6763:7649" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="7141:7613" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="7365:7599" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="7470:7553" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="7703:8572" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="7714:8562" ph="/* Transform tTra = GetComponent&lt;Transform&gt;().Find(&quot;Obstacle&quot;); ... */" />
-            <marker date="1573134720341" expanded="true" signature="8625:8953" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="8997:9017" ph="{...}" />
-            <marker date="1573134720341" expanded="true" signature="9055:9075" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>

@@ -5,10 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/RTS_nav/Main 1.unity
-    guid: 635a000fd6d7d124b957570ba87cbc4d
   - enabled: 0
-    path: Assets/Scenes/PlaneBattle/New Scene.unity
+    path: Assets/AutoFight/Main 1.unity
+    guid: 635a000fd6d7d124b957570ba87cbc4d
+  - enabled: 1
+    path: Assets/FlyDemo/PlaneBattle/New Scene.unity
     guid: bfd2e37b6f1dee34fb4701e02fd5953b
   m_configObjects: {}

@@ -15,6 +15,10 @@ public class TimerManager : BehaviourSingleton<TimerManager>
     {
     }
 
+    public Timer addTimer(long delayMilliSeconds, OnTimer callback, MonoBehaviour liveWith = null)
+    {
+        return addTimer(delayMilliSeconds, 0, callback, liveWith != null ? liveWith.gameObject : null);
+    }
     /// <summary>
     /// 添加延迟时间执行
     /// </summary>
@@ -22,11 +26,11 @@ public class TimerManager : BehaviourSingleton<TimerManager>
     /// <param name="callback"></param>
     /// <param name="liveWith"></param>
     /// <returns></returns>
-    public Timer addTimer(long delayMilliSeconds, OnTimer callback, MonoBehaviour liveWith = null)
+    public Timer addTimer(long delayMilliSeconds, OnTimer callback, GameObject liveWith )
     {
         return addTimer(delayMilliSeconds, 0, callback, liveWith);
     }
-    public Timer addTimer(long delayMilliSeconds, int repeatTimes, OnTimer callback, MonoBehaviour liveWith = null)
+    public Timer addTimer(long delayMilliSeconds, int repeatTimes, OnTimer callback, GameObject liveWith = null)
     {
         GameObject t = new GameObject();
         t.name = "timer_old";
@@ -45,7 +49,7 @@ public class TimerManager : BehaviourSingleton<TimerManager>
 
         if (liveWith != null)
         {
-            t.transform.SetParent(liveWith.gameObject.transform);
+            t.transform.SetParent(liveWith.transform);
         }
         else
         {
