@@ -1,7 +1,230 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="170d5015-85ae-45a6-b937-2c508dc8510d" name="Default Changelist" comment="" />
+    <list default="true" id="170d5015-85ae-45a6-b937-2c508dc8510d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Cube.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Cube.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Editor/LocalNavMeshBuilderEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Editor/LocalNavMeshBuilderEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Editor/NavMeshComponentsExamplesEditor.asmdef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Editor/NavMeshComponentsExamplesEditor.asmdef.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Editor/NavMeshComponentsGUIUtility.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Editor/NavMeshComponentsGUIUtility.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Editor/NavMeshPrefabInstanceEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Editor/NavMeshPrefabInstanceEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Materials/brightgreen.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Materials/brightgreen.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Materials/brown.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Materials/brown.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Materials/crosshair.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Materials/crosshair.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Materials/floor.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Materials/floor.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Materials/green.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Materials/green.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Materials/grey.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Materials/grey.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Materials/modify_crosshair.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Materials/modify_crosshair.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Materials/red.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Materials/red.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Materials/yellow.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Materials/yellow.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/NavMeshComponentsExamples.asmdef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/NavMeshComponentsExamples.asmdef.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/BanyanTree.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/BanyanTree.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/BanyanTree.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/BanyanTree.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile0.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile0.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile1.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile1.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile10.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile10.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile11.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile11.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile12.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile12.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile13.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile13.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile14.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile14.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile15.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile15.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile2.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile2.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile3.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile3.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile4.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile4.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile5.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile5.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile6.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile6.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile7.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile7.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile8.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile8.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile9.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/DungeonTiles/Tile9.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/GroundTile.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/GroundTile.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/Materials/BanyanBark.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/Materials/BanyanBark.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/Materials/BanyanBranches.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/Materials/BanyanBranches.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/Plank.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Prefabs/Plank.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scenes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scenes/1_multiple_agent_sizes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scenes/1_multiple_agent_sizes.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scenes/1_multiple_agent_sizes.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scenes/1_multiple_agent_sizes/NavMesh-Geometry 1.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scenes/1_multiple_agent_sizes/NavMesh-Geometry 1.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scenes/1_multiple_agent_sizes/NavMesh-Geometry.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scenes/1_multiple_agent_sizes/NavMesh-Geometry.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scenes/2_drop_plank.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scenes/2_drop_plank.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scenes/3_free_orientation.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scenes/3_free_orientation.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scenes/3_free_orientation.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scenes/3_free_orientation/NavMesh.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scenes/3_free_orientation/NavMesh.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scenes/4_sliding_window_infinite.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scenes/4_sliding_window_infinite.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scenes/5_sliding_window_terrain.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scenes/5_sliding_window_terrain.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scenes/6_modify_mesh.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scenes/6_modify_mesh.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scenes/7_dungeon.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scenes/7_dungeon.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scenes/7b_dungeon_tile_prefabs.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scenes/7b_dungeon_tile_prefabs.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/AgentLinkMover.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/AgentLinkMover.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/ClickToMove.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/ClickToMove.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/DestroyOnTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/DestroyOnTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/DungeonManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/DungeonManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/EnableIffSleeping.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/EnableIffSleeping.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/FreeCam.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/FreeCam.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/LocalNavMeshBuilder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/LocalNavMeshBuilder.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/MeshTool.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/MeshTool.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/NavMeshPrefabInstance.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/NavMeshPrefabInstance.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/NavMeshSourceTag.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/NavMeshSourceTag.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/Oscillator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/Oscillator.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/RandomInstancing.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/RandomInstancing.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/RandomWalk.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/RandomWalk.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/SpawnPrefabOnKeyDown.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/SpawnPrefabOnKeyDown.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Terrains.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Terrains/Islands.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Terrains/Islands.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Terrains/LightmapWithFog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Terrains/LightmapWithFog.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Terrains/layer_LightmapWithFog(2048.000,2048.000)(0.000,0.000)(0.000,0.000,0.000),0.000,0.000.terrainlayer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Terrains/layer_LightmapWithFog(2048.000,2048.000)(0.000,0.000)(0.000,0.000,0.000),0.000,0.000.terrainlayer.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Gizmos.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Gizmos/NavMeshLink Icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Gizmos/NavMeshLink Icon.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Gizmos/NavMeshModifierVolume Icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Gizmos/NavMeshModifierVolume Icon.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Gizmos/NavMeshSurface Icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Gizmos/NavMeshSurface Icon.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Editor/NavMeshAssetManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Editor/NavMeshAssetManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Editor/NavMeshComponentsGUIUtility.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Editor/NavMeshComponentsGUIUtility.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Editor/NavMeshLinkEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Editor/NavMeshLinkEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Editor/NavMeshModifierEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Editor/NavMeshModifierEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Editor/NavMeshModifierVolumeEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Editor/NavMeshModifierVolumeEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Editor/NavMeshSurfaceEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Editor/NavMeshSurfaceEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Scripts/NavMeshComponents.asmdef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Scripts/NavMeshComponents.asmdef.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Scripts/NavMeshLink.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Scripts/NavMeshLink.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Scripts/NavMeshModifier.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Scripts/NavMeshModifier.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Scripts/NavMeshModifierVolume.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Scripts/NavMeshModifierVolume.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Scripts/NavMeshSurface.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/NavMeshComponents/Scripts/NavMeshSurface.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_OnMobile/Main.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_OnMobile/Main.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_OnMobile/NavAgentCom.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_OnMobile/NavAgentCom.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_OnMobile/New Scene.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_OnMobile/New Scene.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_OnMobile/New Scene.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_OnMobile/New Scene/NavMesh.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_OnMobile/New Scene/NavMesh.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/DrawLine.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/DrawLine.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/GameController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/GameController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/Main 1.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/Main 1.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/Main 1.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/RoleDeadEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/RoleDeadEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/SetAgentTarget.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/RTS_nav/SetAgentTarget.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Demo/HeroAI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Demo/HeroAI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Demo/HideMeshRender.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Demo/HideMeshRender.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Demo/Materails.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Demo/Materails/Ground.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Demo/Materails/Ground.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Util/EventSystem.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Util/EventSystem/BaseEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Util/EventSystem/BaseEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Util/EventSystem/EventCenter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Util/EventSystem/EventCenter.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Util/LogTime.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Util/LogTime.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Util/TimerManger.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Util/TimerManger/SafeTime.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Util/TimerManger/SafeTime.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Util/TimerManger/Singleton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Util/TimerManger/Singleton.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Util/TimerManger/Timer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Util/TimerManger/Timer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Util/TimerManger/TimerManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Util/TimerManger/TimerManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AutoFight/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AutoFight/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AutoFight/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AutoFight/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,34 +236,19 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Bullet/BulletLogic.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scenes/RTS_OnMobile/NavAgentCom.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Bullet.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/48 Particle Effect Pack/Script/csParticleScaleControl.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Plane/MasterPlane.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Enemies/NormalEnemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example11_RVO/RVOExampleAgent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/c5/41a95146/Random.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/77/50eed0fa/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FlyDemo/SkyBox/StarNestSkybox/Scripts/SkyboxSwitcher.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Plane/PlaneMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/81/aab0b849/Transform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/ExampleScripts/DynamicGridObstacle.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/ResourceMgr.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Plane/PlaneRotation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/LocalNavMeshBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/NavMeshComponent/Examples/Scripts/NavMeshSourceTag.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B7EA4E17-1526-44EA-B00E-0F80D68C43DC/d2/435af3ea/TweenSettingsExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Bullet/Weapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0FB38736-02AD-4F16-A30D-E8CE8E1A6F6D/1e/1c1b0b24/Action`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Obstacles/CommonObstacle.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/ObjectPool.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Obstacles/ObstacleLogic.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/OtherResources/CharacterDOD/MonsterPrefabs/Boxer.prefab" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Enemies/EnemyGenerator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Plane/PlaneAttackLogic.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/AstarPathfindingProject.asmdef" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/changelog.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Obstacles/ChildTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/48 Particle Effect Pack/Script/csDestroyEffect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/RVO/RVOSquareObstacle.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/48 Particle Effect Pack/Script/csParticleMove.cs" root0="FORCE_HIGHLIGHTING" />
@@ -48,23 +256,20 @@
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/RVO/RVOController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/48 Particle Effect Pack/Script/csShowAllEffect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/48 Particle Effect Pack/Script/csParticleEffectPackLightControl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AutoFight/RoleDeadEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Util/LogTime.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AutoFight/RoleAnimator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B7EA4E17-1526-44EA-B00E-0F80D68C43DC/13/bb4bd8b5/ShortcutExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharactorRote.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/BasePlane.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AutoFight/Main 1.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/49/2a50d501/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Demo/HeroAI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/8a/9147425c/Component.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Enemies/BaseEnemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Util/TimerManger/Singleton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/Behaviors/AIDestinationSetter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/0f/69c9f98c/Quaternion.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/43/c668e3a3/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/Core/AI/AIPath.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/Core/AI/AIBase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Util/TimerManger/TimerManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Util/TimerManger/Singleton.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Util/TimerManger/Timer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/509B38DE-0BB8-4FDE-A4B2-340764259EC3/25/bdc912da/ParticleSystem.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FlyDemo/DemoPlaneFight/Environment/PlanetRotate.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -208,6 +413,7 @@
       <workItem from="1576334176510" duration="2086000" />
       <workItem from="1576381318234" duration="3700000" />
       <workItem from="1576684738942" duration="671000" />
+      <workItem from="1576759070943" duration="742000" />
     </task>
     <task id="LOCAL-00001" summary="commit new version of AStarProjectPro">
       <created>1571475131951</created>
@@ -234,6 +440,31 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:D:/Projects/AutoFight/AutoFight/Assets/Scripts" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State>
@@ -242,6 +473,11 @@
           </value>
         </entry>
       </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
     </option>
     <option name="RECENT_FILTERS">
       <map>
